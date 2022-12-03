@@ -7,6 +7,11 @@
   font-family: "Gilroy";
 }
 
+p, a {
+  font-weight: 500;
+  font-size: 16px;
+}
+
 .header {
   height: 100px;
   display: flex;
@@ -28,7 +33,6 @@
 }
 .header nav a {
   text-decoration: none;
-  font-size: 16;
   font-weight: 500;
   color: #352C2C;
 }
@@ -42,8 +46,6 @@
 }
 .header-info a {
   text-decoration: none;
-  font-size: 16;
-  font-weight: 500;
   color: #161616;
 }
 
@@ -91,7 +93,6 @@
   max-width: 385px;
   margin-top: 30px;
   color: #161616;
-  font-weight: 500;
 }
 
 .get-started-button {
@@ -108,5 +109,28 @@
 
 .about-studio {
   display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 70px 135px;
   position: relative;
+}
+
+.info-about-studio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 1000px;
+}
+.info-about-studio h2, .info-about-studio span {
+  font-size: 40px;
+  max-width: 120px;
+  font-family: "BN Chester";
+}
+.info-about-studio span {
+  color: #D3A265;
+}
+.info-about-studio p {
+  max-width: 580px;
+  line-height: 170%;
 }/*# sourceMappingURL=main.css.map */

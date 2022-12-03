@@ -9,6 +9,11 @@
   // border: 1px solid red;
 }
 
+p, a {
+  font-weight: 500;
+  font-size: 16px;
+}
+
 
 // Header
 
@@ -31,7 +36,6 @@
     height: 23px;
     a {
       text-decoration: none;
-      font-size: 16;
       font-weight: 500;
       color: #352C2C;
     }
@@ -46,8 +50,6 @@
   right: 135px;
   a {
     text-decoration: none;
-    font-size: 16;
-    font-weight: 500;
     color: #161616;
   }
 }
@@ -95,7 +97,6 @@
     max-width: 385px;
     margin-top: 30px;
     color: #161616;
-    font-weight: 500;
   }
 }
 
@@ -112,7 +113,31 @@
 }
 
 // About Studio
+
 .about-studio {
   display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 70px 135px;
   position: relative;
+}
+
+.info-about-studio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 1000px;
+  h2, span {
+    font-size: 40px;
+    max-width: 120px;
+    font-family: "BN Chester";
+  }
+  span {
+    color: #D3A265;
+  }
+  p {
+    max-width: 580px;
+    line-height: 170%;
+  }
 }
