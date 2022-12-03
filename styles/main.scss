@@ -5,9 +5,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // border: 1px solid red;
-  color: #000;
   font-family: "Gilroy";
+  // border: 1px solid red;
 }
 
 // Header
@@ -17,6 +16,8 @@
   display: flex;
   align-items: center;
   background-color: transparent;
+  position: relative;
+  z-index: 1;
   nav {
     display: flex;
     justify-content: space-between;
@@ -29,6 +30,7 @@
       text-decoration: none;
       font-size: 16;
       font-weight: 500;
+      color: #352C2C;
     }
   }
 }
@@ -43,6 +45,7 @@
     text-decoration: none;
     font-size: 16;
     font-weight: 500;
+    color: #161616;
   }
 }
 
@@ -74,8 +77,6 @@
 
 .main-info-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -86,12 +87,26 @@
     font-size: 66px;
     font-family: "BN Chester";
     max-width: 480px;
+    color: #3D3737;
   }
   p {
     line-height: 170%;
     max-width: 385px;
     margin-top: 30px;
+    color: #161616;
   }
+}
+
+.get-started-button {
+  height: 48px;
+  width: 168px;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 16;
+  border: 2px solid #D3A265;
+  border-radius: 8px;
+  margin-top: 54px;
+  cursor: pointer;
 }
 
 .main-right-section {
