@@ -148,7 +148,7 @@ a {
   margin-bottom: 0;
 }
 
-.cards-container {
+.section-header {
   margin: 85px 0px;
 }
 
@@ -159,6 +159,9 @@ a {
 
 .card-img-container {
   width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
 }
 
 .card-text {
