@@ -119,12 +119,8 @@ a {
   height: 48px;
   width: 168px;
   background-color: transparent;
-  font-weight: bold;
-  font-size: 16;
   border: 2px solid #d3a265;
-  border-radius: 8px;
   margin-top: 54px;
-  cursor: pointer;
 }
 
 // About Studio
@@ -175,4 +171,12 @@ a {
 .card-text {
   color: #8d8d8d;
   line-height: 170%;
+}
+
+.free-consultation-button {
+  width: 220px;
+  height: 48px;
+  background-color: transparent;
+  border: 2px solid #d3a265;
+  margin: 85px 0px;
 }
