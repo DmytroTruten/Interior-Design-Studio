@@ -148,7 +148,20 @@ a {
   margin-bottom: 0;
 }
 
-.our-services {
-  display: flex;
-  justify-content: center;
+.cards-container {
+  margin: 85px 0px;
+}
+
+.card {
+  min-width: 270px;
+  max-width: 270px;
+}
+
+.card-img-container {
+  width: 90px;
+}
+
+.card-text {
+  color: #8d8d8d;
+  line-height: 170%;
 }/*# sourceMappingURL=main.css.map */
