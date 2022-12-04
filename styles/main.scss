@@ -9,11 +9,24 @@
   // border: 1px solid red;
 }
 
-p, a {
+p,
+a {
   font-weight: 500;
   font-size: 16px;
 }
 
+.section-header {
+  font-weight: 600;
+  font-size: 40px;
+  font-family: "BN Chester";
+  margin: 0;
+  span {
+    font-weight: 600;
+    font-size: 40px;
+    font-family: "BN Chester";
+    color: #d3a265;
+  }
+}
 
 // Header
 
@@ -37,7 +50,7 @@ p, a {
     a {
       text-decoration: none;
       font-weight: 500;
-      color: #352C2C;
+      color: #352c2c;
     }
   }
 }
@@ -88,14 +101,16 @@ p, a {
   flex-direction: column;
   h1 {
     font-size: 66px;
+    font-weight: 600;
     font-family: "BN Chester";
     max-width: 480px;
-    color: #3D3737;
+    color: #3d3737;
   }
   p {
     line-height: 170%;
     max-width: 385px;
     margin-top: 30px;
+    margin-bottom: 0;
     color: #161616;
   }
 }
@@ -106,7 +121,7 @@ p, a {
   background-color: transparent;
   font-weight: bold;
   font-size: 16;
-  border: 2px solid #D3A265;
+  border: 2px solid #d3a265;
   border-radius: 8px;
   margin-top: 54px;
   cursor: pointer;
@@ -128,16 +143,20 @@ p, a {
   align-items: center;
   position: relative;
   width: 1000px;
-  h2, span {
-    font-size: 40px;
-    max-width: 120px;
-    font-family: "BN Chester";
-  }
+  h2,
   span {
-    color: #D3A265;
+    max-width: 120px;
   }
   p {
     max-width: 580px;
     line-height: 170%;
+    margin-bottom: 0;
   }
+}
+
+// Our Services
+
+.our-services {
+  display: flex;
+  justify-content: center;
 }
