@@ -1,12 +1,13 @@
 @import url("../fonts/Gilroy/stylesheet.css");
 @import url("../fonts/BN-Chester/stylesheet.css");
+@import "./helpers/media";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Gilroy";
-  // border: 1px solid red;
+  border: 1px solid red;
 }
 
 p,
@@ -98,6 +99,7 @@ body {
   img {
     position: absolute;
     right: 0;
+    z-index: -1;
   }
 }
 
@@ -177,8 +179,6 @@ body {
 .card-img-container {
   width: 90px;
   height: 90px;
-  display: flex;
-  align-items: center;
 }
 
 .card-text {

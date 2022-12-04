@@ -1,10 +1,16 @@
 @import url("../fonts/Gilroy/stylesheet.css");
 @import url("../fonts/BN-Chester/stylesheet.css");
+@media (max-width: 1200px) {
+  .services-card-container {
+    margin-top: 50px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Gilroy";
+  border: 1px solid red;
 }
 
 p,
@@ -91,6 +97,7 @@ body::-webkit-scrollbar-thumb {
 .hero img {
   position: absolute;
   right: 0;
+  z-index: -1;
 }
 
 .main-info-container {
@@ -167,8 +174,6 @@ body::-webkit-scrollbar-thumb {
 .card-img-container {
   width: 90px;
   height: 90px;
-  display: flex;
-  align-items: center;
 }
 
 .card-text {
