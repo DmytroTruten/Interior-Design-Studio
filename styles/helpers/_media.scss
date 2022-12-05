@@ -17,10 +17,14 @@
     min-width: 270px;
     max-width: 270px;
   }
+
+  .our-services-section {
+    margin: 0px 30px;
+  }
 }
 
 // @media (min-width: 768px) {
-  
+
 // }
 
 @media (min-width: 992px) {
@@ -28,6 +32,18 @@
     margin: 70px 135px !important;
     p {
       margin: 0px;
+    }
+  }
+
+  .our-services-section {
+    margin: 0px 135px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .our-services-section {
+    h2 {
+      margin: 85px 0px;
     }
   }
 }
