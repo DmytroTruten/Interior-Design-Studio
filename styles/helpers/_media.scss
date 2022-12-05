@@ -46,4 +46,23 @@
       margin: 85px 0px;
     }
   }
+
+  .hero {
+    margin-left: 135px;
+  }
+  
+  .main-info-container {
+    img {
+      width: 100%;
+    }
+  }
+
+  .main-info {
+    height: fit-content;
+    h1 {
+      font-size: 66px;
+      font-family: "BN Chester";
+      font-weight: 600;
+    }
+  }
 }

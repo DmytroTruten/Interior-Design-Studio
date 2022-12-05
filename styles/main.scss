@@ -10,7 +10,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Gilroy";
-  // border: 1px solid red;
+  border: 1px solid red;
 }
 
 p,
@@ -93,45 +93,6 @@ body {
 }
 
 // Main
-
-.hero {
-  display: flex;
-  align-items: center;
-  position: relative;
-  height: 750px;
-  img {
-    position: absolute;
-    right: 0;
-    z-index: -1;
-  }
-}
-
-.main-info-container {
-  display: flex;
-  flex-direction: column;
-  height: fit-content;
-  position: relative;
-  left: 135px;
-}
-
-.main-info {
-  display: flex;
-  flex-direction: column;
-  h1 {
-    font-size: 66px;
-    font-weight: 600;
-    font-family: "BN Chester";
-    max-width: 480px;
-    color: #3d3737;
-  }
-  p {
-    line-height: 170%;
-    max-width: 385px;
-    margin-top: 30px;
-    margin-bottom: 0;
-    color: #161616;
-  }
-}
 
 .get-started-button {
   height: 48px;
