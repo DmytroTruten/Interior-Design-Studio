@@ -137,13 +137,17 @@ body::-webkit-scrollbar-thumb {
   margin-top: 54px;
 }
 
-.about-studio h2 {
+.about-studio-row {
+  margin: 70px 135px !important;
+}
+
+.about-studio-header-col h2 {
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
 }
 
-.section-header {
+.our-services h2 {
   margin: 85px 0px;
 }
 
