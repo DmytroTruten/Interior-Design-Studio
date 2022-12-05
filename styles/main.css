@@ -18,7 +18,7 @@
     max-width: 270px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .about-studio-row {
     margin: 70px 135px !important;
   }
@@ -31,7 +31,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Gilroy";
-  border: 1px solid red;
 }
 
 p,
