@@ -137,29 +137,10 @@ body::-webkit-scrollbar-thumb {
   margin-top: 54px;
 }
 
-.about-studio {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 70px 135px;
-  position: relative;
-}
-
-.info-about-studio {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  width: 1000px;
-}
-.info-about-studio h2,
-.info-about-studio span {
-  max-width: 120px;
-}
-.info-about-studio p {
-  max-width: 580px;
-  line-height: 170%;
-  margin-bottom: 0;
+.about-studio h2 {
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
 }
 
 .section-header {

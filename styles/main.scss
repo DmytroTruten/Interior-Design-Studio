@@ -139,29 +139,9 @@ body {
 }
 
 // About Studio
-
 .about-studio {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 70px 135px;
-  position: relative;
-}
-
-.info-about-studio {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  width: 1000px;
-  h2,
-  span {
-    max-width: 120px;
-  }
-  p {
-    max-width: 580px;
-    line-height: 170%;
-    margin-bottom: 0;
+  h2 {
+    max-width: min-content;
   }
 }
 
