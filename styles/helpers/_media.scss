@@ -102,6 +102,7 @@
 
 @media (min-width: 992px) {
   .hero-header {
+    padding: 0px 30px 0px 135px !important;
     h1 {
       font-size: 66px;
     }
@@ -112,24 +113,21 @@
     span {
       font-size: 40px;
     }
+  }
 
-    .about-studio-row {
-      margin: 70px 135px !important;
-      p {
-        margin: 0px;
-      }
+  .about-studio-row {
+    margin: 70px 135px !important;
+    p {
+      margin: 0px;
     }
+  }
 
-    .our-services-section {
-      margin: 0px 135px;
-    }
+  .our-services-section {
+    margin: 0px 135px;
   }
 }
 
 @media (min-width: 1200px) {
-  .hero-header {
-    padding: 0px 30px 0px 135px !important;
-  }
   .our-services-section {
     h2 {
       margin: 85px 0px;

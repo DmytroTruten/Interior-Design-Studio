@@ -95,6 +95,9 @@
   }
 }
 @media (min-width: 992px) {
+  .hero-header {
+    padding: 0px 30px 0px 135px !important;
+  }
   .hero-header h1 {
     font-size: 66px;
   }
@@ -104,20 +107,17 @@
   .section-header span {
     font-size: 40px;
   }
-  .section-header .about-studio-row {
+  .about-studio-row {
     margin: 70px 135px !important;
   }
-  .section-header .about-studio-row p {
+  .about-studio-row p {
     margin: 0px;
   }
-  .section-header .our-services-section {
+  .our-services-section {
     margin: 0px 135px;
   }
 }
 @media (min-width: 1200px) {
-  .hero-header {
-    padding: 0px 30px 0px 135px !important;
-  }
   .our-services-section h2 {
     margin: 85px 0px;
   }
