@@ -10,7 +10,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Gilroy";
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
 p,
@@ -49,7 +49,7 @@ body {
 
 .header {
   height: 100px;
-  display: flex;
+  display: none;
   align-items: center;
   background-color: transparent;
   position: absolute;
@@ -93,13 +93,11 @@ body {
 }
 
 // Main
-
 .get-started-button {
-  height: 48px;
-  width: 168px;
   background-color: transparent;
   border: 2px solid #d3a265;
-  margin-top: 54px;
+  font-weight: bold;
+  border-radius: 8px;
 }
 
 // Our Services
@@ -115,7 +113,7 @@ body {
 }
 
 .free-consultation-button {
-  width: 220px;
+  width: 100%;
   height: 48px;
   background-color: transparent;
   border: 2px solid #d3a265;
