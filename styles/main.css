@@ -1,6 +1,9 @@
 @import url("../fonts/Gilroy/stylesheet.css");
 @import url("../fonts/BN-Chester/stylesheet.css");
 @media (min-width: 0px) {
+  .navbar {
+    padding: 50px 30px !important;
+  }
   .hero {
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -144,51 +147,6 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #d3a265;
   border-radius: 10px;
-}
-
-.header {
-  height: 100px;
-  display: none;
-  align-items: center;
-  background-color: transparent;
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  right: 0;
-}
-.header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  left: 135px;
-  width: 470px;
-  height: 23px;
-}
-.header nav a {
-  text-decoration: none;
-  font-weight: 500;
-  color: #352c2c;
-}
-
-.header-info {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  width: 200px;
-  right: 135px;
-}
-.header-info a {
-  text-decoration: none;
-  color: #161616;
-}
-
-.dropdown {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 43px;
-  font-weight: 500;
 }
 
 .get-started-button {
