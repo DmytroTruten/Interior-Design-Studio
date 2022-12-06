@@ -28,7 +28,7 @@
   .hero-header button {
     height: 48px;
     width: 100%;
-    margin: 50px 0px 0px 0px;
+    margin: 55px 0px 0px 0px;
   }
   .section-header {
     font-weight: 600;
@@ -79,6 +79,7 @@
 @media (min-width: 768px) {
   .hero-header {
     align-items: flex-start;
+    justify-content: center;
   }
   .hero-header h1 {
     max-width: 480px;
@@ -114,6 +115,9 @@
   }
 }
 @media (min-width: 1200px) {
+  .hero-header {
+    padding: 0px 30px 0px 135px !important;
+  }
   .our-services-section h2 {
     margin: 85px 0px;
   }
