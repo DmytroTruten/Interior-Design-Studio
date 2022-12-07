@@ -2,7 +2,7 @@
 @import url("../fonts/BN-Chester/stylesheet.css");
 @media (min-width: 0px) {
   .navbar {
-    padding: 50px 30px !important;
+    padding: 55px 30px !important;
   }
   .hero {
     height: -webkit-fit-content;
@@ -152,16 +152,17 @@ body::-webkit-scrollbar-thumb {
   display: block;
   width: 100%;
   background-color: black;
-  height: 2px;
+  height: 3px;
   position: absolute;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .navbar span:nth-child(1) {
   width: 60%;
+  top: 0%;
   right: 0;
 }
 .navbar span:nth-child(2) {
-  top: 50%;
+  top: calc(50% - 2px);
 }
 .navbar span:nth-child(3) {
   width: 60%;
@@ -171,8 +172,12 @@ body::-webkit-scrollbar-thumb {
 
 .hamburger-container {
   width: 35px;
-  height: 34px;
+  height: 25px;
   position: relative;
+}
+
+.navbar-brand img {
+  display: block;
 }
 
 .get-started-button {
