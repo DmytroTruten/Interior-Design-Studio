@@ -9,7 +9,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Gilroy";
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
 p,
@@ -31,6 +31,34 @@ body {
 }
 
 // Header
+.navbar {
+  span {
+    display: block;
+    width: 100%;
+    background-color: black;
+    height: 2px;
+    position: absolute;
+    border-radius: 10px;
+    &:nth-child(1) {
+      width: 60%;
+      right: 0;
+    }
+    &:nth-child(2) {
+      top: 50%;
+    }
+    &:nth-child(3) {
+      width: 60%;
+      left: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.hamburger-container {
+  width: 35px;
+  height: 34px;
+  position: relative;
+}
 
 // Main
 .get-started-button {

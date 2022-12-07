@@ -130,7 +130,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Gilroy";
-  border: 1px solid red;
 }
 
 p,
@@ -147,6 +146,33 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #d3a265;
   border-radius: 10px;
+}
+
+.navbar span {
+  display: block;
+  width: 100%;
+  background-color: black;
+  height: 2px;
+  position: absolute;
+  border-radius: 10px;
+}
+.navbar span:nth-child(1) {
+  width: 60%;
+  right: 0;
+}
+.navbar span:nth-child(2) {
+  top: 50%;
+}
+.navbar span:nth-child(3) {
+  width: 60%;
+  left: 0;
+  bottom: 0;
+}
+
+.hamburger-container {
+  width: 35px;
+  height: 34px;
+  position: relative;
 }
 
 .get-started-button {
