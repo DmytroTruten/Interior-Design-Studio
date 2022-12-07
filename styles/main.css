@@ -2,7 +2,10 @@
 @import url("../fonts/BN-Chester/stylesheet.css");
 @media (min-width: 0px) {
   .navbar {
-    padding: 55px 30px !important;
+    padding: 55px 30px 30px !important;
+  }
+  .header-link {
+    display: none;
   }
   .hero {
     height: -webkit-fit-content;
@@ -18,7 +21,7 @@
   }
   .hero-header {
     align-items: center;
-    padding: 100px 30px 30px 30px !important;
+    padding: 80px 30px 30px 30px !important;
   }
   .hero-header h1 {
     font-size: 48px;
@@ -98,6 +101,23 @@
   }
 }
 @media (min-width: 992px) {
+  .navbar {
+    padding: 50px 135px !important;
+  }
+  .inner-navbar {
+    width: 470px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .inner-navbar a {
+    display: block;
+    text-decoration: none;
+    color: #352c2c;
+  }
+  .hamburger-container {
+    display: none;
+  }
   .hero-header {
     padding: 0px 30px 0px 135px !important;
   }
