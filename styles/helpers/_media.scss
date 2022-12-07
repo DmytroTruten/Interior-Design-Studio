@@ -7,6 +7,10 @@
     display: none;
   }
 
+  .header-right-section {
+    display: none;
+  }
+
   .hero {
     height: fit-content;
     flex-direction: column;
@@ -111,6 +115,10 @@
 @media (min-width: 992px) {
   .navbar {
     padding: 50px 135px !important;
+    position: absolute !important;
+    z-index: 1 !important;
+    right: 0;
+    left: 0;
   }
 
   .inner-navbar {
@@ -125,14 +133,24 @@
     }
   }
 
+  .header-right-section {
+    display: flex;
+    a {
+      text-decoration: none;
+      color: #352c2c;
+    }
+  }
+
+  .dropdown {
+    margin-left: 40px;
+  }
+
   .hamburger-container {
     display: none;
   }
+
   .hero-header {
     padding: 0px 30px 0px 135px !important;
-    h1 {
-      font-size: 66px;
-    }
   }
 
   .section-header {
@@ -155,6 +173,13 @@
 }
 
 @media (min-width: 1200px) {
+
+  .hero-header {
+    h1 {
+      font-size: 66px;
+    }
+  }
+
   .our-services-section {
     h2 {
       margin: 85px 0px;
