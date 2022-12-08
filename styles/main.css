@@ -85,12 +85,10 @@
     margin: 0px 30px;
   }
   .free-consultation-button {
-    height: 48px;
-    width: 100%;
-    margin: 85px 0px;
+    display: none;
   }
   .our-portfolio-section .section-header {
-    margin-bottom: 65px;
+    margin: 65px 0px;
   }
   .tabs {
     margin: 0px 30px;
@@ -135,9 +133,6 @@
   }
   .hero-header button {
     width: 170px;
-  }
-  .free-consultation-button {
-    width: 225px;
   }
 }
 @media (min-width: 992px) {
@@ -203,6 +198,15 @@
   }
   .services-card-container:nth-child(1) {
     margin-top: 0px !important;
+  }
+  .free-consultation-button {
+    display: block;
+    width: 225px;
+    height: 48px;
+    margin: 85px 0px;
+  }
+  .our-portfolio-section .section-header {
+    margin: 85px 0px;
   }
 }
 * {
