@@ -89,6 +89,16 @@
     width: 100%;
     margin: 85px 0px;
   }
+  .our-portfolio-section .section-header {
+    margin-bottom: 65px;
+  }
+  .tabs {
+    margin: 0px 30px;
+  }
+  .tabs p:nth-child(1) {
+    color: #d3a265;
+    font-weight: bold;
+  }
 }
 @media (min-width: 576px) {
   .hero {
