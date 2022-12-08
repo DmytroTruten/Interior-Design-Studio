@@ -62,8 +62,22 @@
     max-width: -moz-min-content;
     max-width: min-content;
   }
+  .services-card-container {
+    position: relative;
+    margin-top: 100px !important;
+  }
+  .services-card-container:nth-child(1) {
+    margin-top: 30px !important;
+  }
+  .services-card-container span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #DCD1BB;
+    top: 118%;
+  }
   .card {
-    margin-top: 50px;
     min-width: 270px;
     max-width: 270px;
   }
@@ -83,6 +97,9 @@
   .hero img {
     max-height: 100%;
     min-height: 100%;
+  }
+  .services-card-container span {
+    display: none;
   }
 }
 @media (min-width: 768px) {
