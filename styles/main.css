@@ -98,6 +98,12 @@
     max-height: 100%;
     min-height: 100%;
   }
+  .services-card-container {
+    margin-top: 50px !important;
+  }
+  .services-card-container:nth-child(1) {
+    margin-top: 50px !important;
+  }
   .services-card-container span {
     display: none;
   }
@@ -177,6 +183,12 @@
   }
   .our-services-section h2 {
     margin: 85px 0px;
+  }
+  .services-card-container {
+    margin-top: 0px !important;
+  }
+  .services-card-container:nth-child(1) {
+    margin-top: 0px !important;
   }
 }
 * {
