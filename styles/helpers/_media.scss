@@ -104,7 +104,9 @@
 
   .tabs {
     margin: 0px 30px;
+    flex-wrap: wrap;
     p {
+      font-size: 13px;
       &:nth-child(1) {
         color: #d3a265;
         font-weight: bold;

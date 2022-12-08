@@ -94,6 +94,10 @@
   }
   .tabs {
     margin: 0px 30px;
+    flex-wrap: wrap;
+  }
+  .tabs p {
+    font-size: 13px;
   }
   .tabs p:nth-child(1) {
     color: #d3a265;
