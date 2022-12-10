@@ -101,7 +101,7 @@
   }
 
   .tabs {
-    margin: 0px 30px;
+    margin: 0px 30px 50px;
     flex-wrap: wrap;
     p {
       font-size: 13px;
@@ -110,6 +110,18 @@
         color: #d3a265;
         font-weight: bold;
       }
+    }
+  }
+
+  .gallery {
+    div {
+      &:nth-child(1) {
+        margin-top: 0px !important;
+      }
+      margin-top: 18px;
+    }
+    img {
+      width: 100%;
     }
   }
 }

@@ -91,7 +91,7 @@
     margin: 65px 0px;
   }
   .tabs {
-    margin: 0px 30px;
+    margin: 0px 30px 50px;
     flex-wrap: wrap;
   }
   .tabs p {
@@ -101,6 +101,15 @@
   .tabs p:nth-child(1) {
     color: #d3a265;
     font-weight: bold;
+  }
+  .gallery div {
+    margin-top: 18px;
+  }
+  .gallery div:nth-child(1) {
+    margin-top: 0px !important;
+  }
+  .gallery img {
+    width: 100%;
   }
 }
 @media (min-width: 576px) {
