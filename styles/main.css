@@ -96,6 +96,7 @@
   }
   .tabs p {
     font-size: 13px;
+    font-weight: 600;
   }
   .tabs p:nth-child(1) {
     color: #d3a265;
