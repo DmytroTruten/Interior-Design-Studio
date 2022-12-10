@@ -62,6 +62,14 @@
     max-width: -moz-min-content;
     max-width: min-content;
   }
+  .more {
+    font-size: 14px;
+    font-weight: 600;
+    color: #161616;
+    -webkit-text-decoration-color: #d3a265;
+            text-decoration-color: #d3a265;
+    text-underline-offset: 5px;
+  }
   .services-card-container {
     position: relative;
     margin-top: 100px !important;
@@ -110,6 +118,9 @@
   }
   .gallery img {
     width: 100%;
+  }
+  .gallery a {
+    margin: 50px 0px;
   }
 }
 @media (min-width: 576px) {
