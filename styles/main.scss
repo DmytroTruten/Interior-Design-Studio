@@ -17,6 +17,10 @@ a {
   font-weight: 500;
 }
 
+p {
+  line-height: 170%;
+}
+
 body {
   &::-webkit-scrollbar {
     width: 10px;

@@ -57,12 +57,18 @@
   .about-studio-row p {
     margin: 30px 0px;
   }
+  .about-studio-row p:nth-child(2) {
+    display: none;
+  }
   .about-studio-header-col h2 {
     max-width: -webkit-min-content;
     max-width: -moz-min-content;
     max-width: min-content;
   }
   .more {
+    max-width: -webkit-fit-content !important;
+    max-width: -moz-fit-content !important;
+    max-width: fit-content !important;
     font-size: 14px;
     font-weight: 600;
     color: #161616;
@@ -82,7 +88,7 @@
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #DCD1BB;
+    background-color: #dcd1bb;
     top: 118%;
   }
   .card {
@@ -203,6 +209,15 @@
   .about-studio-row p {
     margin: 0px;
   }
+  .about-studio-row p {
+    max-width: 575px;
+  }
+  .about-studio-row p:nth-child(2) {
+    display: block;
+  }
+  .about-studio-row .more {
+    display: none;
+  }
   .our-services-section {
     margin: 0px 135px;
   }
@@ -240,6 +255,10 @@
 p,
 a {
   font-weight: 500;
+}
+
+p {
+  line-height: 170%;
 }
 
 body::-webkit-scrollbar {

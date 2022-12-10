@@ -56,6 +56,9 @@
     margin: 60px 30px 30px 30px !important;
     p {
       margin: 30px 0px;
+      &:nth-child(2) {
+        display: none;
+      }
     }
   }
 
@@ -66,6 +69,7 @@
   }
 
   .more {
+    max-width: fit-content !important;
     font-size: 14px;
     font-weight: 600;
     color: #161616;
@@ -84,7 +88,7 @@
       position: absolute;
       width: 100%;
       height: 2px;
-      background-color: #DCD1BB;
+      background-color: #dcd1bb;
       top: 118%;
     }
   }
@@ -225,6 +229,19 @@
     margin: 70px 135px !important;
     p {
       margin: 0px;
+    }
+  }
+
+  .about-studio-row {
+    p {
+      max-width: 575px;
+      &:nth-child(2) {
+        display: block;
+      }
+    }
+
+    .more {
+      display: none;
     }
   }
 
