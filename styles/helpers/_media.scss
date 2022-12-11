@@ -126,6 +126,7 @@
   }
 
   .gallery {
+    padding: 0 !important;
     a {
       margin: 50px 0px;
     }
@@ -136,6 +137,9 @@
 
     &:nth-child(1) {
       margin-top: 0px !important;
+    }
+    &:nth-child(n + 4) {
+      display: none;
     }
     img {
       width: 100%;
@@ -196,6 +200,9 @@
   }
 
   .gallery {
+    padding: 0px 30px !important;
+    column-gap: 30px;
+    row-gap: 20px;
     a {
       display: none;
     }
@@ -206,6 +213,15 @@
     height: 320px;
     &:nth-child(1) {
       margin-top: 20px !important;
+    }
+    &:nth-child(4) {
+      display: block;
+    }
+    &:nth-child(5) {
+      display: block;
+    }
+    &:nth-child(6) {
+      display: block;
     }
     img {
       object-fit: cover;
@@ -323,6 +339,22 @@
   .our-portfolio-section {
     .section-header {
       margin: 85px 0px;
+    }
+  }
+
+  .gallery > div {
+    max-width: 270px;
+    height: 320px;
+    &:nth-child(1) {
+      margin-top: 20px !important;
+    }
+    &:nth-last-child(-n + 3) {
+      display: block;
+    }
+    img {
+      object-fit: cover;
+      height: 100%;
+      border-radius: 10px;
     }
   }
 }
