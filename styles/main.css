@@ -128,6 +128,13 @@
   .gallery a {
     margin: 50px 0px;
   }
+  .gallery .card {
+    max-width: 100% !important;
+    border: none;
+  }
+  .gallery .card img {
+    width: 100%;
+  }
 }
 @media (min-width: 576px) {
   .hero {

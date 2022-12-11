@@ -138,6 +138,13 @@
     a {
       margin: 50px 0px;
     }
+    .card {
+      max-width: 100% !important;
+      border: none;
+      img {
+        width: 100%;
+      }
+    }
   }
 }
 
