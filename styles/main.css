@@ -189,8 +189,6 @@
     display: none;
   }
   .gallery > div {
-    max-width: 270px;
-    height: 320px;
     margin-top: 0px;
   }
   .gallery > div:nth-child(4) {
@@ -206,11 +204,13 @@
     -o-object-fit: cover;
        object-fit: cover;
     height: 100%;
+    width: 100%;
     border-radius: 10px;
   }
   .gallery > div .card,
 .gallery > div .card-img-top {
     height: 100%;
+    width: 100%;
   }
 }
 @media (min-width: 992px) {
@@ -306,6 +306,9 @@
   }
   .our-portfolio-section .section-header {
     margin: 85px 0px;
+  }
+  .tabs {
+    margin: 0px 135px 85px;
   }
   .gallery > div {
     max-width: 270px;

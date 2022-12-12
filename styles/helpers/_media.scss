@@ -205,8 +205,6 @@
   }
 
   .gallery > div {
-    max-width: 270px;
-    height: 320px;
     margin-top: 0px;
     &:nth-child(4) {
       display: block;
@@ -220,12 +218,14 @@
     img {
       object-fit: cover;
       height: 100%;
+      width: 100%;
       border-radius: 10px;
     }
 
     .card,
     .card-img-top {
       height: 100%;
+      width: 100%;
     }
   }
 }
@@ -348,6 +348,10 @@
     .section-header {
       margin: 85px 0px;
     }
+  }
+
+  .tabs {
+    margin: 0px 135px 85px;
   }
 
   .gallery > div {
