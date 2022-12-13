@@ -141,6 +141,13 @@
       border: none;
     }
   }
+
+  .gallery > div {
+    &:nth-child(2),
+    &:nth-child(3) {
+      margin-top: 18px;
+    }
+  }
 }
 
 @media (min-width: 576px) {
