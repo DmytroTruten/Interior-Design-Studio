@@ -127,9 +127,18 @@
   }
 
   .gallery {
+    flex-direction: column;
     padding: 0 !important;
     a {
       margin: 50px 0px;
+    }
+    img {
+      width: 100%;
+    }
+    .card,
+    .card-img-top {
+      max-width: 100%;
+      border: none;
     }
   }
 }
