@@ -118,6 +118,7 @@
     font-weight: bold;
   }
   .gallery {
+    justify-content: center;
     padding: 0 !important;
   }
   .gallery a {
@@ -154,6 +155,7 @@
     display: none;
   }
   .gallery {
+    justify-content: space-between;
     padding: 0px 30px 150px !important;
     row-gap: 20px;
   }
@@ -286,9 +288,6 @@
   }
   .our-portfolio-section .section-header {
     margin: 85px 0px;
-  }
-  .tabs {
-    margin: 0px 135px 85px;
   }
 }
 * {
