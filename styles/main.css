@@ -104,12 +104,14 @@
   .our-portfolio-section .section-header {
     margin: 65px 0px;
   }
+  .tabs-container {
+    padding: 0px 30px 50px !important;
+  }
   .tabs-container > a {
     display: none;
   }
   .tabs {
     max-width: 550px;
-    margin: 0px 30px 50px;
     flex-wrap: wrap;
   }
   .tabs a {
@@ -169,7 +171,7 @@
     margin-left: auto;
   }
   .tabs {
-    flex-grow: 1;
+    flex-grow: 0.5;
   }
   .gallery {
     justify-content: space-between;
@@ -209,8 +211,8 @@
   .hero-header button {
     width: 170px;
   }
-  .tabs {
-    margin: 0px 30px 20px;
+  .tabs-container {
+    padding: 0px 30px 20px;
   }
   .tabs p {
     font-size: 16px;
@@ -277,8 +279,11 @@
   .our-services-section {
     margin: 0px 135px;
   }
-  .tabs {
-    margin: 0px 135px 20px;
+  .tabs-container {
+    padding: 0px 135px 20px !important;
+  }
+  .tabs-container a {
+    font-size: 16px;
   }
   .gallery {
     padding: 0px 135px 135px !important;

@@ -111,13 +111,16 @@
     }
   }
 
+  .tabs-container {
+    padding: 0px 30px 50px !important;
+  }
+
   .tabs-container > a {
     display: none;
   }
 
   .tabs {
     max-width: 550px;
-    margin: 0px 30px 50px;
     flex-wrap: wrap;
     a {
       font-size: 13px;
@@ -187,7 +190,7 @@
   }
 
   .tabs {
-    flex-grow: 1;
+    flex-grow: 0.5;
   }
 
   .gallery {
@@ -231,8 +234,11 @@
     }
   }
 
+  .tabs-container {
+    padding: 0px 30px 20px;
+  }
+
   .tabs {
-    margin: 0px 30px 20px;
     p {
       font-size: 16px;
       font-weight: 500;
@@ -313,8 +319,11 @@
     margin: 0px 135px;
   }
 
-  .tabs {
-    margin: 0px 135px 20px;
+  .tabs-container {
+    padding: 0px 135px 20px !important;
+    a {
+      font-size: 16px;
+    }
   }
 
   .gallery {
