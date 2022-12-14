@@ -104,17 +104,21 @@
   .our-portfolio-section .section-header {
     margin: 65px 0px;
   }
+  .tabs-container > a {
+    display: none;
+  }
   .tabs {
     max-width: 550px;
     margin: 0px 30px 50px;
     flex-wrap: wrap;
   }
-  .tabs p {
+  .tabs a {
     font-size: 13px;
     font-weight: 600;
+    text-decoration: none;
   }
-  .tabs p:nth-child(1) {
-    color: #d3a265;
+  .tabs a:nth-child(1) {
+    color: #d3a265 !important;
     font-weight: bold;
   }
   .gallery {
@@ -154,6 +158,19 @@
   .services-card-container span {
     display: none;
   }
+  .tabs-container {
+    display: flex;
+  }
+  .tabs-container a {
+    display: block;
+    font-size: 13px;
+  }
+  .tabs-container > a {
+    margin-left: auto;
+  }
+  .tabs {
+    flex-grow: 1;
+  }
   .gallery {
     justify-content: space-between;
     padding: 0px 30px 150px !important;
@@ -169,7 +186,7 @@
   }
   .gallery > div {
     height: 320px;
-    max-width: 270px;
+    max-width: 250px;
   }
   .gallery > div:nth-child(n+4) {
     display: block;
@@ -304,6 +321,10 @@ a {
 
 p {
   line-height: 170%;
+}
+
+a {
+  color: #161616 !important;
 }
 
 body::-webkit-scrollbar {
