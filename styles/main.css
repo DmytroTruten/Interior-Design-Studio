@@ -175,7 +175,7 @@
   }
   .gallery {
     justify-content: space-between;
-    padding: 0px 30px 150px !important;
+    padding: 0px 30px 30px !important;
     row-gap: 20px;
   }
   .gallery a {
@@ -286,7 +286,7 @@
     font-size: 16px;
   }
   .gallery {
-    padding: 0px 135px 135px !important;
+    padding: 0px 135px 50px !important;
   }
 }
 @media (min-width: 1200px) {
