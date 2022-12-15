@@ -142,6 +142,9 @@
   .gallery > div:nth-child(2), .gallery > div:nth-child(3) {
     margin-top: 18px;
   }
+  .our-pricing h2 {
+    margin: 65px 0px;
+  }
 }
 @media (min-width: 576px) {
   .hero {
