@@ -104,5 +104,67 @@ body {
 // Our Pricing
 
 .our-pricing {
-  
+  .card {
+    background-color: #FDFBF8;
+    border: 1px solid #d3a265;
+    border-radius: 10px;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      li {
+        font-size: 14px;
+        line-height: 180%;
+        color: #161616;
+        font-weight: 500;
+      }
+    }
+    span {
+      height: 1px;
+      width: 100%;
+      background-color: #dcd1bb;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.card-body-bottom,
+.card-body-top {
+  padding: 0 !important;
+}
+
+.pricing-type,
+.price,
+.per-month {
+  font-weight: 600;
+  font-family: "BN Chester";
+}
+
+.pricing-type,
+.price {
+  color: #161616;
+}
+
+.pricing-type {
+  font-size: 20px;
+}
+
+.price {
+  font-size: 28px;
+}
+
+.per-month {
+  color: #BBB;
+}
+
+.buy-now-button {
+  background-color: #d3a265;
+  border: none;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  font-weight: 700;
+  color: white;
 }
