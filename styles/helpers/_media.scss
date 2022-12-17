@@ -162,6 +162,7 @@
     align-items: center;
     .card {
       height: 320px;
+      width: 100%;
       border: 1px solid #d3a265;
       ul {
         li {
@@ -199,6 +200,17 @@
 
   .per-month {
     color: #bbb !important;
+  }
+
+  .buy-now-button {
+    height: 40px;
+    width: 100%;
+    background-color: #d3a265;
+    border: none;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-weight: 700;
+    color: white;
   }
 }
 
@@ -375,8 +387,14 @@
   }
 
   .our-pricing {
+    .row {
+      column-gap: 50px;
+    }
+
     .card {
       height: 448px;
+      max-width: 270px;
+      min-width: 270px;
       border-width: 2px;
       ul {
         li {
@@ -393,6 +411,9 @@
   .price-container {
     max-width: 95px;
     flex-direction: column;
+    p {
+      line-height: normal;
+    }
   }
 
   .price {
@@ -400,7 +421,18 @@
   }
 
   .per-month {
+    font-size: 18px;
     color: #161616 !important;
+  }
+
+  .buy-now-button {
+    height: 48px;
+    width: 140px;
+    margin: 50px 0px 30px;
+    background-color: transparent;
+    border: 2px solid #d3a265;
+    border-radius: 8px;
+    color: #161616;
   }
 }
 

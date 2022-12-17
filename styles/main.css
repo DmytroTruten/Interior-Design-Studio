@@ -148,6 +148,7 @@
   }
   .our-pricing .card {
     height: 320px;
+    width: 100%;
     border: 1px solid #d3a265;
   }
   .our-pricing .card ul li {
@@ -179,6 +180,16 @@
   }
   .per-month {
     color: #bbb !important;
+  }
+  .buy-now-button {
+    height: 40px;
+    width: 100%;
+    background-color: #d3a265;
+    border: none;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-weight: 700;
+    color: white;
   }
 }
 @media (min-width: 576px) {
@@ -326,8 +337,14 @@
   .gallery {
     padding: 0px 135px 50px !important;
   }
+  .our-pricing .row {
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
   .our-pricing .card {
     height: 448px;
+    max-width: 270px;
+    min-width: 270px;
     border-width: 2px;
   }
   .our-pricing .card ul li {
@@ -340,11 +357,24 @@
     max-width: 95px;
     flex-direction: column;
   }
+  .price-container p {
+    line-height: normal;
+  }
   .price {
     font-size: 44px;
   }
   .per-month {
+    font-size: 18px;
     color: #161616 !important;
+  }
+  .buy-now-button {
+    height: 48px;
+    width: 140px;
+    margin: 50px 0px 30px;
+    background-color: transparent;
+    border: 2px solid #d3a265;
+    border-radius: 8px;
+    color: #161616;
   }
 }
 @media (min-width: 1200px) {
@@ -490,20 +520,4 @@ body::-webkit-scrollbar-thumb {
   font-weight: 600;
   font-family: "BN Chester";
   color: #161616;
-}
-
-.price {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.buy-now-button {
-  height: 40px;
-  background-color: #d3a265;
-  border: none;
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  font-weight: 700;
-  color: white;
 }/*# sourceMappingURL=main.css.map */
