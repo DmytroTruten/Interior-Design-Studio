@@ -145,13 +145,13 @@
   .our-pricing {
     flex-direction: column;
     align-items: center;
+    row-gap: 30px;
   }
   .our-pricing h2 {
     margin: 65px 0px;
   }
   .our-pricing .card-body {
     flex-direction: column;
-    align-items: center;
   }
 }
 @media (min-width: 576px) {
@@ -326,7 +326,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Gilroy";
 }
 
@@ -412,15 +411,24 @@ body::-webkit-scrollbar-thumb {
 }
 
 .our-pricing .card {
+  height: 320px;
   background-color: #FDFBF8;
   border: 1px solid #d3a265;
   border-radius: 10px;
+}
+.our-pricing .card .card-body {
+  padding: 0 !important;
+}
+.our-pricing .card .card-body > span {
+  display: block;
+  height: 1px;
+  width: 68%;
+  background-color: #dcd1bb;
 }
 .our-pricing .card ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 .our-pricing .card ul li {
   font-size: 14px;
@@ -428,45 +436,36 @@ body::-webkit-scrollbar-thumb {
   color: #161616;
   font-weight: 500;
 }
-.our-pricing .card span {
-  height: 1px;
-  width: 100%;
-  background-color: #dcd1bb;
-}
 .our-pricing .card p {
   margin: 0;
 }
 
-.card-body-bottom,
-.card-body-top {
-  padding: 0 !important;
-}
-
 .pricing-type,
-.price,
-.per-month {
+.price {
   font-weight: 600;
   font-family: "BN Chester";
 }
 
-.pricing-type,
-.price {
+.pricing-type {
   color: #161616;
 }
 
 .pricing-type {
   font-size: 20px;
+  margin-top: 20px !important;
 }
 
 .price {
-  font-size: 28px;
-}
-
-.per-month {
   color: #BBB;
+}
+.price span {
+  font-size: 28px;
+  color: #161616;
+  font-family: "BN Chester";
 }
 
 .buy-now-button {
+  height: 40px;
   background-color: #d3a265;
   border: none;
   border-bottom-right-radius: 8px;

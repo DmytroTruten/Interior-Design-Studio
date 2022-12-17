@@ -7,7 +7,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Gilroy";
   // border: 1px solid red;
 }
@@ -105,14 +104,24 @@ body {
 
 .our-pricing {
   .card {
+    height: 320px;
     background-color: #FDFBF8;
     border: 1px solid #d3a265;
     border-radius: 10px;
+    .card-body {
+      padding: 0 !important;
+    }
+
+    .card-body > span {
+      display: block;
+      height: 1px;
+      width: 68%;
+      background-color: #dcd1bb;
+    }
     ul {
       list-style: none;
       margin: 0;
       padding: 0;
-      text-align: center;
       li {
         font-size: 14px;
         line-height: 180%;
@@ -120,47 +129,38 @@ body {
         font-weight: 500;
       }
     }
-    span {
-      height: 1px;
-      width: 100%;
-      background-color: #dcd1bb;
-    }
     p {
       margin: 0;
     }
   }
 }
 
-.card-body-bottom,
-.card-body-top {
-  padding: 0 !important;
-}
-
 .pricing-type,
-.price,
-.per-month {
+.price {
   font-weight: 600;
   font-family: "BN Chester";
 }
 
-.pricing-type,
-.price {
+.pricing-type {
   color: #161616;
 }
 
 .pricing-type {
   font-size: 20px;
+  margin-top: 20px !important;
 }
 
 .price {
-  font-size: 28px;
-}
-
-.per-month {
+  span {
+    font-size: 28px;
+    color: #161616;
+    font-family: "BN Chester";
+  }
   color: #BBB;
 }
 
 .buy-now-button {
+  height: 40px;
   background-color: #d3a265;
   border: none;
   border-bottom-right-radius: 8px;

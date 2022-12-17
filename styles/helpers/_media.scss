@@ -160,12 +160,12 @@
   .our-pricing {
     flex-direction: column;
     align-items: center;
+    row-gap: 30px;
     h2 {
       margin: 65px 0px ;
     }
     .card-body {
       flex-direction: column;
-      align-items: center;
     }
   }
 }
