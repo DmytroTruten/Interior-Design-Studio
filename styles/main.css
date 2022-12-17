@@ -29,7 +29,7 @@
   .hero-header h1 {
     font-size: 48px;
     font-family: "BN Chester";
-    font-weight: 600;
+    font-weight: 400;
   }
   .hero-header p {
     margin-top: 30px;
@@ -40,13 +40,13 @@
     margin: 55px 0px 0px 0px;
   }
   .section-header {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 32px;
     font-family: "BN Chester";
     margin: 0;
   }
   .section-header span {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 32px;
     font-family: "BN Chester";
     color: #d3a265;
@@ -472,7 +472,7 @@ body::-webkit-scrollbar-thumb {
 .get-started-button {
   background-color: transparent;
   border: 2px solid #d3a265;
-  font-weight: bold;
+  font-weight: 700;
   border-radius: 8px;
 }
 
@@ -521,7 +521,7 @@ body::-webkit-scrollbar-thumb {
 .pricing-type,
 .price,
 .per-month {
-  font-weight: 600;
+  font-weight: 400;
   font-family: "BN Chester";
   color: #161616;
 }

@@ -1,6 +1,8 @@
 @font-face {
-  font-family: 'BN Chester';
-  src: url('BN Chester Regular.otf') format(otf);
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'BN Chester';
+    src: url('bn_chester-webfont.woff2') format('woff2'),
+         url('bn_chester-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
