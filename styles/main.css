@@ -145,13 +145,40 @@
   .our-pricing {
     flex-direction: column;
     align-items: center;
-    row-gap: 30px;
+  }
+  .our-pricing .card {
+    height: 320px;
+    border: 1px solid #d3a265;
+  }
+  .our-pricing .card ul li {
+    font-size: 14px;
   }
   .our-pricing h2 {
     margin: 65px 0px;
   }
   .our-pricing .card-body {
     flex-direction: column;
+  }
+  .our-pricing .row {
+    row-gap: 30px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  .price-container {
+    width: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .pricing-type {
+    font-size: 20px;
+    margin-top: 20px !important;
+  }
+  .price {
+    font-size: 28px;
+  }
+  .per-month {
+    color: #bbb !important;
   }
 }
 @media (min-width: 576px) {
@@ -299,6 +326,26 @@
   .gallery {
     padding: 0px 135px 50px !important;
   }
+  .our-pricing .card {
+    height: 448px;
+    border-width: 2px;
+  }
+  .our-pricing .card ul li {
+    font-size: 15px;
+  }
+  .pricing-type {
+    font-size: 28px;
+  }
+  .price-container {
+    max-width: 95px;
+    flex-direction: column;
+  }
+  .price {
+    font-size: 44px;
+  }
+  .per-month {
+    color: #161616 !important;
+  }
 }
 @media (min-width: 1200px) {
   .hero-header h1 {
@@ -411,9 +458,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .our-pricing .card {
-  height: 320px;
   background-color: #FDFBF8;
-  border: 1px solid #d3a265;
   border-radius: 10px;
 }
 .our-pricing .card .card-body {
@@ -431,7 +476,6 @@ body::-webkit-scrollbar-thumb {
   padding: 0;
 }
 .our-pricing .card ul li {
-  font-size: 14px;
   line-height: 180%;
   color: #161616;
   font-weight: 500;
@@ -441,27 +485,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 .pricing-type,
-.price {
+.price,
+.per-month {
   font-weight: 600;
   font-family: "BN Chester";
-}
-
-.pricing-type {
   color: #161616;
-}
-
-.pricing-type {
-  font-size: 20px;
-  margin-top: 20px !important;
 }
 
 .price {
-  color: #BBB;
-}
-.price span {
-  font-size: 28px;
-  color: #161616;
-  font-family: "BN Chester";
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .buy-now-button {
