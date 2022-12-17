@@ -121,7 +121,7 @@
   }
   .tabs a:nth-child(1) {
     color: #d3a265 !important;
-    font-weight: bold;
+    font-weight: 700;
   }
   .gallery {
     justify-content: center;
@@ -376,6 +376,10 @@
     border-radius: 8px;
     color: #161616;
   }
+  .active .buy-now-button {
+    background-color: #fff;
+    border: none;
+  }
 }
 @media (min-width: 1200px) {
   .hero-header h1 {
@@ -520,4 +524,22 @@ body::-webkit-scrollbar-thumb {
   font-weight: 600;
   font-family: "BN Chester";
   color: #161616;
+}
+
+.active {
+  background-color: #d3a265 !important;
+}
+.active .pricing-type,
+.active .price,
+.active .per-month {
+  color: #fff !important;
+}
+.active .card-body > span {
+  background-color: #fff !important;
+}
+.active ul li {
+  color: #fff !important;
+}
+.active button {
+  border-top: 1px solid #fff;
 }/*# sourceMappingURL=main.css.map */

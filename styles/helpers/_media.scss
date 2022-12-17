@@ -128,7 +128,7 @@
       text-decoration: none;
       &:nth-child(1) {
         color: #d3a265 !important;
-        font-weight: bold;
+        font-weight: 700;
       }
     }
   }
@@ -433,6 +433,10 @@
     border: 2px solid #d3a265;
     border-radius: 8px;
     color: #161616;
+  }
+  .active .buy-now-button {
+    background-color: #fff;
+    border: none;
   }
 }
 

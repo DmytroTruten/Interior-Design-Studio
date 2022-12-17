@@ -140,4 +140,25 @@ body {
   color: #161616;
 }
 
+.active {
+  background-color: #d3a265 !important;
+  .pricing-type,
+  .price,
+  .per-month{
+    color: #fff !important;
+  }
+  .card-body > span {
+    background-color: #fff !important;
+  }
+
+  ul {
+    li {
+      color: #fff !important;
+    }
+  }
+
+  button {
+    border-top: 1px solid #fff;
+  }
+}
 
