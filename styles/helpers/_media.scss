@@ -215,9 +215,28 @@
 
   .what-people-say-section {
     flex-direction: column;
+    padding: 0px 30px;
+    .card {
+      max-width: 355px;
+      height: 380px;
+    }
+    .card-body {
+      padding: 25px !important;
+    }
     h2 {
       margin: 65px 0px;
     }
+  }
+
+  .name {
+    max-width: 60px;
+    line-height: 120%;
+    font-weight: 600;
+  }
+
+  .occupation {
+    color: #948b8b;
+    font-size: 14px;
   }
 }
 

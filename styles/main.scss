@@ -164,36 +164,27 @@ body {
 
 // What People Say
 .what-people-say-section {
-  padding: 0px 30px;
-  .card-body {
-    padding: 25px !important;
-  }
   span {
     width: 100%;
     height: 1px;
     background-color: #dcd1bb;
     position: absolute;
-    top: 107px;
+    top: 110px;
   }
 }
 
 .info-about-people {
   img {
     z-index: 1;
+    width: 130px;
   }
-}
-
-.name {
-  max-width: 60px;
-  line-height: 120%;
-  font-weight: 600;
-}
-
-.occupation {
-  color: #948b8b;
-  font-size: 14px;
 }
 
 .social {
   max-width: 90px;
+  a {
+    img {
+      width: 18px;
+    }
+  }
 }
