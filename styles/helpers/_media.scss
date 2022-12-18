@@ -178,6 +178,7 @@
     .row {
       row-gap: 30px;
       column-gap: 30px;
+      margin-bottom: 30px;
     }
   }
 
@@ -214,6 +215,9 @@
 
   .what-people-say {
     flex-direction: column;
+    h2 {
+      margin: 65px 0px;
+    }
   }
 }
 
@@ -392,6 +396,7 @@
   .our-pricing {
     .row {
       column-gap: 50px;
+      margin-bottom: 65px;
     }
 
     .card {
