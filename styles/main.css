@@ -406,7 +406,7 @@
 }
 @media (min-width: 1200px) {
   .hero-header {
-    padding: 170px 30px 0px 135px !important;
+    justify-content: center;
   }
   .hero-header h1 {
     font-size: 66px;
