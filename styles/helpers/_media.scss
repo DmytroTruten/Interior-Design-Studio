@@ -304,7 +304,7 @@
 @media (min-width: 768px) {
   .hero-header {
     align-items: flex-start;
-    justify-content: center;
+    // justify-content: center;
     h1 {
       max-width: 480px;
     }
@@ -367,7 +367,8 @@
   }
 
   .hero-header {
-    padding: 0px 30px 0px 135px !important;
+    padding: 150px 30px 0px 135px !important;
+    
   }
 
   .section-header {
@@ -469,6 +470,7 @@
 
 @media (min-width: 1200px) {
   .hero-header {
+    padding: 170px 30px 0px 135px !important;
     h1 {
       font-size: 66px;
     }
