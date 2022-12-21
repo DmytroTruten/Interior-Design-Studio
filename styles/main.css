@@ -370,7 +370,6 @@
   }
   .gallery {
     padding: 0px 135px 50px !important;
-    row-gap: 30px;
   }
   .gallery > div:nth-child(2) {
     justify-content: center;
@@ -384,18 +383,18 @@
   .gallery > div:nth-child(5) {
     justify-content: center;
   }
-  .galle .our-pricing-section .row {
+  .our-pricing-section .row {
     -moz-column-gap: 50px;
          column-gap: 50px;
     margin-bottom: 65px;
   }
-  .galle .our-pricing-section .card {
+  .our-pricing-section .card {
     height: 448px;
     max-width: 270px;
     min-width: 270px;
     border-width: 2px;
   }
-  .galle .our-pricing-section .card ul li {
+  .our-pricing-section .card ul li {
     font-size: 15px;
   }
   .pricing-type {
