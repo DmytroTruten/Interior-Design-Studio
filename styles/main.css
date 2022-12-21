@@ -252,9 +252,12 @@
     flex-grow: 0.5;
   }
   .gallery {
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0px 30px 30px !important;
-    row-gap: 20px;
+    row-gap: 30px;
+  }
+  .gallery .card {
+    width: 90%;
   }
   .gallery a {
     display: none;
@@ -266,13 +269,16 @@
   }
   .gallery > div {
     height: 320px;
-    max-width: 250px;
+    display: flex;
   }
   .gallery > div:nth-child(n+4) {
-    display: block;
+    display: flex;
   }
   .gallery > div:nth-child(2), .gallery > div:nth-child(3) {
     margin-top: 0px;
+  }
+  .gallery > div:nth-child(even) {
+    justify-content: end;
   }
 }
 @media (min-width: 768px) {
@@ -364,19 +370,32 @@
   }
   .gallery {
     padding: 0px 135px 50px !important;
+    row-gap: 30px;
   }
-  .our-pricing-section .row {
+  .gallery > div:nth-child(2) {
+    justify-content: center;
+  }
+  .gallery > div:nth-child(3) {
+    justify-content: end;
+  }
+  .gallery > div:nth-child(4) {
+    justify-content: start;
+  }
+  .gallery > div:nth-child(5) {
+    justify-content: center;
+  }
+  .galle .our-pricing-section .row {
     -moz-column-gap: 50px;
          column-gap: 50px;
     margin-bottom: 65px;
   }
-  .our-pricing-section .card {
+  .galle .our-pricing-section .card {
     height: 448px;
     max-width: 270px;
     min-width: 270px;
     border-width: 2px;
   }
-  .our-pricing-section .card ul li {
+  .galle .our-pricing-section .card ul li {
     font-size: 15px;
   }
   .pricing-type {
@@ -434,6 +453,21 @@
   }
   .our-portfolio-section .section-header {
     margin: 85px 0px;
+  }
+  .gallery > div:nth-child(3) {
+    justify-content: center;
+  }
+  .gallery > div:nth-child(4) {
+    justify-content: end;
+  }
+  .gallery > div:nth-child(5) {
+    justify-content: start;
+  }
+  .gallery > div:nth-child(6) {
+    justify-content: center;
+  }
+  .gallery > div:nth-child(7) {
+    justify-content: center;
   }
 }
 * {

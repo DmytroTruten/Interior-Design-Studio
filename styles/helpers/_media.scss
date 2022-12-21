@@ -285,9 +285,12 @@
   }
 
   .gallery {
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0px 30px 30px !important;
-    row-gap: 20px;
+    row-gap: 30px;
+    .card {
+      width: 90%;
+    }
     a {
       display: none;
     }
@@ -299,13 +302,17 @@
 
   .gallery > div {
     height: 320px;
-    max-width: 250px;
+    display: flex;
     &:nth-child(n + 4) {
-      display: block;
+      display: flex;
     }
     &:nth-child(2),
     &:nth-child(3) {
       margin-top: 0px;
+    }
+
+    &:nth-child(even) {
+      justify-content: end;
     }
   }
 }
@@ -418,7 +425,25 @@
 
   .gallery {
     padding: 0px 135px 50px !important;
+    row-gap: 30px;
   }
+
+  .gallery > div {
+    &:nth-child(2) {
+      justify-content: center;
+    }
+    &:nth-child(3) {
+      justify-content: end;
+    }
+    &:nth-child(4) {
+      justify-content: start;
+    }
+    &:nth-child(5) {
+      justify-content: center;
+    }
+  }
+
+  .galle
 
   .our-pricing-section {
     .row {
@@ -506,6 +531,24 @@
   .our-portfolio-section {
     .section-header {
       margin: 85px 0px;
+    }
+  }
+
+  .gallery > div {
+    &:nth-child(3) {
+      justify-content: center;
+    }
+    &:nth-child(4) {
+      justify-content: end;
+    }
+    &:nth-child(5) {
+      justify-content: start;
+    }
+    &:nth-child(6) {
+      justify-content: center;
+    }
+    &:nth-child(7) {
+      justify-content: center;
     }
   }
 }
