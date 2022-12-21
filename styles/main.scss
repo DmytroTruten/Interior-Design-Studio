@@ -164,30 +164,3 @@ body {
 }
 
 // What People Say
-.what-people-say-section {
-  .card {
-    span {
-      width: 100%;
-      height: 1px;
-      background-color: #dcd1bb;
-      position: absolute;
-      top: 110px;
-    }
-  }
-}
-
-.info-about-people {
-  img {
-    z-index: 1;
-    width: 130px;
-  }
-}
-
-.social {
-  max-width: 90px;
-  a {
-    img {
-      width: 18px;
-    }
-  }
-}
