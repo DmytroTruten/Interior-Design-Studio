@@ -436,6 +436,9 @@
   .gallery > div:nth-child(n) {
     justify-content: center;
   }
+  .what-people-say-section .section-header {
+    margin: 60px 0px 90px;
+  }
 }
 * {
   margin: 0;
