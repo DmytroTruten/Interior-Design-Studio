@@ -576,4 +576,8 @@ body::-webkit-scrollbar-thumb {
 }
 .active button {
   border-top: 1px solid #fff;
+}
+
+.what-people-say-section {
+  flex-direction: column;
 }/*# sourceMappingURL=main.css.map */
