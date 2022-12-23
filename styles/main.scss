@@ -131,6 +131,28 @@ body {
       margin: 0;
     }
   }
+
+  .active {
+    background-color: #d3a265 !important;
+    .pricing-type,
+    .price,
+    .per-month {
+      color: #fff !important;
+    }
+    .card-body > span {
+      background-color: #fff !important;
+    }
+  
+    ul {
+      li {
+        color: #fff !important;
+      }
+    }
+  
+    button {
+      border-top: 1px solid #fff;
+    }
+  }
 }
 
 .pricing-type,
@@ -141,30 +163,25 @@ body {
   color: #161616;
 }
 
-.active {
-  background-color: #d3a265 !important;
-  .pricing-type,
-  .price,
-  .per-month {
-    color: #fff !important;
-  }
-  .card-body > span {
-    background-color: #fff !important;
-  }
-
-  ul {
-    li {
-      color: #fff !important;
-    }
-  }
-
-  button {
-    border-top: 1px solid #fff;
-  }
-}
 
 // What People Say
 
 .what-people-say-section {
   flex-direction: column;
+}
+
+.carousel-indicators {
+  max-width: 120px;
+  margin: auto !important;
+  button {
+    width: 14px !important;
+    height: 14px !important;
+    border-radius: 50%;
+    background-color: #dfdfdf;
+    opacity: 1 !important;
+  }
+
+  .active {
+    background-color: #d3a265 !important;
+  }
 }
