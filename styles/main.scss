@@ -181,7 +181,7 @@ body {
 .carousel {
   width: 100%;
   .card {
-    // border: none;
+    border: none;
   }
   .card > span {
     width: 100%;
@@ -198,7 +198,6 @@ body {
 .testimonials-owner > img {
   max-width: 40%;
   position: relative;
-  // z-index: 1;
 }
 
 .owner-info {
@@ -229,6 +228,7 @@ body {
 .carousel-indicators {
   max-width: 120px;
   margin: auto !important;
+  bottom: 5% !important;
   button {
     width: 14px !important;
     height: 14px !important;
