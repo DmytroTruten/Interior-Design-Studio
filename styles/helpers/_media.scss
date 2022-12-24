@@ -221,6 +221,16 @@
       margin: 60px 0px;
     }
   }
+
+  .carousel {
+    .card {
+      height: 380px;
+    }
+  }
+
+  .carousel-item {
+    padding: 0px 30px;
+  }
 }
 
 @media (min-width: 576px) {

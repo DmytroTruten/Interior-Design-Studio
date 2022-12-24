@@ -197,6 +197,12 @@
   .what-people-say-section .section-header {
     margin: 60px 0px;
   }
+  .carousel .card {
+    height: 380px;
+  }
+  .carousel-item {
+    padding: 0px 30px;
+  }
 }
 @media (min-width: 576px) {
   .hero {
@@ -463,6 +469,9 @@ a {
   color: #161616 !important;
 }
 
+body {
+  background-color: #f4f4f4 !important;
+}
 body::-webkit-scrollbar {
   width: 10px;
 }
