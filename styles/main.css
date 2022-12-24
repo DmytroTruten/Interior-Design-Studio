@@ -200,6 +200,9 @@
   .carousel .card {
     height: 380px;
   }
+  .carousel .card-body {
+    padding: 25px !important;
+  }
   .carousel-item {
     padding: 0px 30px;
   }
