@@ -9,7 +9,6 @@
   padding: 0;
   font-family: "Gilroy";
   user-select: none;
-  // border: 1px solid red;
 }
 
 p,
@@ -78,6 +77,10 @@ body {
 }
 
 // Main
+.hero-header {
+  background-color: #fff;
+}
+
 .get-started-button {
   background-color: transparent;
   border: 2px solid #d3a265;
@@ -86,6 +89,10 @@ body {
 }
 
 // Our Services
+
+.our-services-section {
+  background-color: #fff;
+}
 
 .card-img-container {
   width: 90px;
@@ -105,6 +112,7 @@ body {
 // Our Pricing
 
 .our-pricing-section {
+  background-color: #fff;
   .card {
     background-color: #fdfbf8;
     border-radius: 10px;

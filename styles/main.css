@@ -96,7 +96,7 @@
     max-width: 270px;
   }
   .our-services-section {
-    margin: 0px 30px;
+    padding: 50px 30px 30px;
   }
   .our-services-section .section-header {
     max-width: 120px;
@@ -365,7 +365,7 @@
     display: none;
   }
   .our-services-section {
-    margin: 0px 135px;
+    padding: 0px 135px;
   }
   .tabs-container {
     padding: 0px 135px 20px !important;
@@ -537,11 +537,19 @@ body::-webkit-scrollbar-thumb {
   display: block;
 }
 
+.hero-header {
+  background-color: #fff;
+}
+
 .get-started-button {
   background-color: transparent;
   border: 2px solid #d3a265;
   font-weight: 700;
   border-radius: 8px;
+}
+
+.our-services-section {
+  background-color: #fff;
 }
 
 .card-img-container {
@@ -559,6 +567,9 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid #d3a265;
 }
 
+.our-pricing-section {
+  background-color: #fff;
+}
 .our-pricing-section .card {
   background-color: #fdfbf8;
   border-radius: 10px;
