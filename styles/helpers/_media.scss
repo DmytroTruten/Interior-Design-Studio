@@ -229,6 +229,9 @@
     .card-body {
       padding: 25px !important;
     }
+    .card-body > p {
+      margin-bottom: 0;
+    }
   }
 
   .carousel-item {

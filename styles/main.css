@@ -203,6 +203,9 @@
   .carousel .card-body {
     padding: 25px !important;
   }
+  .carousel .card-body > p {
+    margin-bottom: 0;
+  }
   .carousel-item {
     padding: 0px 30px;
   }
@@ -599,6 +602,18 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
 }
 
+.carousel .card-body {
+  flex-direction: column;
+}
+
+.testimonials-owner img {
+  max-width: 40%;
+}
+
+.owner-info {
+  max-width: 60%;
+}
+
 .carousel-indicators {
   max-width: 120px;
   margin: auto !important;
@@ -607,7 +622,7 @@ body::-webkit-scrollbar-thumb {
   width: 14px !important;
   height: 14px !important;
   border-radius: 50%;
-  background-color: #dfdfdf;
+  background-color: #dfdfdf !important;
   opacity: 1 !important;
 }
 .carousel-indicators .active {

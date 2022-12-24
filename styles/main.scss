@@ -171,6 +171,25 @@ body {
   flex-direction: column;
 }
 
+.carousel {
+  .card {
+    // border: none;
+  }
+  .card-body {
+    flex-direction: column;
+  }
+}
+
+.testimonials-owner {
+  img {
+    max-width: 40%;
+  }
+}
+
+.owner-info {
+  max-width: 60%;
+}
+
 .carousel-indicators {
   max-width: 120px;
   margin: auto !important;
@@ -178,7 +197,7 @@ body {
     width: 14px !important;
     height: 14px !important;
     border-radius: 50%;
-    background-color: #dfdfdf;
+    background-color: #dfdfdf !important;
     opacity: 1 !important;
   }
 
