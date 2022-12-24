@@ -143,13 +143,13 @@ body {
     .card-body > span {
       background-color: #fff !important;
     }
-  
+
     ul {
       li {
         color: #fff !important;
       }
     }
-  
+
     button {
       border-top: 1px solid #fff;
     }
@@ -164,7 +164,6 @@ body {
   color: #161616;
 }
 
-
 // What People Say
 
 .what-people-say-section {
@@ -172,22 +171,51 @@ body {
 }
 
 .carousel {
+  width: 100%;
   .card {
     // border: none;
+  }
+  .card > span {
+    width: 100%;
+    height: 1px;
+    background-color: #dcd1bb;
+    position: absolute;
+    top: 28%;
   }
   .card-body {
     flex-direction: column;
   }
 }
 
-.testimonials-owner {
-  img {
-    max-width: 40%;
-  }
+.testimonials-owner > img {
+  max-width: 40%;
+  position: relative;
+  // z-index: 1;
 }
 
 .owner-info {
-  max-width: 60%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.name {
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 0;
+  max-width: 60px;
+}
+
+.social {
+  max-width: 90px;
+  justify-content: space-between;
+  a {
+    img {
+      width: 100%;
+    }
+    max-width: 18px;
+    text-decoration: none;
+  }
 }
 
 .carousel-indicators {
