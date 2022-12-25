@@ -556,6 +556,10 @@ body::-webkit-scrollbar-thumb {
   background-color: #fff;
 }
 
+.services-card-container .card {
+  border: none;
+}
+
 .card-img-container {
   width: 90px;
   height: 90px;
