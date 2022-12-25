@@ -189,13 +189,6 @@ body {
   .card {
     // border: none;
   }
-  .card > span {
-    width: 100%;
-    height: 1px;
-    background-color: #dcd1bb;
-    position: absolute;
-    top: 28%;
-  }
   .card-body {
     flex-direction: column;
   }
@@ -207,10 +200,18 @@ body {
   border-radius: 50%;
 }
 
+
 .owner-info {
   height: 100%;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+.owner-info > span {
+  width: 100%;
+  height: 1px;
+  background-color: #dcd1bb;
+  border-radius: 50%;
 }
 
 .name {
