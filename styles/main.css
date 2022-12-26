@@ -219,6 +219,18 @@
   .carousel-item {
     padding: 0px 30px;
   }
+  .carousel-item:nth-child(1) .card:nth-child(2) {
+    display: none;
+  }
+  .carousel-item:nth-child(2) .card:nth-child(2), .carousel-item:nth-child(2) .card:nth-child(3) {
+    display: none;
+  }
+  .carousel-item:nth-child(3) .card:nth-child(2), .carousel-item:nth-child(3) .card:nth-child(3) {
+    display: none;
+  }
+  .carousel-item:nth-child(4) .card:nth-child(1) {
+    display: none;
+  }
   .carousel-item.active,
 .carousel-item-next,
 .carousel-item-prev {
@@ -314,6 +326,24 @@
   .tabs p {
     font-size: 16px;
     font-weight: 500;
+  }
+  .carousel-item:nth-child(1) .card:nth-child(2) {
+    display: flex;
+  }
+  .carousel-item:nth-child(2) .card:nth-child(1) {
+    display: none;
+  }
+  .carousel-item:nth-child(2) .card:nth-child(2), .carousel-item:nth-child(2) .card:nth-child(3) {
+    display: flex;
+  }
+  .carousel-item:nth-child(3) .card:nth-child(1) {
+    display: none;
+  }
+  .carousel-item:nth-child(3) .card:nth-child(2), .carousel-item:nth-child(3) .card:nth-child(3) {
+    display: flex;
+  }
+  .carousel-item:nth-child(4) .card:nth-child(1) {
+    display: flex;
   }
 }
 @media (min-width: 992px) {
