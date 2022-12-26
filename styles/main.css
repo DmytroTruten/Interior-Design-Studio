@@ -209,6 +209,7 @@
   .carousel .card {
     height: 380px;
     max-width: 355px;
+    border-radius: 10px;
   }
   .carousel .card-body {
     padding: 25px !important;
@@ -236,6 +237,11 @@
 .carousel-item-prev {
     display: flex !important;
     justify-content: center;
+  }
+  .name {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
   }
   .occupation {
     font-weight: 500;
@@ -474,6 +480,19 @@
     background-color: #fff;
     border: none;
   }
+  .carousel {
+    height: 460px;
+  }
+  .carousel .card {
+    height: 400px;
+    max-width: 570px;
+  }
+  .carousel .card-body {
+    padding: 35px 25px 25px 90px !important;
+  }
+  .carousel-item {
+    padding: 0px 135px;
+  }
 }
 @media (min-width: 1200px) {
   .hero-header {
@@ -506,6 +525,16 @@
   }
   .what-people-say-section .section-header {
     margin: 60px 0px 90px;
+  }
+  .name {
+    font-size: 20px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .occupation {
+    color: #b5b5b5;
+    font-size: 20px;
   }
 }
 * {
@@ -676,13 +705,15 @@ body::-webkit-scrollbar-thumb {
 .carousel {
   width: 100%;
 }
+.carousel .card {
+  border: none;
+}
 .carousel .card-body {
   flex-direction: column;
 }
 
 .testimonials-owner > img {
   max-width: 40%;
-  position: relative;
   border-radius: 50%;
 }
 
@@ -702,9 +733,6 @@ body::-webkit-scrollbar-thumb {
   font-weight: 600;
   line-height: 120%;
   margin-bottom: 0;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
 }
 
 .social {

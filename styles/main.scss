@@ -186,9 +186,9 @@ body {
 
 .carousel {
   width: 100%;
-  // .card {
-  //   border: none;
-  // }
+  .card {
+    border: none;
+  }
   .card-body {
     flex-direction: column;
   }
@@ -196,7 +196,6 @@ body {
 
 .testimonials-owner > img {
   max-width: 40%;
-  position: relative;
   border-radius: 50%;
 }
 
@@ -217,7 +216,6 @@ body {
   font-weight: 600;
   line-height: 120%;
   margin-bottom: 0;
-  width: min-content;
 }
 
 .social {

@@ -235,6 +235,7 @@
     .card {
       height: 380px;
       max-width: 355px;
+      border-radius: 10px;
     }
     .card-body {
       padding: 25px !important;
@@ -283,6 +284,10 @@
   .carousel-item-prev {
     display: flex !important;
     justify-content: center;
+  }
+
+  .name {
+    width: min-content;
   }
 
   .occupation {
@@ -594,6 +599,22 @@
     background-color: #fff;
     border: none;
   }
+
+  .carousel {
+    height: 460px;
+    .card {
+      height: 400px;
+      max-width: 570px;
+    }
+
+    .card-body {
+      padding: 35px 25px 25px 90px !important;
+    }
+  }
+
+  .carousel-item {
+    padding: 0px 135px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -641,5 +662,15 @@
     .section-header {
       margin: 60px 0px 90px;
     }
+  }
+
+  .name {
+    font-size: 20px;
+    width: max-content;
+  }
+
+  .occupation {
+    color: #b5b5b5;
+    font-size: 20px;
   }
 }
