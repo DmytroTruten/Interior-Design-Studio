@@ -255,7 +255,7 @@
     }
     &:nth-child(2) {
       .card {
-        &:nth-child(2),
+        &:nth-child(1),
         &:nth-child(3) {
           display: none;
         }
@@ -263,7 +263,7 @@
     }
     &:nth-child(3) {
       .card {
-        &:nth-child(2),
+        &:nth-child(1),
         &:nth-child(3) {
           display: none;
         }
@@ -393,6 +393,16 @@
   }
 
   .carousel-item {
+    &:nth-child(n) {
+      .card {
+        &:nth-child(1) {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+
+  .carousel-item {
     &:nth-child(1) {
       .card {
         &:nth-child(2) {
@@ -402,10 +412,10 @@
     }
     &:nth-child(2) {
       .card {
-        &:nth-child(1) {
+        &:nth-child(2) {
           display: none;
         }
-        &:nth-child(2),
+        &:nth-child(1),
         &:nth-child(3) {
           display: flex;
         }
@@ -413,10 +423,10 @@
     }
     &:nth-child(3) {
       .card {
-        &:nth-child(1) {
+        &:nth-child(2) {
           display: none;
         }
-        &:nth-child(2),
+        &:nth-child(1),
         &:nth-child(3) {
           display: flex;
         }
