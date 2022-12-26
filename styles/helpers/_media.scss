@@ -248,6 +248,13 @@
     padding: 0px 30px;
   }
 
+  .carousel-item.active,
+  .carousel-item-next,
+  .carousel-item-prev {
+    display: flex !important;
+    justify-content: center;
+  }
+
   .occupation {
     font-weight: 500;
     color: #948b8b;
