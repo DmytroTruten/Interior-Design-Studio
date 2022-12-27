@@ -296,7 +296,7 @@
     width: min-content;
   }
 
-  .occupation {
+  .position {
     font-weight: 500;
     color: #948b8b;
     font-size: 14px;
@@ -406,9 +406,7 @@
   .carousel-item {
     &:nth-child(n) {
       .card {
-        &:nth-child(1) {
-          margin-right: 30px;
-        }
+        max-width: 48.5%;
       }
     }
   }
@@ -450,6 +448,13 @@
         }
       }
     }
+  }
+
+  .carousel-item.active,
+  .carousel-item-next,
+  .carousel-item-prev {
+    display: flex !important;
+    justify-content: space-between;
   }
 }
 
@@ -625,11 +630,6 @@
   .owner-info {
     height: 80%;
   }
-
-  .testimonials-owner > img {
-    margin-right: 15px;
-    max-width: 172px;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -684,8 +684,13 @@
     width: max-content;
   }
 
-  .occupation {
+  .position {
     color: #b5b5b5;
     font-size: 20px;
+  }
+
+  .testimonials-owner > img {
+    margin-right: 15px;
+    max-width: 172px;
   }
 }
