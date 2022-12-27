@@ -228,6 +228,7 @@
 
   .testimonials-owner > img {
     margin-right: 15px;
+    max-width: 40%;
   }
 
   .carousel {
@@ -277,6 +278,10 @@
         }
       }
     }
+  }
+  
+  .owner-info {
+    height: 100%;
   }
 
   .carousel-item.active,
@@ -614,6 +619,15 @@
 
   .carousel-item {
     padding: 0px 135px;
+  }
+
+  .owner-info {
+    height: 80%;
+  }
+
+  .testimonials-owner > img {
+    margin-right: 15px;
+    max-width: 172px;
   }
 }
 
