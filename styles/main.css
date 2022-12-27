@@ -235,6 +235,7 @@
   }
   .owner-info {
     height: 100%;
+    width: 100%;
   }
   .carousel-item.active,
 .carousel-item-next,
