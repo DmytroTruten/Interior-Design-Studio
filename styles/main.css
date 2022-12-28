@@ -254,6 +254,12 @@
     font-size: 14px;
     margin-bottom: 0;
   }
+  .question-section {
+    justify-content: center;
+  }
+  .question-section h2 {
+    text-align: center;
+  }
 }
 @media (min-width: 576px) {
   .hero {
