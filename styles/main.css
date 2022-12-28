@@ -34,10 +34,10 @@
   .hero-header p {
     margin-top: 30px;
   }
-  .hero-header button {
+  .get-started-button {
     height: 48px;
     width: 100%;
-    margin: 55px 0px 0px 0px;
+    margin: 40px 0px 0px 0px;
   }
   .section-header {
     font-weight: 400;
@@ -255,10 +255,18 @@
     margin-bottom: 0;
   }
   .question-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px !important;
+  }
+  .question-section .col {
     justify-content: center;
   }
   .question-section h2 {
     text-align: center;
+  }
+  .question-section .get-started-button {
+    margin: 35px 0px 0px 0px;
   }
 }
 @media (min-width: 576px) {
