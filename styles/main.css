@@ -379,6 +379,13 @@
     display: flex !important;
     justify-content: space-between;
   }
+  .question-section {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .question-section .get-started-button {
+    margin: 0;
+  }
 }
 @media (min-width: 992px) {
   .navbar {
