@@ -257,7 +257,8 @@
   .question-section {
     flex-direction: column;
     align-items: center;
-    padding: 30px !important;
+    background-color: #fff;
+    padding: 40px 30px !important;
   }
   .question-section .col {
     justify-content: center;
@@ -574,6 +575,9 @@
   .testimonials-owner > img {
     margin-right: 15px;
     max-width: 172px;
+  }
+  .question-section {
+    padding: 70px 135px !important;
   }
 }
 * {
