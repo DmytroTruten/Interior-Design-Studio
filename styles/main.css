@@ -241,7 +241,10 @@
     max-width: 90px;
   }
   .owner-info .social a {
-    max-width: 18px;
+    height: 30px;
+  }
+  .owner-info .social a img {
+    width: 18px;
   }
   .carousel-item.active,
 .carousel-item-next,
@@ -803,6 +806,9 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
 }
 .social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
 }
 .social a img {
