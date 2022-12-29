@@ -284,6 +284,12 @@
   .owner-info {
     height: 100%;
     width: 100%;
+    .social {
+      max-width: 90px;
+      a {
+        max-width: 18px;
+      }
+    }
   }
 
   .carousel-item.active,
@@ -317,6 +323,25 @@
     }
     .get-started-button {
       margin: 35px 0px 0px 0px;
+    }
+  }
+
+  footer {
+    padding: 35px 30px 30px;
+  }
+
+  .footer-header {
+    flex-direction: row;
+    justify-content: space-between;
+    .social {
+      width: 100px;
+      a {
+        width: 28px;
+        height: 28px;
+        img {
+          width: 20px;
+        }
+      }
     }
   }
 }

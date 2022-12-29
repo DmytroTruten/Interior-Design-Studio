@@ -237,6 +237,12 @@
     height: 100%;
     width: 100%;
   }
+  .owner-info .social {
+    max-width: 90px;
+  }
+  .owner-info .social a {
+    max-width: 18px;
+  }
   .carousel-item.active,
 .carousel-item-next,
 .carousel-item-prev {
@@ -268,6 +274,23 @@
   }
   .question-section .get-started-button {
     margin: 35px 0px 0px 0px;
+  }
+  footer {
+    padding: 35px 30px 30px;
+  }
+  .footer-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-header .social {
+    width: 100px;
+  }
+  .footer-header .social a {
+    width: 28px;
+    height: 28px;
+  }
+  .footer-header .social a img {
+    width: 20px;
   }
 }
 @media (min-width: 576px) {
@@ -777,15 +800,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 .social {
-  max-width: 90px;
   justify-content: space-between;
 }
 .social a {
-  max-width: 18px;
   text-decoration: none;
 }
 .social a img {
   width: 100%;
+  display: block;
 }
 
 .carousel-indicators {

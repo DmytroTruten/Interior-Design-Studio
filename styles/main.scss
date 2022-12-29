@@ -217,13 +217,12 @@ body {
 }
 
 .social {
-  max-width: 90px;
   justify-content: space-between;
   a {
     img {
       width: 100%;
+      display: block;
     }
-    max-width: 18px;
     text-decoration: none;
   }
 }
