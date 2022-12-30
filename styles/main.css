@@ -291,10 +291,18 @@
   footer .social a img {
     width: 20px;
   }
+  footer p,
+footer a {
+    color: #161616;
+  }
   .footer-header {
     flex-direction: row;
     justify-content: space-between;
     padding: 60px 0px;
+  }
+  .footer-header p,
+.footer-header .license {
+    display: none;
   }
   .contacts {
     display: flex;
@@ -304,21 +312,25 @@
   .contacts p {
     margin-bottom: 0 !important;
   }
+  .contacts > p {
+    font-weight: 600;
+  }
   .navigation-container,
 .navigation {
     display: none;
   }
-  .contacts > p,
-.navigation > a {
+  .navigation > a {
     font-size: 14px;
     margin: 24px 0px 0px;
     text-decoration: none;
   }
-  .contacts > p:nth-child(1),
-.navigation > a:nth-child(1) {
+  .navigation > a:nth-child(1) {
     font-weight: 600;
-    color: #161616;
     font-size: 16px;
+  }
+  .navigation > p {
+    font-weight: 600;
+    margin: 0;
   }
   .address,
 .email,
@@ -335,6 +347,9 @@
 .phones p:nth-child(2) {
     margin-top: 5px;
     font-size: 14px;
+  }
+  .address {
+    margin-top: 24px !important;
   }
   .license {
     margin-top: 70px !important;
@@ -607,6 +622,22 @@
   }
   .owner-info {
     height: 80%;
+  }
+  .footer-header {
+    flex-direction: column;
+    padding: 0;
+  }
+  .footer-header p,
+.footer-header .license {
+    margin: 0 !important;
+    display: block;
+  }
+  footer {
+    justify-content: space-between;
+    padding: 100px 135px;
+  }
+  footer > .license {
+    display: none;
   }
 }
 @media (min-width: 1200px) {
@@ -883,4 +914,9 @@ body::-webkit-scrollbar-thumb {
 }
 .carousel-indicators .active {
   background-color: #d3a265 !important;
+}
+
+.logo {
+  max-width: 140px;
+  display: block;
 }/*# sourceMappingURL=main.css.map */
