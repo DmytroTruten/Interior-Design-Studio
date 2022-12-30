@@ -39,6 +39,7 @@
     height: 48px;
     width: 100%;
     margin: 40px 0px 0px 0px;
+    color: #161616;
   }
   .section-header {
     font-weight: 400;
@@ -413,6 +414,9 @@
   .gallery > div:nth-child(even) {
     justify-content: end;
   }
+  .footer-header {
+    justify-content: center;
+  }
   .footer-header .social {
     display: none !important;
   }
@@ -421,6 +425,10 @@
     flex-direction: column;
     justify-content: space-between;
     display: flex;
+    align-items: center;
+  }
+  .contacts {
+    text-align: center;
   }
 }
 @media (min-width: 768px) {
@@ -619,8 +627,16 @@
   .owner-info {
     height: 80%;
   }
+  footer {
+    justify-content: space-between;
+    padding: 100px 135px;
+  }
+  footer > .license {
+    display: none;
+  }
   .footer-header {
     flex-direction: column;
+    justify-content: space-between;
     padding: 0;
   }
   .footer-header p,
@@ -628,12 +644,13 @@
     margin: 0 !important;
     display: block;
   }
-  footer {
-    justify-content: space-between;
-    padding: 100px 135px;
+  .navigation,
+.navigation-container,
+.contacts {
+    align-items: flex-start;
   }
-  footer > .license {
-    display: none;
+  .contacts {
+    text-align: start;
   }
 }
 @media (min-width: 1200px) {
