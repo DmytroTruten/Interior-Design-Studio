@@ -281,20 +281,20 @@
   footer {
     padding: 0px 30px 35px;
   }
+  footer .social {
+    width: 100px;
+  }
+  footer .social a {
+    width: 28px;
+    height: 28px;
+  }
+  footer .social a img {
+    width: 20px;
+  }
   .footer-header {
     flex-direction: row;
     justify-content: space-between;
     padding: 60px 0px;
-  }
-  .footer-header .social {
-    width: 100px;
-  }
-  .footer-header .social a {
-    width: 28px;
-    height: 28px;
-  }
-  .footer-header .social a img {
-    width: 20px;
   }
   .contacts {
     display: flex;
@@ -304,9 +304,22 @@
   .contacts p {
     margin-bottom: 0 !important;
   }
-  .contacts > p {
+  .navigation-container,
+.navigation {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .contacts > p,
+.navigation > a {
+    font-size: 14px;
+    margin: 24px 0px 0px;
+    text-decoration: none;
+  }
+  .contacts > p:nth-child(1),
+.navigation > a:nth-child(1) {
     font-weight: 600;
     color: #161616;
+    font-size: 16px;
   }
   .address,
 .email,
