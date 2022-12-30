@@ -306,8 +306,7 @@
   }
   .navigation-container,
 .navigation {
-    flex-direction: column;
-    justify-content: space-between;
+    display: none;
   }
   .contacts > p,
 .navigation > a {
@@ -402,6 +401,15 @@
   }
   .gallery > div:nth-child(even) {
     justify-content: end;
+  }
+  .footer-header .social {
+    display: none !important;
+  }
+  .navigation-container,
+.navigation {
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
   }
 }
 @media (min-width: 768px) {
