@@ -1,6 +1,7 @@
 @import url("../fonts/Gilroy/stylesheet.css");
 @import url("../fonts/BN-Chester/stylesheet.css");
 @import "./helpers/media";
+@import "./helpers/variables";
 
 // General
 
@@ -14,7 +15,7 @@
 p,
 a {
   font-weight: 500;
-  color: #161616;
+  color: $main-black;
 }
 
 p {
@@ -22,7 +23,7 @@ p {
 }
 
 a {
-  color: #161616 !important;
+  color: $main-black !important;
 }
 
 body {
@@ -34,7 +35,7 @@ body {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   }
   &::-webkit-scrollbar-thumb {
-    background-color: #d3a265;
+    background-color: $main-orange;
     border-radius: 10px;
   }
 }
@@ -45,7 +46,7 @@ body {
   span {
     display: block;
     width: 100%;
-    background-color: black;
+    background-color: $main-black;
     height: 3px;
     position: absolute;
     border-radius: 20px;
@@ -84,7 +85,7 @@ body {
 
 .get-started-button {
   background-color: transparent;
-  border: 2px solid #d3a265;
+  border: $button-border;
   font-weight: 700;
   border-radius: 8px;
 }
@@ -106,14 +107,14 @@ body {
   height: 90px;
 }
 
-.card-text {
-  color: #8d8d8d;
+.service-description {
+  color: $service-description-color;
   line-height: 170%;
 }
 
 .free-consultation-button {
   background-color: transparent;
-  border: 2px solid #d3a265;
+  border: $button-border;
 }
 
 // Our Pricing
@@ -139,7 +140,7 @@ body {
       padding: 0;
       li {
         line-height: 180%;
-        color: #161616;
+        color: $main-black;
         font-weight: 500;
       }
     }
@@ -149,19 +150,19 @@ body {
   }
 
   .active {
-    background-color: #d3a265 !important;
+    background-color: $main-orange !important;
     .pricing-type,
     .price,
     .per-month {
-      color: #fff !important;
+      color: $white-important;
     }
     .card-body > span {
-      background-color: #fff !important;
+      background-color: $white-important;
     }
 
     ul {
       li {
-        color: #fff !important;
+        color: $white-important;
       }
     }
 
@@ -176,7 +177,7 @@ body {
 .per-month {
   font-weight: 400;
   font-family: "BN Chester";
-  color: #161616;
+  color: $main-black;
 }
 
 // What People Say
@@ -244,7 +245,7 @@ body {
   }
 
   .active {
-    background-color: #d3a265 !important;
+    background-color: $main-orange !important;
   }
 }
 

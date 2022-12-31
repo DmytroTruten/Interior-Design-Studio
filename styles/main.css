@@ -747,7 +747,7 @@ body::-webkit-scrollbar-thumb {
 .navbar span {
   display: block;
   width: 100%;
-  background-color: black;
+  background-color: #161616;
   height: 3px;
   position: absolute;
   border-radius: 20px;
@@ -800,7 +800,7 @@ body::-webkit-scrollbar-thumb {
   height: 90px;
 }
 
-.card-text {
+.service-description {
   color: #8d8d8d;
   line-height: 170%;
 }

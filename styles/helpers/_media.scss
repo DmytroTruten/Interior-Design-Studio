@@ -1,3 +1,5 @@
+@import "./variables";
+
 @media (min-width: 0px) {
   .navbar {
     padding: 30px !important;
@@ -39,7 +41,7 @@
     height: 48px;
     width: 100%;
     margin: 40px 0px 0px 0px;
-    color: #161616;
+    color: $main-black;
   }
 
   .section-header {
@@ -51,7 +53,7 @@
       font-weight: 400;
       font-size: 32px;
       font-family: "BN Chester";
-      color: #d3a265;
+      color: $main-orange;
     }
   }
 
@@ -75,7 +77,7 @@
     max-width: fit-content !important;
     font-size: 14px;
     font-weight: 600;
-    text-decoration-color: #d3a265;
+    text-decoration-color: $main-orange;
     text-underline-offset: 5px;
   }
 
@@ -132,7 +134,7 @@
       font-weight: 600;
       text-decoration: none;
       &:nth-child(1) {
-        color: #d3a265 !important;
+        color: $main-orange !important;
         font-weight: 700;
       }
     }
@@ -167,7 +169,7 @@
     .card {
       height: 320px;
       width: 100%;
-      border: 1px solid #d3a265;
+      border: 1px solid $main-orange;
       ul {
         li {
           font-size: 14px;
@@ -210,7 +212,7 @@
   .buy-now-button {
     height: 40px;
     width: 100%;
-    background-color: #d3a265;
+    background-color: $main-orange;
     border: none;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -727,7 +729,7 @@
 
   .per-month {
     font-size: 18px;
-    color: #161616 !important;
+    color: $main-black !important;
   }
 
   .buy-now-button {
@@ -735,9 +737,9 @@
     width: 140px;
     margin: 50px 0px 30px;
     background-color: transparent;
-    border: 2px solid #d3a265;
+    border: $button-border;
     border-radius: 8px;
-    color: #161616;
+    color: $main-black;
   }
   .active .buy-now-button {
     background-color: #fff;
