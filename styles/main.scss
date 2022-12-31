@@ -1,7 +1,12 @@
 @import url("../fonts/Gilroy/stylesheet.css");
 @import url("../fonts/BN-Chester/stylesheet.css");
-@import "./helpers/media";
 @import "./helpers/variables";
+
+@import "./media/media-xs";
+@import "./media/media-sm";
+@import "./media/media-md";
+@import "./media/media-lg";
+@import "./media/media-xl";
 
 // General
 
@@ -52,7 +57,7 @@ body {
     border-radius: 20px;
     &:nth-child(1) {
       width: 60%;
-      top: 0%;
+      top: 0;
       right: 0;
     }
     &:nth-child(2) {

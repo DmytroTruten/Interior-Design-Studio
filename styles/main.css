@@ -31,6 +31,7 @@
     font-size: 48px;
     font-family: "BN Chester";
     font-weight: 400;
+    color: #3d3737;
   }
   .hero-header p {
     margin-top: 30px;
@@ -754,7 +755,7 @@ body::-webkit-scrollbar-thumb {
 }
 .navbar span:nth-child(1) {
   width: 60%;
-  top: 0%;
+  top: 0;
   right: 0;
 }
 .navbar span:nth-child(2) {
