@@ -27,7 +27,7 @@ a {
 }
 
 body {
-  background-color: #f4f4f4 !important;
+  background-color: $body-background-color !important;
   &::-webkit-scrollbar {
     width: 10px;
   }
@@ -80,7 +80,7 @@ body {
 
 // Main
 .hero-header {
-  background-color: #fff;
+  background-color: $main-white;
 }
 
 .get-started-button {
@@ -93,7 +93,7 @@ body {
 // Our Services
 
 .our-services-section {
-  background-color: #fff;
+  background-color: $main-white;
 }
 
 .services-card-container {
@@ -120,9 +120,9 @@ body {
 // Our Pricing
 
 .our-pricing-section {
-  background-color: #fff;
+  background-color: $main-white;
   .card {
-    background-color: #fdfbf8;
+    background-color: $pricing-card-color;
     border-radius: 10px;
     .card-body {
       padding: 0 !important;
@@ -132,7 +132,7 @@ body {
       display: block;
       height: 1px;
       width: 68%;
-      background-color: #dcd1bb;
+      background-color: $splitting-line-color;
     }
     ul {
       list-style: none;
@@ -154,20 +154,20 @@ body {
     .pricing-type,
     .price,
     .per-month {
-      color: $white-important;
+      color: $main-white !important;
     }
     .card-body > span {
-      background-color: $white-important;
+      background-color: $main-white !important;
     }
 
     ul {
       li {
-        color: $white-important;
+        color: $main-white !important;
       }
     }
 
     button {
-      border-top: 1px solid #fff;
+      border-top: 1px solid $main-white;
     }
   }
 }
@@ -209,7 +209,7 @@ body {
 .owner-info > span {
   width: 100%;
   height: 1px;
-  background-color: #dcd1bb;
+  background-color: $splitting-line-color;
 }
 
 .name {
@@ -240,7 +240,7 @@ body {
     width: 14px !important;
     height: 14px !important;
     border-radius: 50%;
-    background-color: #dfdfdf !important;
+    background-color: $carousel-indicators-color !important;
     opacity: 1 !important;
   }
 
