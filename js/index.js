@@ -1,4 +1,14 @@
 const mainButtons = document.querySelectorAll('.main-btn');
+const links = document.querySelectorAll('.navigation-link');
+// const sections = [
+//   document.querySelector('.about-studio-section'),
+//   document.querySelector('.our-services-section'),
+//   document.querySelector('.our-portfolio-section'),
+//   document.querySelector('.our-pricing-section'),
+//   document.querySelector('.testimonials-section'),
+// ]
+const aboutStudioSection = document.querySelector('.about-studio-section');
+
 
 mainButtons.forEach((button) => {
   button.addEventListener("mouseover", event => {
@@ -13,3 +23,12 @@ mainButtons.forEach((button) => {
   })
 })
 
+links.forEach((link) => {
+  link.addEventListener("click", event => {
+    switch (event.target.id) {
+      case "about":
+        aboutStudioSection.scrollIntoView({block: "center", behavior: "smooth"})
+        break
+    }
+  })
+})
