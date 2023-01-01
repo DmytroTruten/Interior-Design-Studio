@@ -41,6 +41,6 @@ links.forEach((link) => {
         selectedSection = document.querySelector(".testimonials-section");
         break;
     }
-    selectedSection.scrollIntoView({ block: "start", behavior: "smooth" });
+    selectedSection.scrollIntoView({ block: "center", behavior: "smooth" });
   });
 });
