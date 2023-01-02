@@ -1,11 +1,6 @@
 const mainButtons = document.querySelectorAll(".main-btn");
 const links = document.querySelectorAll(".navigation-link");
 
-
-
-
-const aboutStudioSection = document.querySelector(".about-studio-section");
-
 mainButtons.forEach((button) => {
   button.addEventListener("mouseover", (event) => {
     event.target.classList.remove("pulsating-effect-off");
