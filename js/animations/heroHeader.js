@@ -1,7 +1,6 @@
 // Getting access to hero-header
 const heroHeader = document.querySelector(".hero-header");
 
-// Initiating and exporting function
 export function heroHeaderReveal() {
 
   /* heroHeader.children[0, 1, 2 ... n] returns HTMLCollection 
