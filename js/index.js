@@ -1,5 +1,9 @@
+import { heroHeaderReveal } from "./animations/heroHeader.js";
+
 const mainButtons = document.querySelectorAll(".main-btn");
 const links = document.querySelectorAll(".navigation-link");
+
+heroHeaderReveal()
 
 mainButtons.forEach((button) => {
   button.addEventListener("mouseover", (event) => {
