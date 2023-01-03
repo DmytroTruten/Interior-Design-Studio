@@ -770,10 +770,12 @@ body::-webkit-scrollbar-thumb {
   width: 35px;
   height: 25px;
   position: relative;
+  opacity: 0;
 }
 
 .navbar-brand img {
   display: block;
+  opacity: 0;
 }
 
 .hero-header {
