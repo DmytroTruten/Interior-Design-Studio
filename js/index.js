@@ -1,10 +1,13 @@
 import { heroHeaderReveal } from "./animations/heroHeader.js";
 import { glowOfMainButtons } from "./animations/mainButtons.js";
+import { animateNavbarMobile } from "./animations/navbarMobile.js";
 
-const links = document.querySelectorAll(".navigation-link");
 
+animateNavbarMobile()
 heroHeaderReveal()
 glowOfMainButtons()
+
+const links = document.querySelectorAll(".navigation-link");
 
 // Adding event listeners for each link
 links.forEach((link) => {
