@@ -1,11 +1,12 @@
 import { heroHeaderReveal } from "./animations/heroHeader.js";
 import { glowOfMainButtons } from "./animations/mainButtons.js";
 import { animateNavbarMobile } from "./animations/navbarMobile.js";
+import { toggleSideNav } from "./animations/sideNav.js";
 
-
-animateNavbarMobile()
-heroHeaderReveal()
-glowOfMainButtons()
+animateNavbarMobile();
+heroHeaderReveal();
+toggleSideNav();
+glowOfMainButtons();
 
 const links = document.querySelectorAll(".navigation-link");
 
