@@ -789,6 +789,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sidenav {
+  display: flex;
+  justify-content: center;
   height: 100%;
   width: 0;
   position: fixed;
@@ -798,6 +800,18 @@ body::-webkit-scrollbar-thumb {
   overflow-x: hidden;
   transition: 1s;
   z-index: 10;
+  padding-top: 100px;
+}
+.sidenav .navigation {
+  text-align: end;
+  display: block;
+}
+.sidenav .navigation p {
+  font-weight: 600;
+  font-size: 30px;
+  -webkit-text-decoration: solid underline 2px #d3a265;
+          text-decoration: solid underline 2px #d3a265;
+  text-underline-offset: 8px;
 }
 
 .hero-header {

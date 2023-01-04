@@ -11,11 +11,16 @@ export function toggleSideNav() {
     sideNavBackPanel.style.display = "block";
     sideNavBackPanel.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
   });
-  sideNavBackPanel.addEventListener("click", () => {
-    hamburgerContainer.classList.remove("menu-on");
-    hamburgerContainer.classList.add("menu-off");
+  sideNavBackPanel.addEventListener("click", closeSideNav);
+  Array.from(sideNav.children[0].children).forEach((link) => {
+    link.addEventListener("click", closeSideNav)
+  })
+}
 
-    sideNav.style.width = "0";
-    sideNavBackPanel.style.display = "none";
-  });
+function closeSideNav() {
+  hamburgerContainer.classList.remove("menu-on");
+  hamburgerContainer.classList.add("menu-off");
+
+  sideNav.style.width = "0";
+  sideNavBackPanel.style.display = "none";
 }

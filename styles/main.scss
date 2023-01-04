@@ -97,6 +97,8 @@ body {
 }
 
 .sidenav {
+  display: flex;
+  justify-content: center;
   height: 100%;
   width: 0;
   position: fixed;
@@ -106,6 +108,18 @@ body {
   overflow-x: hidden;
   transition: 1s;
   z-index: 10;
+  padding-top: 100px;
+
+  .navigation {
+    text-align: end;
+    p {
+      font-weight: 600;
+      font-size: 30px;
+      text-decoration: solid underline 2px $main-orange;
+      text-underline-offset: 8px;
+    }
+    display: block;
+  }
 }
 
 // Main
