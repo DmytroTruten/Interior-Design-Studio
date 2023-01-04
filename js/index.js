@@ -34,6 +34,10 @@ links.forEach((link) => {
         break;
     }
     // Scrolling into selected section
-    selectedSection.scrollIntoView({ block: "center", behavior: "smooth" });
+    if(window.screen.width < 992) {
+      selectedSection.scrollIntoView({ block: "start", behavior: "smooth" });
+    } else {
+      selectedSection.scrollIntoView({ block: "center", behavior: "smooth" });
+    }
   });
 });
