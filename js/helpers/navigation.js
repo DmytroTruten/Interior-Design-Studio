@@ -1,4 +1,4 @@
-export function scrollIntoSection() {
+export function addScrollIntoSection() {
   // Getting access to all navigation links
   const links = document.querySelectorAll(".navigation-link");
 
