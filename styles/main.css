@@ -17,7 +17,8 @@
     height: fit-content;
     flex-direction: column;
   }
-  .hero img {
+  .hero-img {
+    opacity: 0;
     width: 100%;
     max-height: 250px;
     -o-object-fit: cover;
@@ -358,7 +359,7 @@
   .hero {
     flex-direction: row;
   }
-  .hero img {
+  .hero-img {
     max-height: 100%;
     min-height: 100%;
   }
@@ -740,6 +741,7 @@ a {
 
 body {
   background-color: #f4f4f4 !important;
+  overflow-x: hidden;
 }
 body::-webkit-scrollbar {
   width: 10px;

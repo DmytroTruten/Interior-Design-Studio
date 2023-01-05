@@ -1,4 +1,3 @@
-
 export function animateNavbarMobile() {
   // Getting access to mobile navbar elements
   const logo = document.querySelector(".logo");

@@ -3,6 +3,7 @@ import { glowOfMainButtons } from "./animations/mainButtons.js";
 import { animateNavbarMobile } from "./animations/navbar-sidenav/navbarMobile.js";
 import { animateNavbarDesktop } from "./animations/navbar-sidenav/navbarDesktop.js";
 import { toggleSideNav } from "./animations/navbar-sidenav/sideNav.js";
+import { animateHeroImg } from "./animations/heroImg.js";
 
 if (window.screen.width < 992) {
   animateNavbarMobile();
@@ -11,6 +12,7 @@ if (window.screen.width < 992) {
   animateNavbarDesktop();
 }
 heroHeaderReveal();
+animateHeroImg()
 glowOfMainButtons();
 
 const links = document.querySelectorAll(".navigation-link");
