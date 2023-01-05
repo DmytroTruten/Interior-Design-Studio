@@ -7,6 +7,7 @@ import { animateHeroImg } from "./animations/hero/heroImg.js";
 import { aboutStudioReveal } from "./animations/about-studio/aboutStudio.js";
 
 if (window.screen.width < 576) {
+  animateHeroImg("xs")
   window.addEventListener('scroll', () => {
     let scrollYPosition = scrollY;
     // console.log(scrollYPosition)
@@ -14,6 +15,8 @@ if (window.screen.width < 576) {
       aboutStudioReveal()
     }
   })
+} else {
+  animateHeroImg('sm')
 }
 
 if (window.screen.width < 992) {
@@ -22,8 +25,8 @@ if (window.screen.width < 992) {
 } else {
   animateNavbarDesktop();
 }
+
 heroHeaderReveal();
-animateHeroImg()
 glowOfMainButtons();
 
 const links = document.querySelectorAll(".navigation-link");
