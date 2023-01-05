@@ -107,7 +107,7 @@ body {
   right: 0;
   background-color: $main-white;
   overflow-x: hidden;
-  transition: .6s;
+  transition: 0.6s;
   z-index: 10;
   padding-top: 100px;
 
@@ -127,7 +127,7 @@ body {
       -ms-text-underline-offset: 8px;
       -o-text-underline-offset: 8px;
       text-underline-offset: 8px;
-    } 
+    }
   }
 }
 
@@ -146,6 +146,20 @@ body {
   border: $button-border;
   font-weight: 700;
   border-radius: 8px;
+}
+
+// About Studio
+
+.about-studio-header-col {
+  h2 {
+    opacity: 0;
+    max-width: min-content;
+  }
+}
+
+.about-studio-more,
+.about-studio-main-text {
+  opacity: 0;
 }
 
 // Our Services

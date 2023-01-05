@@ -1,9 +1,20 @@
-import { heroHeaderReveal } from "./animations/heroHeader.js";
+import { heroHeaderReveal } from "./animations/hero/heroHeader.js";
 import { glowOfMainButtons } from "./animations/mainButtons.js";
 import { animateNavbarMobile } from "./animations/navbar-sidenav/navbarMobile.js";
 import { animateNavbarDesktop } from "./animations/navbar-sidenav/navbarDesktop.js";
 import { toggleSideNav } from "./animations/navbar-sidenav/sideNav.js";
-import { animateHeroImg } from "./animations/heroImg.js";
+import { animateHeroImg } from "./animations/hero/heroImg.js";
+import { aboutStudioReveal } from "./animations/about-studio/aboutStudio.js";
+
+if (window.screen.width < 576) {
+  window.addEventListener('scroll', () => {
+    let scrollYPosition = scrollY;
+    // console.log(scrollYPosition)
+    if(scrollYPosition >= 500 && scrollYPosition <= 600) {
+      aboutStudioReveal()
+    }
+  })
+}
 
 if (window.screen.width < 992) {
   animateNavbarMobile();
