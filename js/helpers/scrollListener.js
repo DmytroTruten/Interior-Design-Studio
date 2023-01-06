@@ -7,12 +7,12 @@ export function addScrollListener(breakpoint) {
     switch (breakpoint) {
       case "xs":
         if (scrollYPosition >= 500 && scrollYPosition <= 600) {
-          aboutStudioReveal();
+          aboutStudioReveal("xs");
         }
         break;
       case "lg":
         if (scrollYPosition >= 100 && scrollYPosition <= 200) {
-          aboutStudioReveal();
+          aboutStudioReveal("lg");
         }
         break;
     }

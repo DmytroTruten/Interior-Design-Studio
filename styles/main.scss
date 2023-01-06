@@ -174,8 +174,16 @@ body {
   margin: 0 !important;
 }
 
-.reveal-text {
+.reveal-text-xs {
   height: 160px;
+}
+
+.reveal-text-sm {
+  height: 110px;
+}
+
+.reveal-text-md {
+  height: 80px;
 }
 
 // Our Services

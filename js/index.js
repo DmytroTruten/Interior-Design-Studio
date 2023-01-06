@@ -14,17 +14,17 @@ if (window.screen.width < 576) {
   addScrollListener("xs");
 } else if (window.screen.width > 576 && window.screen.width <= 768) {
   animateHeroImg("sm");
-  aboutStudioReveal();
+  aboutStudioReveal('sm');
 } else if (window.screen.width > 768 && window.screen.width <= 992) {
-  animateHeroImg("sm");
-  aboutStudioReveal();
+  animateHeroImg("md");
+  aboutStudioReveal('md');
 }
 
 if (window.screen.width < 992) {
   animateNavbarMobile();
   toggleSideNav();
 } else {
-  animateHeroImg("sm");
+  animateHeroImg("lg");
   animateNavbarDesktop();
   addScrollListener("lg");
 }
