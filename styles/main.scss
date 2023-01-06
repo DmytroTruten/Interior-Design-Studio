@@ -150,16 +150,32 @@ body {
 
 // About Studio
 
-.about-studio-header-col {
+.about-studio-header {
   h2 {
     opacity: 0;
     max-width: min-content;
   }
 }
 
+.about-studio-more-container {
+  display: flex;
+  justify-content: center;
+  height: 0;
+  transition: 1s;
+  overflow-y: hidden;
+}
+
 .about-studio-more,
 .about-studio-main-text {
   opacity: 0;
+}
+
+.about-studio-more-text {
+  margin: 0 !important;
+}
+
+.reveal-text {
+  height: 160px;
 }
 
 // Our Services

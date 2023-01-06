@@ -61,9 +61,6 @@
   .about-studio-row p {
     margin: 30px 0px;
   }
-  .about-studio-row p:nth-child(2) {
-    display: none;
-  }
   .more {
     max-width: -webkit-fit-content !important;
     max-width: -moz-fit-content !important;
@@ -844,16 +841,32 @@ body::-webkit-scrollbar-thumb {
   border-radius: 8px;
 }
 
-.about-studio-header-col h2 {
+.about-studio-header h2 {
   opacity: 0;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
 }
 
+.about-studio-more-container {
+  display: flex;
+  justify-content: center;
+  height: 0;
+  transition: 1s;
+  overflow-y: hidden;
+}
+
 .about-studio-more,
 .about-studio-main-text {
   opacity: 0;
+}
+
+.about-studio-more-text {
+  margin: 0 !important;
+}
+
+.reveal-text {
+  height: 160px;
 }
 
 .our-services-section {
