@@ -12,19 +12,25 @@ export function aboutStudioReveal(breakpoint) {
     const aboutStudioMoreContainer = document.querySelector(
       ".about-studio-more-container"
     );
-    if (breakpoint === "xs") {
-      aboutStudioMore.addEventListener("click", () => {
-        aboutStudioMoreContainer.classList.toggle("reveal-text-xs");
-      });
-    } else if ((breakpoint === "sm")) {
-      aboutStudioMore.addEventListener("click", () => {
-        aboutStudioMoreContainer.classList.toggle("reveal-text-sm");
-      });
-    } else if ((breakpoint === "md")) {
-      aboutStudioMore.addEventListener("click", () => {
-        aboutStudioMoreContainer.classList.toggle("reveal-text-md");
-      });
+
+    let revealTextBreakpoint;
+    switch (breakpoint) {
+      case "xs":
+        revealTextBreakpoint = "xs";
+        break;
+      case "sm":
+        revealTextBreakpoint = "sm";
+        break;
+      case "md":
+        revealTextBreakpoint = "md";
+        break;
     }
+
+    aboutStudioMore.addEventListener("click", () => {
+      aboutStudioMoreContainer.classList.toggle(
+        `reveal-text-${revealTextBreakpoint}`
+      );
+    });
 
     aboutStudioSectionHeader.style.animation = "reveal-to-left 1s ease-in-out";
     aboutStudioSectionHeader.style.opacity = "1";

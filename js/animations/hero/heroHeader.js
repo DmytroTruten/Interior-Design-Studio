@@ -1,21 +1,22 @@
 export function heroHeaderReveal() {
-  // Getting access to hero-header
-  const heroHeader = document.querySelector(".hero-header");
+  // Getting access to hero-header elements
+  const heroHeaderH1 = document.getElementById('hero-header-h1')
+  const heroHeaderP = document.getElementById('hero-header-p')
+  const heroHeaderButton = document.getElementById('hero-header-button')
 
-  /* heroHeader.children[0, 1, 2 ... n] returns HTMLCollection 
-  of child elements. Separately for each child element applying 
+  /* Separately for each hero-header element applying 
   animation in certain intervals */
 
-  heroHeader.children[0].style.animation = "reveal-to-right 1s ease-in-out";
+  heroHeaderH1.style.animation = "reveal-to-right 1s ease-in-out";
   setTimeout(() => {
-    heroHeader.children[0].style.opacity = "1";
+    heroHeaderH1.style.opacity = "1";
   }, 900);
   setTimeout(() => {
-    heroHeader.children[1].style.animation = "reveal-to-right 1s ease-in-out";
-    heroHeader.children[1].style.opacity = "1";
+    heroHeaderP.style.animation = "reveal-to-right 1s ease-in-out";
+    heroHeaderP.style.opacity = "1";
   }, 250);
   setTimeout(() => {
-    heroHeader.children[2].style.animation = "reveal-to-right 1s ease-in-out";
-    heroHeader.children[2].style.opacity = "1";
+    heroHeaderButton.style.animation = "reveal-to-right 1s ease-in-out";
+    heroHeaderButton.style.opacity = "1";
   }, 500);
 }
