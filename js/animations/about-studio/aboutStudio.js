@@ -24,7 +24,6 @@ export function aboutStudioReveal(breakpoint) {
     aboutStudioSectionHeader.style.opacity = "1";
 
     if (
-      breakpoint === "xs" ||
       breakpoint === "xs-1" ||
       breakpoint === "xs-2" ||
       breakpoint === "xs-3" ||
