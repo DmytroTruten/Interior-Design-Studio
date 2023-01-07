@@ -13,7 +13,12 @@ export function ourServicesReveal(breakpoint) {
     const interiorDesignCardDescription = document.getElementById(
       "interior-design-card-description"
     );
-    if (breakpoint === "xs-1") {
+    if (
+      breakpoint === "xs" ||
+      breakpoint === "sm" ||
+      breakpoint === "md" ||
+      breakpoint === "lg"
+    ) {
       ourServicesSectionHeader.style.animation =
         "reveal-to-right 1s ease-in-out";
       ourServicesSectionHeader.style.opacity = "1";

@@ -2,42 +2,62 @@ import { aboutStudioReveal } from "../animations/about-studio/aboutStudio.js";
 import { ourServicesReveal } from "../animations/our-services/ourServices.js";
 
 export function addScrollListener(breakpoint) {
-  const aboutStudioMoreContainer = document.querySelector(
-    ".about-studio-more-container"
-  );
+  const hero = document.querySelector(".hero");
+  const aboutStudioSection = document.querySelector(".about-studio-section");
   window.addEventListener("scroll", () => {
     let scrollYPosition = scrollY;
     console.log(scrollYPosition);
     switch (breakpoint) {
       case "xs-1":
-        if (scrollYPosition >= 700) {
+        if (scrollYPosition >= hero.offsetHeight / 2) {
           aboutStudioReveal("xs-1");
         }
         if (
-          !aboutStudioMoreContainer.classList.contains("reveal-text-xs-1") &&
-          scrollYPosition >= 1300
+          scrollYPosition >=
+          hero.offsetHeight + aboutStudioSection.offsetHeight / 2
         ) {
-          ourServicesReveal("xs-1");
-        } else if (
-          aboutStudioMoreContainer.classList.contains("reveal-text-xs-1") &&
-          scrollYPosition >= 1500
-        ) {
-          ourServicesReveal("xs-1");
+          ourServicesReveal("xs");
         }
-          break;
+        break;
       case "xs-2":
-        if (scrollYPosition >= 500) {
+        if (scrollYPosition >= hero.offsetHeight / 2) {
           aboutStudioReveal("xs-2");
+        }
+        if (
+          scrollYPosition >=
+          hero.offsetHeight + aboutStudioSection.offsetHeight / 2
+        ) {
+          ourServicesReveal("xs");
         }
         break;
       case "xs-3":
-        if (scrollYPosition >= 500) {
+        if (scrollYPosition >= hero.offsetHeight / 2) {
           aboutStudioReveal("xs-3");
+        }
+        if (
+          scrollYPosition >=
+          hero.offsetHeight + aboutStudioSection.offsetHeight / 2
+        ) {
+          ourServicesReveal("xs");
+        }
+        break;
+
+      case "sm":
+        if (scrollYPosition >= hero.offsetHeight / 2) {
+          ourServicesReveal("sm");
+        }
+        break;
+      case "md":
+        if (scrollYPosition >= hero.offsetHeight / 5) {
+          ourServicesReveal("md");
         }
         break;
       case "lg":
-        if (scrollYPosition >= 100) {
+        if (scrollYPosition >= hero.offsetHeight / 2) {
           aboutStudioReveal("lg");
+        }
+        if (scrollYPosition >= hero.offsetHeight) {
+          ourServicesReveal("lg");
         }
         break;
     }

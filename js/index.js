@@ -21,9 +21,11 @@ if (window.screen.width <= 576) {
 } else if (window.screen.width > 576 && window.screen.width <= 768) {
   animateHeroImg("sm");
   aboutStudioReveal("sm");
+  addScrollListener("sm");
 } else if (window.screen.width > 768 && window.screen.width <= 992) {
   animateHeroImg("md");
   aboutStudioReveal("md");
+  addScrollListener("md");
 }
 
 if (window.screen.width < 992) {

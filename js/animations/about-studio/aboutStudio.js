@@ -33,7 +33,7 @@ export function aboutStudioReveal(breakpoint) {
       setTimeout(() => {
         aboutStudioMainText.style.animation = "reveal-to-right 1s ease-in-out";
         aboutStudioMainText.style.opacity = "1";
-      }, 500);
+      }, 200);
     } else {
       setTimeout(() => {
         aboutStudioMainText.style.animation = "reveal-to-bottom 1s ease-in-out";
@@ -41,13 +41,13 @@ export function aboutStudioReveal(breakpoint) {
 
         aboutStudioMoreTextLg.style.animation = "reveal-to-top 1s ease-in-out";
         aboutStudioMoreTextLg.style.opacity = "1";
-      }, 500);
+      }, 200);
     }
 
     setTimeout(() => {
       aboutStudioMore.style.animation = "reveal-to-left 1s ease-in-out";
       aboutStudioMore.style.opacity = "1";
-    }, 950);
+    }, 400);
 
     wasInvoked = true;
   }
