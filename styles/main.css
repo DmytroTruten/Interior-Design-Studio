@@ -61,6 +61,9 @@
   .about-studio-row p {
     margin: 30px 0px;
   }
+  .about-studio-more {
+    margin-top: 0 !important;
+  }
   .more {
     max-width: -webkit-fit-content !important;
     max-width: -moz-fit-content !important;
@@ -867,8 +870,16 @@ body::-webkit-scrollbar-thumb {
   display: none;
 }
 
-.reveal-text-xs {
-  height: 160px;
+.reveal-text-xs-1 {
+  height: 250px;
+}
+
+.reveal-text-xs-2 {
+  height: 220px;
+}
+
+.reveal-text-xs-3 {
+  height: 180px;
 }
 
 .reveal-text-sm {

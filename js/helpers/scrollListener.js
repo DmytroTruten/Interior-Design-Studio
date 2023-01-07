@@ -5,9 +5,19 @@ export function addScrollListener(breakpoint) {
     let scrollYPosition = scrollY;
     console.log(scrollYPosition);
     switch (breakpoint) {
-      case "xs":
-        if (scrollYPosition >= 400 && scrollYPosition <= 500) {
-          aboutStudioReveal("xs");
+      case "xs-1":
+        if (scrollYPosition >= 700 && scrollYPosition <= 800) {
+          aboutStudioReveal("xs-1");
+        }
+        break;
+      case "xs-2":
+        if (scrollYPosition >= 500 && scrollYPosition <= 600) {
+          aboutStudioReveal("xs-2");
+        }
+        break;
+      case "xs-3":
+        if (scrollYPosition >= 500 && scrollYPosition <= 600) {
+          aboutStudioReveal("xs-3");
         }
         break;
       case "lg":

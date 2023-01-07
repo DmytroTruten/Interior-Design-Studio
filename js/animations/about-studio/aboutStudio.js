@@ -23,7 +23,14 @@ export function aboutStudioReveal(breakpoint) {
     aboutStudioSectionHeader.style.animation = "reveal-to-left 1s ease-in-out";
     aboutStudioSectionHeader.style.opacity = "1";
 
-    if (breakpoint === "xs" || breakpoint === "sm" || breakpoint === "md") {
+    if (
+      breakpoint === "xs" ||
+      breakpoint === "xs-1" ||
+      breakpoint === "xs-2" ||
+      breakpoint === "xs-3" ||
+      breakpoint === "sm" ||
+      breakpoint === "md"
+    ) {
       setTimeout(() => {
         aboutStudioMainText.style.animation = "reveal-to-right 1s ease-in-out";
         aboutStudioMainText.style.opacity = "1";

@@ -9,15 +9,21 @@ import { aboutStudioReveal } from "./animations/about-studio/aboutStudio.js";
 import { addScrollListener } from "./helpers/scrollListener.js";
 import { addScrollIntoSection } from "./helpers/navigation.js";
 
-if (window.screen.width < 576) {
+if (window.screen.width <= 576) {
+  if (window.screen.width >= 270 && window.screen.width <= 320) {
+    addScrollListener("xs-1");
+  } else if (window.screen.width > 320 && window.screen.width <= 400) {
+    addScrollListener("xs-2");
+  } else if (window.screen.width > 400) {
+    addScrollListener("xs-3");
+  }
   animateHeroImg("xs");
-  addScrollListener("xs");
 } else if (window.screen.width > 576 && window.screen.width <= 768) {
   animateHeroImg("sm");
-  aboutStudioReveal('sm');
+  aboutStudioReveal("sm");
 } else if (window.screen.width > 768 && window.screen.width <= 992) {
   animateHeroImg("md");
-  aboutStudioReveal('md');
+  aboutStudioReveal("md");
 }
 
 if (window.screen.width < 992) {
