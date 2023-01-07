@@ -12,8 +12,8 @@ export function aboutStudioReveal(breakpoint) {
     const aboutStudioMoreContainer = document.querySelector(
       ".about-studio-more-container"
     );
-    const aboutStudioMoreTextLg = document.querySelector(
-      ".about-studio-more-text-lg"
+    const aboutStudioMoreTextLg = document.getElementById(
+      "about-studio-more-text-lg"
     );
 
     aboutStudioMore.addEventListener("click", () => {

@@ -46,7 +46,30 @@ body {
   }
 }
 
+// Opacity
+
+.header-link,
+.contact-phone,
+.dropdown,
+.hero-img,
+#header-logo,
+#hamburger-container,
+#our-services-section-header,
+#interior-design-card-icon,
+#interior-design-card-header,
+#interior-design-card-description,
+#hero-header-h1,
+#hero-header-p,
+#hero-header-button,
+#about-studio-section-header,
+#about-studio-main-text,
+#about-studio-more-text,
+#about-studio-more {
+  opacity: 0;
+}
+
 // Navbar
+
 .navbar {
   background-color: transparent;
   span {
@@ -76,17 +99,16 @@ body {
   width: 35px;
   height: 25px;
   position: relative;
-  opacity: 0;
 }
 
 .navbar-brand {
   img {
     display: block;
-    opacity: 0;
   }
 }
 
 // Sidenav
+
 .sidenav-back-panel {
   width: 100%;
   height: 100%;
@@ -132,13 +154,9 @@ body {
 }
 
 // Main
+
 .hero-header {
   background-color: $main-white;
-  h1,
-  p,
-  button {
-    opacity: 0;
-  }
 }
 
 .get-started-button {
@@ -152,7 +170,6 @@ body {
 
 .about-studio-header {
   h2 {
-    opacity: 0;
     max-width: min-content;
   }
 }
@@ -161,11 +178,6 @@ body {
   height: 0;
   transition: 1s;
   overflow: hidden;
-}
-
-.about-studio-more,
-.about-studio-main-text {
-  opacity: 0;
 }
 
 .about-studio-more-text-xs,

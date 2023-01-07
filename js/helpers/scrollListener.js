@@ -18,8 +18,13 @@ export function addScrollListener(breakpoint) {
           scrollYPosition >= 1300
         ) {
           ourServicesReveal("xs-1");
+        } else if (
+          aboutStudioMoreContainer.classList.contains("reveal-text-xs-1") &&
+          scrollYPosition >= 1500
+        ) {
+          ourServicesReveal("xs-1");
         }
-        break;
+          break;
       case "xs-2":
         if (scrollYPosition >= 500) {
           aboutStudioReveal("xs-2");

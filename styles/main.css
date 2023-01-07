@@ -502,14 +502,12 @@
     display: block;
     text-decoration: none;
     cursor: pointer;
-    opacity: 0;
   }
   .header-right-section {
     display: flex;
   }
   .header-right-section a {
     text-decoration: none;
-    opacity: 0;
   }
   .dropdown {
     margin-left: 40px;
@@ -747,6 +745,26 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
+.header-link,
+.contact-phone,
+.dropdown,
+.hero-img,
+#header-logo,
+#hamburger-container,
+#our-services-section-header,
+#interior-design-card-icon,
+#interior-design-card-header,
+#interior-design-card-description,
+#hero-header-h1,
+#hero-header-p,
+#hero-header-button,
+#about-studio-section-header,
+#about-studio-main-text,
+#about-studio-more-text,
+#about-studio-more {
+  opacity: 0;
+}
+
 .navbar {
   background-color: transparent;
 }
@@ -776,12 +794,10 @@ body::-webkit-scrollbar-thumb {
   width: 35px;
   height: 25px;
   position: relative;
-  opacity: 0;
 }
 
 .navbar-brand img {
   display: block;
-  opacity: 0;
 }
 
 .sidenav-back-panel {
@@ -829,11 +845,6 @@ body::-webkit-scrollbar-thumb {
 .hero-header {
   background-color: #fff;
 }
-.hero-header h1,
-.hero-header p,
-.hero-header button {
-  opacity: 0;
-}
 
 .get-started-button {
   background-color: transparent;
@@ -843,7 +854,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about-studio-header h2 {
-  opacity: 0;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -853,11 +863,6 @@ body::-webkit-scrollbar-thumb {
   height: 0;
   transition: 1s;
   overflow: hidden;
-}
-
-.about-studio-more,
-.about-studio-main-text {
-  opacity: 0;
 }
 
 .about-studio-more-text-xs,
