@@ -761,7 +761,19 @@ body::-webkit-scrollbar-thumb {
 #about-studio-section-header,
 #about-studio-main-text,
 #about-studio-more-text,
-#about-studio-more {
+#about-studio-more,
+#services-splitting-line,
+#decorative-services-card-icon,
+#decorative-services-card-header,
+#decorative-services-card-description,
+#planning-splitting-line,
+#space-planning-card-icon,
+#space-planning-card-header,
+#space-planning-card-description,
+#management-splitting-line,
+#project-management-card-icon,
+#project-management-card-header,
+#project-management-card-description {
   opacity: 0;
 }
 

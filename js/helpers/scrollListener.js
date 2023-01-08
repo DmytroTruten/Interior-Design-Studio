@@ -4,6 +4,7 @@ import { ourServicesReveal } from "../animations/our-services/ourServices.js";
 export function addScrollListener(breakpoint) {
   const hero = document.querySelector(".hero");
   const aboutStudioSection = document.querySelector(".about-studio-section");
+  const ourServicesSection = document.querySelector(".our-services-section");
   window.addEventListener("scroll", () => {
     let scrollYPosition = scrollY;
     console.log(scrollYPosition);
@@ -14,9 +15,24 @@ export function addScrollListener(breakpoint) {
         }
         if (
           scrollYPosition >=
-          hero.offsetHeight + aboutStudioSection.offsetHeight / 2
+          aboutStudioSection.offsetTop + aboutStudioSection.offsetHeight / 2
         ) {
-          ourServicesReveal("xs");
+          ourServicesReveal("xs", "design");
+        }
+        if (scrollYPosition >= ourServicesSection.offsetTop) {
+          ourServicesReveal("xs", "services");
+        }
+        if (
+          scrollYPosition >=
+          ourServicesSection.offsetTop + ourServicesSection.offsetHeight / 4
+        ) {
+          ourServicesReveal("xs", "planning");
+        }
+        if (
+          scrollYPosition >=
+          ourServicesSection.offsetTop + ourServicesSection.offsetHeight / 2
+        ) {
+          ourServicesReveal("xs", "management");
         }
         break;
       case "xs-2":
@@ -25,9 +41,24 @@ export function addScrollListener(breakpoint) {
         }
         if (
           scrollYPosition >=
-          hero.offsetHeight + aboutStudioSection.offsetHeight / 2
+          aboutStudioSection.offsetTop + aboutStudioSection.offsetHeight / 2
         ) {
-          ourServicesReveal("xs");
+          ourServicesReveal("xs", "design");
+        }
+        if (scrollYPosition >= ourServicesSection.offsetTop) {
+          ourServicesReveal("xs", "services");
+        }
+        if (
+          scrollYPosition >=
+          ourServicesSection.offsetTop + ourServicesSection.offsetHeight / 4
+        ) {
+          ourServicesReveal("xs", "planning");
+        }
+        if (
+          scrollYPosition >=
+          ourServicesSection.offsetTop + ourServicesSection.offsetHeight / 2
+        ) {
+          ourServicesReveal("xs", "management");
         }
         break;
       case "xs-3":
@@ -36,20 +67,35 @@ export function addScrollListener(breakpoint) {
         }
         if (
           scrollYPosition >=
-          hero.offsetHeight + aboutStudioSection.offsetHeight / 2
+          aboutStudioSection.offsetTop + aboutStudioSection.offsetHeight / 2
         ) {
-          ourServicesReveal("xs");
+          ourServicesReveal("xs", "design");
+        }
+        if (scrollYPosition >= ourServicesSection.offsetTop) {
+          ourServicesReveal("xs", "services");
+        }
+        if (
+          scrollYPosition >=
+          ourServicesSection.offsetTop + ourServicesSection.offsetHeight / 4
+        ) {
+          ourServicesReveal("xs", "planning");
+        }
+        if (
+          scrollYPosition >=
+          ourServicesSection.offsetTop + ourServicesSection.offsetHeight / 2
+        ) {
+          ourServicesReveal("xs", "management");
         }
         break;
 
       case "sm":
         if (scrollYPosition >= hero.offsetHeight / 2) {
-          ourServicesReveal("sm");
+          ourServicesReveal("sm", "services");
         }
         break;
       case "md":
         if (scrollYPosition >= hero.offsetHeight / 5) {
-          ourServicesReveal("md");
+          ourServicesReveal("md", "design");
         }
         break;
       case "lg":
@@ -57,7 +103,7 @@ export function addScrollListener(breakpoint) {
           aboutStudioReveal("lg");
         }
         if (scrollYPosition >= hero.offsetHeight) {
-          ourServicesReveal("lg");
+          ourServicesReveal("lg", "design");
         }
         break;
     }
