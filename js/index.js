@@ -26,16 +26,20 @@ if (window.screen.width <= 576) {
   animateHeroImg("md");
   aboutStudioReveal("md");
   addScrollListener("md");
+} else if(window.screen.width > 992 && window.screen.width <= 1200) {
+  animateHeroImg("lg");
+  animateNavbarDesktop();
+  addScrollListener("lg");
+} else {
+  animateHeroImg("xl");
+  animateNavbarDesktop();
+  addScrollListener("xl");
 }
 
 if (window.screen.width < 992) {
   animateNavbarMobile();
   toggleSideNav();
-} else {
-  animateHeroImg("lg");
-  animateNavbarDesktop();
-  addScrollListener("lg");
-}
+} 
 
 heroHeaderReveal();
 glowOfMainButtons();

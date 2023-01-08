@@ -90,12 +90,12 @@ export function addScrollListener(breakpoint) {
 
       case "sm":
         if (scrollYPosition >= hero.offsetHeight / 2) {
-          ourServicesReveal("sm", "services");
+          ourServicesReveal("sm");
         }
         break;
       case "md":
         if (scrollYPosition >= hero.offsetHeight / 5) {
-          ourServicesReveal("md", "design");
+          ourServicesReveal("md");
         }
         break;
       case "lg":
@@ -103,7 +103,15 @@ export function addScrollListener(breakpoint) {
           aboutStudioReveal("lg");
         }
         if (scrollYPosition >= hero.offsetHeight) {
-          ourServicesReveal("lg", "design");
+          ourServicesReveal("lg");
+        }
+        break;
+      case "xl":
+        if (scrollYPosition >= hero.offsetHeight / 2) {
+          aboutStudioReveal("xl");
+        }
+        if (scrollYPosition >= hero.offsetHeight) {
+          ourServicesReveal("xl");
         }
         break;
     }

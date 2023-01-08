@@ -15,6 +15,17 @@ export function ourServicesReveal(breakpoint, card) {
   } else if (!ourServicesCardsInvoking.management && card === "management") {
     projectManagementReveal(breakpoint);
   }
+  if (
+    breakpoint === "sm" ||
+    breakpoint === "md" ||
+    breakpoint === "lg" ||
+    breakpoint === "xl"
+  ) {
+    interiorDesignReveal(breakpoint);
+    decorativeServicesReveal(breakpoint);
+    spacePlanningReveal(breakpoint);
+    projectManagementReveal(breakpoint);
+  }
 }
 
 function interiorDesignReveal(breakpoint) {
@@ -30,7 +41,7 @@ function interiorDesignReveal(breakpoint) {
   const interiorDesignCardDescription = document.getElementById(
     "interior-design-card-description"
   );
-  if (breakpoint === "xs" || breakpoint === "sm") {
+  if (breakpoint === "xs") {
     ourServicesSectionHeader.style.animation = "reveal-to-right 1s ease-in-out";
     ourServicesSectionHeader.style.opacity = "1";
 
@@ -50,6 +61,48 @@ function interiorDesignReveal(breakpoint) {
         "reveal-to-right 1s ease-in-out";
       interiorDesignCardDescription.style.opacity = "1";
     }, 600);
+  } else if (
+    breakpoint === "sm" ||
+    breakpoint === "md" ||
+    breakpoint === "lg"
+  ) {
+    ourServicesSectionHeader.style.animation = "reveal-to-top 1s ease-in-out";
+    ourServicesSectionHeader.style.opacity = "1";
+
+    setTimeout(() => {
+      interiorDesignCardIcon.style.animation = "reveal-to-top 1s ease-in-out";
+      interiorDesignCardIcon.style.opacity = "1";
+    }, 200);
+
+    setTimeout(() => {
+      interiorDesignCardHeader.style.animation = "reveal-to-top 1s ease-in-out";
+      interiorDesignCardHeader.style.opacity = "1";
+    }, 400);
+
+    setTimeout(() => {
+      interiorDesignCardDescription.style.animation =
+        "reveal-to-top 1s ease-in-out";
+      interiorDesignCardDescription.style.opacity = "1";
+    }, 600);
+  } else {
+    ourServicesSectionHeader.style.animation = "reveal-to-top 1s ease-in-out";
+    ourServicesSectionHeader.style.opacity = "1";
+
+    setTimeout(() => {
+      interiorDesignCardIcon.style.animation = "reveal-to-bottom 1s ease-in-out";
+      interiorDesignCardIcon.style.opacity = "1";
+    }, 300);
+
+    setTimeout(() => {
+      interiorDesignCardHeader.style.animation = "reveal-to-bottom 1s ease-in-out";
+      interiorDesignCardHeader.style.opacity = "1";
+    }, 200);
+
+    setTimeout(() => {
+      interiorDesignCardDescription.style.animation =
+        "reveal-to-bottom 1s ease-in-out";
+      interiorDesignCardDescription.style.opacity = "1";
+    }, 100);
   }
   ourServicesCardsInvoking.design = true;
 }
@@ -86,6 +139,46 @@ function decorativeServicesReveal(breakpoint) {
     setTimeout(() => {
       decorativeServicesCardDescription.style.animation =
         "reveal-to-right 1s ease-in-out";
+      decorativeServicesCardDescription.style.opacity = "1";
+    }, 600);
+  } else if (
+    breakpoint === "sm" ||
+    breakpoint === "md" ||
+    breakpoint === "lg"
+  ) {
+    setTimeout(() => {
+      decorativeServicesCardIcon.style.animation =
+        "reveal-to-top 1s ease-in-out";
+      decorativeServicesCardIcon.style.opacity = "1";
+    }, 200);
+
+    setTimeout(() => {
+      decorativeServicesCardHeader.style.animation =
+        "reveal-to-top 1s ease-in-out";
+      decorativeServicesCardHeader.style.opacity = "1";
+    }, 400);
+
+    setTimeout(() => {
+      decorativeServicesCardDescription.style.animation =
+        "reveal-to-top 1s ease-in-out";
+      decorativeServicesCardDescription.style.opacity = "1";
+    }, 600);
+  } else {
+    setTimeout(() => {
+      decorativeServicesCardIcon.style.animation =
+        "reveal-to-top 1s ease-in-out";
+      decorativeServicesCardIcon.style.opacity = "1";
+    }, 400);
+
+    setTimeout(() => {
+      decorativeServicesCardHeader.style.animation =
+        "reveal-to-top 1s ease-in-out";
+      decorativeServicesCardHeader.style.opacity = "1";
+    }, 500);
+
+    setTimeout(() => {
+      decorativeServicesCardDescription.style.animation =
+        "reveal-to-top 1s ease-in-out";
       decorativeServicesCardDescription.style.opacity = "1";
     }, 600);
   }
@@ -125,6 +218,42 @@ function spacePlanningReveal(breakpoint) {
         "reveal-to-right 1s ease-in-out";
       spacePlanningCardDescription.style.opacity = "1";
     }, 600);
+  } else if (
+    breakpoint === "sm" ||
+    breakpoint === "md" ||
+    breakpoint === "lg"
+  ) {
+    setTimeout(() => {
+      spacePlanningCardIcon.style.animation = "reveal-to-top 1s ease-in-out";
+      spacePlanningCardIcon.style.opacity = "1";
+    }, 800);
+
+    setTimeout(() => {
+      spacePlanningCardHeader.style.animation = "reveal-to-top 1s ease-in-out";
+      spacePlanningCardHeader.style.opacity = "1";
+    }, 1000);
+
+    setTimeout(() => {
+      spacePlanningCardDescription.style.animation =
+        "reveal-to-top 1s ease-in-out";
+      spacePlanningCardDescription.style.opacity = "1";
+    }, 1200);
+  } else {
+    setTimeout(() => {
+      spacePlanningCardIcon.style.animation = "reveal-to-bottom 1s ease-in-out";
+      spacePlanningCardIcon.style.opacity = "1";
+    }, 900);
+
+    setTimeout(() => {
+      spacePlanningCardHeader.style.animation = "reveal-to-bottom 1s ease-in-out";
+      spacePlanningCardHeader.style.opacity = "1";
+    }, 800);
+
+    setTimeout(() => {
+      spacePlanningCardDescription.style.animation =
+        "reveal-to-bottom 1s ease-in-out";
+      spacePlanningCardDescription.style.opacity = "1";
+    }, 700);
   }
   ourServicesCardsInvoking.services = true;
 }
@@ -155,7 +284,7 @@ function projectManagementReveal(breakpoint) {
     setTimeout(() => {
       projectManagementCardHeader.style.animation =
         "reveal-to-right 1s ease-in-out";
-        projectManagementCardHeader.style.opacity = "1";
+      projectManagementCardHeader.style.opacity = "1";
     }, 400);
 
     setTimeout(() => {
@@ -163,6 +292,46 @@ function projectManagementReveal(breakpoint) {
         "reveal-to-right 1s ease-in-out";
       projectManagementCardDescription.style.opacity = "1";
     }, 600);
+  } else if (
+    breakpoint === "sm" ||
+    breakpoint === "md" ||
+    breakpoint === "lg"
+  ) {
+    setTimeout(() => {
+      projectManagementCardIcon.style.animation =
+        "reveal-to-top 1s ease-in-out";
+      projectManagementCardIcon.style.opacity = "1";
+    }, 800);
+
+    setTimeout(() => {
+      projectManagementCardHeader.style.animation =
+        "reveal-to-top 1s ease-in-out";
+      projectManagementCardHeader.style.opacity = "1";
+    }, 1000);
+
+    setTimeout(() => {
+      projectManagementCardDescription.style.animation =
+        "reveal-to-top 1s ease-in-out";
+      projectManagementCardDescription.style.opacity = "1";
+    }, 1200);
+  } else {
+    setTimeout(() => {
+      projectManagementCardIcon.style.animation =
+        "reveal-to-top 1s ease-in-out";
+      projectManagementCardIcon.style.opacity = "1";
+    }, 1000);
+
+    setTimeout(() => {
+      projectManagementCardHeader.style.animation =
+        "reveal-to-top 1s ease-in-out";
+      projectManagementCardHeader.style.opacity = "1";
+    }, 1100);
+
+    setTimeout(() => {
+      projectManagementCardDescription.style.animation =
+        "reveal-to-top 1s ease-in-out";
+      projectManagementCardDescription.style.opacity = "1";
+    }, 1200);
   }
   ourServicesCardsInvoking.services = true;
 }
