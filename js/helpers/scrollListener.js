@@ -1,5 +1,6 @@
 import { aboutStudioReveal } from "../animations/about-studio/aboutStudio.js";
 import { ourServicesReveal } from "../animations/our-services/ourServices.js";
+import { ourPortfolioReveal } from "../animations/our-portfolio/ourPortfolio.js";
 
 export function addScrollListener(breakpoint) {
   const hero = document.querySelector(".hero");
@@ -34,7 +35,15 @@ export function addScrollListener(breakpoint) {
         ) {
           ourServicesReveal("xs", "management");
         }
-        break;
+        if (
+          scrollYPosition >=
+          ourServicesSection.offsetTop +
+            (ourServicesSection.offsetHeight -
+              ourServicesSection.offsetHeight / 4)
+        ) {
+          ourPortfolioReveal("xs")
+        }
+          break;
       case "xs-2":
         if (scrollYPosition >= hero.offsetHeight / 2) {
           aboutStudioReveal("xs-2");

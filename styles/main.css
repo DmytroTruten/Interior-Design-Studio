@@ -118,12 +118,12 @@
     max-width: 550px;
     flex-wrap: wrap;
   }
-  .tabs a {
+  .tabs p {
     font-size: 13px;
     font-weight: 600;
     text-decoration: none;
   }
-  .tabs a:nth-child(1) {
+  .tabs p:nth-child(1) {
     color: #d3a265 !important;
     font-weight: 700;
   }
@@ -773,7 +773,13 @@ body::-webkit-scrollbar-thumb {
 #management-splitting-line,
 #project-management-card-icon,
 #project-management-card-header,
-#project-management-card-description {
+#project-management-card-description,
+#our-portfolio-section-header,
+#our-portfolio-all,
+#our-portfolio-commercial,
+#our-portfolio-residental,
+#our-portfolio-office,
+#our-portfolio-other {
   opacity: 0;
 }
 
