@@ -26,7 +26,7 @@ export function ourPortfolioReveal(breakpoint) {
         "reveal-to-right 1s ease-in-out";
       ourPortfolioSectionHeader.style.opacity = "1";
       let filterTime = 200;
-      let galleryImagesTime = 200;
+      let galleryImagesTime = 1200;
       for (let filter of filters) {
         setTimeout(() => {
           filter.style.animation = "reveal-to-top 1s ease-in-out";

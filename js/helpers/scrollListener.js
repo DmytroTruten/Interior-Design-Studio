@@ -5,6 +5,9 @@ import { ourPortfolioReveal } from "../animations/our-portfolio/ourPortfolio.js"
 export function addScrollListener(breakpoint) {
   const hero = document.querySelector(".hero");
   const aboutStudioSection = document.querySelector(".about-studio-section");
+  const aboutStudioMoreContainer = document.querySelector(
+    ".about-studio-more-container"
+  );
   const ourServicesSection = document.querySelector(".our-services-section");
   window.addEventListener("scroll", () => {
     let scrollYPosition = scrollY;
@@ -15,8 +18,19 @@ export function addScrollListener(breakpoint) {
           aboutStudioReveal("xs-1");
         }
         if (
+          scrollYPosition >= aboutStudioSection.offsetTop &&
+          !aboutStudioMoreContainer.classList.contains(
+            `reveal-text-${breakpoint}`
+          )
+        ) {
+          ourServicesReveal("xs", "design");
+        } else if (
           scrollYPosition >=
-          aboutStudioSection.offsetTop + aboutStudioSection.offsetHeight / 2
+            aboutStudioSection.offsetTop +
+              aboutStudioSection.offsetHeight / 3 &&
+          aboutStudioMoreContainer.classList.contains(
+            `reveal-text-${breakpoint}`
+          )
         ) {
           ourServicesReveal("xs", "design");
         }
@@ -41,16 +55,27 @@ export function addScrollListener(breakpoint) {
             (ourServicesSection.offsetHeight -
               ourServicesSection.offsetHeight / 4)
         ) {
-          ourPortfolioReveal("xs")
+          ourPortfolioReveal("xs");
         }
-          break;
+        break;
       case "xs-2":
         if (scrollYPosition >= hero.offsetHeight / 2) {
           aboutStudioReveal("xs-2");
         }
         if (
+          scrollYPosition >= aboutStudioSection.offsetTop &&
+          !aboutStudioMoreContainer.classList.contains(
+            `reveal-text-${breakpoint}`
+          )
+        ) {
+          ourServicesReveal("xs", "design");
+        } else if (
           scrollYPosition >=
-          aboutStudioSection.offsetTop + aboutStudioSection.offsetHeight / 2
+            aboutStudioSection.offsetTop +
+              aboutStudioSection.offsetHeight / 3 &&
+          aboutStudioMoreContainer.classList.contains(
+            `reveal-text-${breakpoint}`
+          )
         ) {
           ourServicesReveal("xs", "design");
         }
@@ -75,7 +100,7 @@ export function addScrollListener(breakpoint) {
             (ourServicesSection.offsetHeight -
               ourServicesSection.offsetHeight / 4)
         ) {
-          ourPortfolioReveal("xs")
+          ourPortfolioReveal("xs");
         }
         break;
       case "xs-3":
@@ -83,8 +108,19 @@ export function addScrollListener(breakpoint) {
           aboutStudioReveal("xs-3");
         }
         if (
+          scrollYPosition >= aboutStudioSection.offsetTop &&
+          !aboutStudioMoreContainer.classList.contains(
+            `reveal-text-${breakpoint}`
+          )
+        ) {
+          ourServicesReveal("xs", "design");
+        } else if (
           scrollYPosition >=
-          aboutStudioSection.offsetTop + aboutStudioSection.offsetHeight / 2
+            aboutStudioSection.offsetTop +
+              aboutStudioSection.offsetHeight / 4 &&
+          aboutStudioMoreContainer.classList.contains(
+            `reveal-text-${breakpoint}`
+          )
         ) {
           ourServicesReveal("xs", "design");
         }
@@ -109,7 +145,7 @@ export function addScrollListener(breakpoint) {
             (ourServicesSection.offsetHeight -
               ourServicesSection.offsetHeight / 4)
         ) {
-          ourPortfolioReveal("xs")
+          ourPortfolioReveal("xs");
         }
         break;
 
