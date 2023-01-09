@@ -69,6 +69,14 @@ export function addScrollListener(breakpoint) {
         ) {
           ourServicesReveal("xs", "management");
         }
+        if (
+          scrollYPosition >=
+          ourServicesSection.offsetTop +
+            (ourServicesSection.offsetHeight -
+              ourServicesSection.offsetHeight / 4)
+        ) {
+          ourPortfolioReveal("xs")
+        }
         break;
       case "xs-3":
         if (scrollYPosition >= hero.offsetHeight / 2) {
@@ -94,6 +102,14 @@ export function addScrollListener(breakpoint) {
           ourServicesSection.offsetTop + ourServicesSection.offsetHeight / 2
         ) {
           ourServicesReveal("xs", "management");
+        }
+        if (
+          scrollYPosition >=
+          ourServicesSection.offsetTop +
+            (ourServicesSection.offsetHeight -
+              ourServicesSection.offsetHeight / 4)
+        ) {
+          ourPortfolioReveal("xs")
         }
         break;
 

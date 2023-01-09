@@ -139,6 +139,7 @@
   }
   .gallery .card {
     border: none;
+    background-color: transparent;
   }
   .gallery > div:nth-child(n+4) {
     display: none;
