@@ -184,13 +184,25 @@ export function addScrollListener(breakpoint) {
         if (scrollYPosition >= hero.offsetHeight) {
           ourServicesReveal("lg");
         }
-        break;
+        if (
+          scrollYPosition >=
+          ourServicesSection.offsetTop + ourServicesSection.offsetHeight / 2
+        ) {
+          ourPortfolioReveal('lg')
+        }
+          break;
       case "xl":
         if (scrollYPosition >= hero.offsetHeight / 2) {
           aboutStudioReveal("xl");
         }
         if (scrollYPosition >= hero.offsetHeight) {
           ourServicesReveal("xl");
+        }
+        if (
+          scrollYPosition >=
+          ourServicesSection.offsetTop + ourServicesSection.offsetHeight / 2
+        ) {
+          ourPortfolioReveal('xl')
         }
         break;
     }
