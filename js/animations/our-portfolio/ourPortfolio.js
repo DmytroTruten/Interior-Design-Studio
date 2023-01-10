@@ -4,6 +4,7 @@ export function ourPortfolioReveal(breakpoint) {
     const ourPortfolioSectionHeader = document.getElementById(
       "our-portfolio-section-header"
     );
+    const tabsContainerMore = document.getElementById("tabs-container-more");
     const filters = [
       document.getElementById("our-portfolio-all"),
       document.getElementById("our-portfolio-commercial"),
@@ -21,7 +22,6 @@ export function ourPortfolioReveal(breakpoint) {
       document.getElementById("gallery-img-7"),
       document.getElementById("gallery-img-8"),
     ];
-    const tabsContainerMore = document.getElementById("tabs-container-more");
     if (breakpoint === "xs") {
       ourPortfolioSectionHeader.style.animation =
         "reveal-to-right 1s ease-in-out";
@@ -55,13 +55,13 @@ export function ourPortfolioReveal(breakpoint) {
         "reveal-to-top 1s ease-in-out";
       ourPortfolioSectionHeader.style.opacity = "1";
       let filterTime = 0;
-      let galleryImagesTime = 800;
+      let galleryImagesTime = 400;
       for (let filter of filters) {
         setTimeout(() => {
           filter.style.animation = "reveal-to-top 1s ease-in-out";
           filter.style.opacity = "1";
         }, filterTime);
-        filterTime += 200;
+        filterTime += 100;
       }
       setTimeout(() => {
         tabsContainerMore.style.animation = "reveal-to-top 1s ease-in-out";
@@ -72,7 +72,7 @@ export function ourPortfolioReveal(breakpoint) {
           image.style.animation = "reveal-to-top 1s ease-in-out";
           image.style.opacity = "1";
         }, galleryImagesTime);
-        galleryImagesTime += 200;
+        galleryImagesTime += 100;
       }
     }
     wasInvoked = true;

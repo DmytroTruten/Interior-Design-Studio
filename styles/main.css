@@ -73,6 +73,7 @@
     -webkit-text-decoration: underline #d3a265;
             text-decoration: underline #d3a265;
     text-underline-offset: 5px;
+    cursor: pointer;
   }
   .services-card-container {
     position: relative;
@@ -107,6 +108,9 @@
   }
   .our-portfolio-section .section-header {
     margin-bottom: 65px;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
   }
   .tabs-container {
     padding: 0px 30px 50px !important;
@@ -121,7 +125,7 @@
   .tabs p {
     font-size: 13px;
     font-weight: 600;
-    text-decoration: none;
+    cursor: pointer;
   }
   .tabs p:nth-child(1) {
     color: #d3a265 !important;
@@ -775,6 +779,7 @@ body::-webkit-scrollbar-thumb {
 #project-management-card-icon,
 #project-management-card-header,
 #project-management-card-description,
+#consultation-button,
 #our-portfolio-section-header,
 #our-portfolio-all,
 #our-portfolio-commercial,
