@@ -39,21 +39,23 @@ export function addScrollListener(breakpoint) {
         }
         if (
           scrollYPosition >=
-          ourServicesSection.offsetTop + ourServicesSection.offsetHeight / 4
+          ourServicesSection.offsetTop + ourServicesSection.offsetHeight / 8
         ) {
           ourServicesReveal("xs", "planning");
         }
         if (
           scrollYPosition >=
-          ourServicesSection.offsetTop + ourServicesSection.offsetHeight / 2
+          ourServicesSection.offsetTop +
+            ourServicesSection.offsetHeight / 2 -
+            ourServicesSection.offsetHeight / 8
         ) {
           ourServicesReveal("xs", "management");
         }
         if (
           scrollYPosition >=
           ourServicesSection.offsetTop +
-            (ourServicesSection.offsetHeight -
-              ourServicesSection.offsetHeight / 4)
+            (ourServicesSection.offsetHeight / 2 +
+              ourServicesSection.offsetHeight / 6)
         ) {
           ourPortfolioReveal("xs");
         }
@@ -84,21 +86,23 @@ export function addScrollListener(breakpoint) {
         }
         if (
           scrollYPosition >=
-          ourServicesSection.offsetTop + ourServicesSection.offsetHeight / 4
+          ourServicesSection.offsetTop + ourServicesSection.offsetHeight / 8
         ) {
           ourServicesReveal("xs", "planning");
         }
         if (
           scrollYPosition >=
-          ourServicesSection.offsetTop + ourServicesSection.offsetHeight / 2
+          ourServicesSection.offsetTop +
+            ourServicesSection.offsetHeight / 2 -
+            ourServicesSection.offsetHeight / 8
         ) {
           ourServicesReveal("xs", "management");
         }
         if (
           scrollYPosition >=
           ourServicesSection.offsetTop +
-            (ourServicesSection.offsetHeight -
-              ourServicesSection.offsetHeight / 4)
+            (ourServicesSection.offsetHeight / 2 +
+              ourServicesSection.offsetHeight / 6)
         ) {
           ourPortfolioReveal("xs");
         }
@@ -129,21 +133,23 @@ export function addScrollListener(breakpoint) {
         }
         if (
           scrollYPosition >=
-          ourServicesSection.offsetTop + ourServicesSection.offsetHeight / 4
+          ourServicesSection.offsetTop + ourServicesSection.offsetHeight / 8
         ) {
           ourServicesReveal("xs", "planning");
         }
         if (
           scrollYPosition >=
-          ourServicesSection.offsetTop + ourServicesSection.offsetHeight / 2
+          ourServicesSection.offsetTop +
+            ourServicesSection.offsetHeight / 2 -
+            ourServicesSection.offsetHeight / 8
         ) {
           ourServicesReveal("xs", "management");
         }
         if (
           scrollYPosition >=
           ourServicesSection.offsetTop +
-            (ourServicesSection.offsetHeight -
-              ourServicesSection.offsetHeight / 4)
+            (ourServicesSection.offsetHeight / 2 +
+              ourServicesSection.offsetHeight / 6)
         ) {
           ourPortfolioReveal("xs");
         }
