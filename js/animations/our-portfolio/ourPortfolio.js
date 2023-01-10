@@ -45,7 +45,7 @@ export function ourPortfolioReveal(breakpoint) {
         }, galleryImagesTime);
         galleryImagesTime += 200;
       }
-    } else if (breakpoint === "sm") {
+    } else if (breakpoint === "sm" || breakpoint === 'md') {
       ourPortfolioSectionHeader.style.animation =
         "reveal-to-right 1s ease-in-out";
       ourPortfolioSectionHeader.style.opacity = "1";
