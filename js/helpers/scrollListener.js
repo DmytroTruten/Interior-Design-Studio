@@ -159,6 +159,9 @@ export function addScrollListener(breakpoint) {
         if (scrollYPosition >= hero.offsetHeight / 2) {
           ourServicesReveal("sm");
         }
+        if(scrollYPosition >= ourServicesSection.offsetHeight) {
+          ourPortfolioReveal('sm')
+        }
         break;
       case "md":
         if (scrollYPosition >= hero.offsetHeight / 5) {
