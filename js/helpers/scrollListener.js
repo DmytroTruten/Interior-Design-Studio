@@ -2,6 +2,7 @@ import { aboutStudioReveal } from "../animations/about-studio/aboutStudio.js";
 import { ourServicesReveal } from "../animations/our-services/ourServices.js";
 import { ourPortfolioReveal } from "../animations/our-portfolio/ourPortfolio.js";
 import { ourPricingReveal } from "../animations/our-pricing/ourPricing.js";
+import { pricingCardsHover } from "../animations/our-pricing/pricingCardsHover.js";
 
 export function addScrollListener(breakpoint) {
   const hero = document.querySelector(".hero");
@@ -247,6 +248,7 @@ export function addScrollListener(breakpoint) {
           ourPortfolioSection.offsetTop + ourPortfolioSection.offsetHeight / 2
         ) {
           ourPricingReveal('xl')
+          pricingCardsHover()
         }
         break;
     }

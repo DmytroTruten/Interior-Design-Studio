@@ -276,6 +276,7 @@ body {
   .card {
     background-color: $pricing-card-color;
     border-radius: 10px;
+    transition: transform .5s ease-in-out;
     .card-body {
       padding: 0 !important;
     }
@@ -298,6 +299,9 @@ body {
     }
     p {
       margin: 0;
+    }
+    &:hover {
+      transform: rotateX(0deg) rotateY(0deg);
     }
   }
 

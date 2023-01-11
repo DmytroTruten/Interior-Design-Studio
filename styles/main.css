@@ -961,6 +961,7 @@ body::-webkit-scrollbar-thumb {
 .our-pricing-section .card {
   background-color: #fdfbf8;
   border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
 }
 .our-pricing-section .card .card-body {
   padding: 0 !important;
@@ -983,6 +984,9 @@ body::-webkit-scrollbar-thumb {
 }
 .our-pricing-section .card p {
   margin: 0;
+}
+.our-pricing-section .card:hover {
+  transform: rotateX(0deg) rotateY(0deg);
 }
 .our-pricing-section .active {
   background-color: #d3a265 !important;
