@@ -10,14 +10,66 @@ export function pricingCardsHover() {
       const x = event.pageX - event.currentTarget.offsetLeft;
       const y = event.pageY - event.currentTarget.offsetTop;
       if (
-        x <= pricingCards[0].offsetWidth / 2 &&
-        y <= pricingCards[0].offsetHeight / 2
+        x < pricingCards[0].offsetWidth / 3 &&
+        y < pricingCards[0].offsetHeight / 3
       ) {
         pricingCards[0].style.transform =
-          "perspective(1500px) rotateX(15deg) rotateY(-15deg)";
+          "perspective(1500px) rotateX(10deg) rotateY(-10deg)";
+      } else if (
+        x > pricingCards[0].offsetWidth / 3 &&
+        x < (pricingCards[0].offsetWidth / 3) * 2 &&
+        y < pricingCards[0].offsetHeight / 3
+      ) {
+        pricingCards[0].style.transform = "perspective(1500px) rotateX(10deg)";
+      } else if (
+        x > (pricingCards[0].offsetWidth / 3) * 2 &&
+        y < pricingCards[0].offsetHeight / 3
+      ) {
+        pricingCards[0].style.transform =
+          "perspective(1500px) rotateX(10deg) rotateY(10deg)";
+      } else if (
+        x < pricingCards[0].offsetWidth / 3 &&
+        y > pricingCards[0].offsetHeight / 3 &&
+        y < (pricingCards[0].offsetHeight / 3) * 2
+      ) {
+        pricingCards[0].style.transform = "perspective(1500px) rotateY(-10deg)";
+      } else if (
+        x > pricingCards[0].offsetWidth / 3 &&
+        x < (pricingCards[0].offsetWidth / 3) * 2 &&
+        y > pricingCards[0].offsetHeight / 3 &&
+        y < (pricingCards[0].offsetHeight / 3) * 2
+      ) {
+        pricingCards[0].style.transform = "rotateX(0deg) rotateY(0deg)";
+      } else if (
+        x > (pricingCards[0].offsetWidth / 3) * 2 &&
+        y > pricingCards[0].offsetHeight / 3 &&
+        y < (pricingCards[0].offsetHeight / 3) * 2
+      ) {
+        pricingCards[0].style.transform = "perspective(1500px) rotateY(10deg)";
+      } else if (
+        x < pricingCards[0].offsetWidth / 3 &&
+        y > (pricingCards[0].offsetHeight / 3) * 2
+      ) {
+        pricingCards[0].style.transform =
+          "perspective(1500px) rotateX(-10deg) rotateY(-10deg)";
+      } else if (
+        x > pricingCards[0].offsetWidth / 3 &&
+        x < (pricingCards[0].offsetWidth / 3) * 2 &&
+        y > (pricingCards[0].offsetHeight / 3) * 2
+      ) {
+        pricingCards[0].style.transform =
+          "perspective(1500px) rotateX(-10deg)";
+      } else if (
+        x > (pricingCards[0].offsetWidth / 3) * 2 &&
+        y > (pricingCards[0].offsetHeight / 3) * 2
+      ) {
+        pricingCards[0].style.transform =
+          "perspective(1500px) rotateX(-10deg) rotateY(10deg)";
       }
-      console.log(x, y);
     });
+    pricingCards[0].addEventListener('mouseleave', () => {
+      pricingCards[0].style.transform = 'rotateX(0deg) rotateY(0deg)'
+    })
     wasInvoked = true;
   }
 }

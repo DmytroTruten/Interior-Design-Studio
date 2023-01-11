@@ -277,6 +277,7 @@ body {
     background-color: $pricing-card-color;
     border-radius: 10px;
     transition: transform .5s ease-in-out;
+    cursor: pointer;
     .card-body {
       padding: 0 !important;
     }
