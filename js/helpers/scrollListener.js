@@ -3,6 +3,7 @@ import { ourServicesReveal } from "../animations/our-services/ourServices.js";
 import { ourPortfolioReveal } from "../animations/our-portfolio/ourPortfolio.js";
 import { ourPricingReveal } from "../animations/our-pricing/ourPricing.js";
 import { pricingCardsHover } from "../animations/our-pricing/pricingCardsHover.js";
+import { testimonialsSectionHeaderReveal } from "../animations/what-people-say/whatPeopleSay.js";
 
 export function addScrollListener(breakpoint) {
   const hero = document.querySelector(".hero");
@@ -12,6 +13,7 @@ export function addScrollListener(breakpoint) {
   );
   const ourServicesSection = document.querySelector(".our-services-section");
   const ourPortfolioSection = document.querySelector(".our-portfolio-section");
+  const ourPricingSection = document.querySelector(".our-pricing-section");
   window.addEventListener("scroll", () => {
     let scrollYPosition = scrollY;
     console.log(scrollYPosition);
@@ -68,6 +70,12 @@ export function addScrollListener(breakpoint) {
         ) {
           ourPricingReveal("xs");
         }
+        if (
+          scrollYPosition >=
+          ourPricingSection.offsetTop + ourPricingSection.offsetHeight / 2
+        ) {
+          testimonialsSectionHeaderReveal();
+        }
         break;
       case "xs-2":
         if (scrollYPosition >= hero.offsetHeight / 2) {
@@ -121,6 +129,12 @@ export function addScrollListener(breakpoint) {
         ) {
           ourPricingReveal("xs");
         }
+        if (
+          scrollYPosition >=
+          ourPricingSection.offsetTop + ourPricingSection.offsetHeight / 2
+        ) {
+          testimonialsSectionHeaderReveal();
+        }
         break;
       case "xs-3":
         if (scrollYPosition >= hero.offsetHeight / 2) {
@@ -172,10 +186,15 @@ export function addScrollListener(breakpoint) {
           scrollYPosition >=
           ourPortfolioSection.offsetTop + ourPortfolioSection.offsetHeight / 2
         ) {
-          ourPricingReveal('xs')
+          ourPricingReveal("xs");
+        }
+        if (
+          scrollYPosition >=
+          ourPricingSection.offsetTop + ourPricingSection.offsetHeight / 2
+        ) {
+          testimonialsSectionHeaderReveal();
         }
         break;
-
       case "sm":
         if (scrollYPosition >= hero.offsetHeight / 2) {
           ourServicesReveal("sm");
@@ -190,7 +209,10 @@ export function addScrollListener(breakpoint) {
           scrollYPosition >=
           ourPortfolioSection.offsetTop + ourPortfolioSection.offsetHeight / 2
         ) {
-          ourPricingReveal('sm')
+          ourPricingReveal("sm");
+        }
+        if (scrollYPosition >= ourPricingSection.offsetTop) {
+          testimonialsSectionHeaderReveal();
         }
         break;
       case "md":
@@ -207,7 +229,10 @@ export function addScrollListener(breakpoint) {
           scrollYPosition >=
           ourPortfolioSection.offsetTop + ourPortfolioSection.offsetHeight / 2
         ) {
-          ourPricingReveal('md')
+          ourPricingReveal("md");
+        }
+        if (scrollYPosition >= ourPricingSection.offsetTop) {
+          testimonialsSectionHeaderReveal();
         }
         break;
       case "lg":
@@ -227,7 +252,10 @@ export function addScrollListener(breakpoint) {
           scrollYPosition >=
           ourPortfolioSection.offsetTop + ourPortfolioSection.offsetHeight / 2
         ) {
-          ourPricingReveal('lg')
+          ourPricingReveal("lg");
+        }
+        if (scrollYPosition >= ourPricingSection.offsetTop) {
+          testimonialsSectionHeaderReveal();
         }
         break;
       case "xl":
@@ -247,8 +275,11 @@ export function addScrollListener(breakpoint) {
           scrollYPosition >=
           ourPortfolioSection.offsetTop + ourPortfolioSection.offsetHeight / 2
         ) {
-          ourPricingReveal('xl')
-          pricingCardsHover()
+          ourPricingReveal("xl");
+          pricingCardsHover();
+        }
+        if (scrollYPosition >= ourPricingSection.offsetTop) {
+          testimonialsSectionHeaderReveal();
         }
         break;
     }
