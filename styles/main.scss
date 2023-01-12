@@ -285,7 +285,7 @@ body {
   .card {
     background-color: $pricing-card-color;
     border-radius: 10px;
-    transition: transform 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     cursor: pointer;
     .card-body {
       padding: 0 !important;
@@ -296,6 +296,7 @@ body {
       height: 1px;
       width: 68%;
       background-color: $splitting-line-color;
+      transition: background-color 0.5s ease-in-out;
     }
     ul {
       list-style: none;
@@ -305,6 +306,7 @@ body {
         line-height: 180%;
         color: $main-black;
         font-weight: 500;
+        transition: color .5s ease-in-out;
       }
     }
     p {
@@ -333,7 +335,7 @@ body {
     }
 
     button {
-      border-top: 1px solid $main-white;
+      transition: all .5s ease-in-out;
     }
   }
 }
@@ -344,6 +346,7 @@ body {
   font-weight: 400;
   font-family: "BN Chester";
   color: $main-black;
+  transition: color 0.5s ease-in-out;
 }
 
 // Testimonials

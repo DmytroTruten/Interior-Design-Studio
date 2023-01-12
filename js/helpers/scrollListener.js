@@ -1,7 +1,7 @@
 import { aboutStudioReveal } from "../animations/about-studio/aboutStudio.js";
 import { ourServicesReveal } from "../animations/our-services/ourServices.js";
 import { ourPortfolioReveal } from "../animations/our-portfolio/ourPortfolio.js";
-import { ourPricingReveal } from "../animations/our-pricing/ourPricing.js";
+import { ourPricingReveal, selectPricingCard } from "../animations/our-pricing/ourPricing.js";
 import { pricingCardsHover } from "../animations/our-pricing/pricingCardsHover.js";
 import { testimonialsSectionHeaderReveal } from "../animations/what-people-say/whatPeopleSay.js";
 
@@ -69,6 +69,7 @@ export function addScrollListener(breakpoint) {
           ourPortfolioSection.offsetTop + ourPortfolioSection.offsetHeight / 2
         ) {
           ourPricingReveal("xs");
+          selectPricingCard()
         }
         if (
           scrollYPosition >=
@@ -128,6 +129,7 @@ export function addScrollListener(breakpoint) {
           ourPortfolioSection.offsetTop + ourPortfolioSection.offsetHeight / 2
         ) {
           ourPricingReveal("xs");
+          selectPricingCard()
         }
         if (
           scrollYPosition >=
@@ -187,6 +189,7 @@ export function addScrollListener(breakpoint) {
           ourPortfolioSection.offsetTop + ourPortfolioSection.offsetHeight / 2
         ) {
           ourPricingReveal("xs");
+          selectPricingCard()
         }
         if (
           scrollYPosition >=
@@ -210,6 +213,7 @@ export function addScrollListener(breakpoint) {
           ourPortfolioSection.offsetTop + ourPortfolioSection.offsetHeight / 2
         ) {
           ourPricingReveal("sm");
+          selectPricingCard()
         }
         if (scrollYPosition >= ourPricingSection.offsetTop) {
           testimonialsSectionHeaderReveal();
@@ -230,6 +234,7 @@ export function addScrollListener(breakpoint) {
           ourPortfolioSection.offsetTop + ourPortfolioSection.offsetHeight / 2
         ) {
           ourPricingReveal("md");
+          selectPricingCard()
         }
         if (scrollYPosition >= ourPricingSection.offsetTop) {
           testimonialsSectionHeaderReveal();
@@ -253,6 +258,7 @@ export function addScrollListener(breakpoint) {
           ourPortfolioSection.offsetTop + ourPortfolioSection.offsetHeight / 2
         ) {
           ourPricingReveal("lg");
+          selectPricingCard()
         }
         if (scrollYPosition >= ourPricingSection.offsetTop) {
           testimonialsSectionHeaderReveal();
@@ -277,6 +283,7 @@ export function addScrollListener(breakpoint) {
         ) {
           ourPricingReveal("xl");
           pricingCardsHover();
+          selectPricingCard()
         }
         if (scrollYPosition >= ourPricingSection.offsetTop) {
           testimonialsSectionHeaderReveal();
