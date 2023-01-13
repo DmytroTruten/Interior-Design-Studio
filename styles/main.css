@@ -791,7 +791,9 @@ body::-webkit-scrollbar-thumb {
 #pricing-card-basic,
 #pricing-card-standart,
 #pricing-card-premium,
-#testimonials-section-header {
+#testimonials-section-header,
+#question-section-header,
+#order-a-call-button {
   opacity: 0;
 }
 
