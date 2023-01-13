@@ -1,3 +1,5 @@
+import { revealIntoDirection } from "../reveal-function/revealIntoDirection.js";
+
 let wasInvoked = false;
 export function questionSectionReveal(breakpoint) {
   if (!wasInvoked) {
@@ -6,17 +8,13 @@ export function questionSectionReveal(breakpoint) {
     );
     const orderCallButton = document.getElementById("order-a-call-button");
     if (breakpoint === "xs") {
-      questionSectionHeader.style.animation = "reveal-to-top 1s ease-in-out";
-      questionSectionHeader.style.opacity = "1";
+      revealIntoDirection(questionSectionHeader, 'top')
       setTimeout(() => {
-        orderCallButton.style.animation = "reveal-to-top 1s ease-in-out";
-        orderCallButton.style.opacity = "1";
+        revealIntoDirection(orderCallButton, 'top')
       }, 200);
     } else {
-      questionSectionHeader.style.animation = "reveal-to-right 1s ease-in-out";
-      questionSectionHeader.style.opacity = "1";
-      orderCallButton.style.animation = "reveal-to-left 1s ease-in-out";
-      orderCallButton.style.opacity = "1";
+      revealIntoDirection(questionSectionHeader, 'right')
+      revealIntoDirection(orderCallButton, 'left')
     }
   }
 }
