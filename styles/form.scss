@@ -1,0 +1,46 @@
+@import url("../fonts/Gilroy/stylesheet.css");
+@import url("../fonts/BN-Chester/stylesheet.css");
+@import "./helpers/variables";
+
+// Form
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+h1,h3 {
+  font-family: "BN Chester";
+  color: $main-black;
+}
+
+h3 {
+  margin-top: 0;
+}
+p {
+  font-family: "Gilroy";
+  font-weight: 600;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.order-a-call-header {
+  span {
+    color: $main-orange;
+  }
+}
+
+.form-input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
