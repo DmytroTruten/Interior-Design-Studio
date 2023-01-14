@@ -12,7 +12,14 @@
 html,
 body {
   height: 100%;
-  
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $main-orange;
 }
 
 h1,
@@ -22,12 +29,16 @@ h3 {
 }
 
 h1 {
-  margin: 0;
+  margin: 30px 0px 0px;
 }
 
 h3 {
   margin: 15px 0px 30px 0px;
   font-size: 14px;
+  text-align: center;
+  span {
+    color: $main-orange;
+  }
 }
 
 input {
@@ -45,6 +56,9 @@ input {
     font-family: "Gilroy";
     font-weight: 600;
   }
+  &:focus {
+    outline: none;
+  }
 }
 
 .form {
@@ -52,7 +66,11 @@ input {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100%;
+  height: fit-content;
+  width: 70%;
+  background-color: $main-white;
+  border-radius: 20px;
+  box-shadow: 8px 8px 16px #ab8352, -8px -8px 16px #fbc178;
 }
 
 .order-a-call-header {
@@ -74,7 +92,7 @@ input {
   border: $button-border;
   border-radius: 10px;
   background-color: transparent;
-  margin: 15px 0px;
+  margin: 30px 0px;
   font-weight: 600;
   font-size: 16px;
   font-family: "Gilroy";
