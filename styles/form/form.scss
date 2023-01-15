@@ -1,5 +1,5 @@
-@import url("../fonts/Gilroy/stylesheet.css");
-@import url("../fonts/BN-Chester/stylesheet.css");
+@import url("../../fonts/Gilroy/stylesheet.css");
+@import url("../../fonts/BN-Chester/stylesheet.css");
 @import "./helpers/variables";
 
 // Form
@@ -90,15 +90,12 @@ input {
   label {
     position: absolute;
     left: 0;
-    transition: transform 0.5s ease-in-out;
-    span {
-      width: max-content;
-      color: $main-black;
-      font-size: 16px;
-      font-family: "Gilroy";
-      font-weight: 600;
-      z-index: 0;
-    }
+    transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
+    width: max-content;
+    color: $main-black;
+    font-size: 16px;
+    font-family: "Gilroy";
+    font-weight: 600;
   }
 }
 

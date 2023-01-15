@@ -1,5 +1,5 @@
-@import url("../fonts/Gilroy/stylesheet.css");
-@import url("../fonts/BN-Chester/stylesheet.css");
+@import url("../../fonts/Gilroy/stylesheet.css");
+@import url("../../fonts/BN-Chester/stylesheet.css");
 * {
   padding: 0;
   margin: 0;
@@ -89,9 +89,7 @@ input:focus {
 .form-input-container label {
   position: absolute;
   left: 0;
-  transition: transform 0.5s ease-in-out;
-}
-.form-input-container label span {
+  transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -99,7 +97,6 @@ input:focus {
   font-size: 16px;
   font-family: "Gilroy";
   font-weight: 600;
-  z-index: 0;
 }
 
 .submit-button {
