@@ -30,6 +30,9 @@ h3 {
 
 h1 {
   margin: 30px 0px 0px;
+  span {
+    color: $main-orange;
+  }
 }
 
 h3 {
@@ -50,12 +53,10 @@ input {
   border-left: none;
   margin: 15px 0px;
   background-color: transparent;
-  &::placeholder {
-    color: $main-black;
-    font-size: 16px;
-    font-family: "Gilroy";
-    font-weight: 600;
-  }
+  position: relative;
+  font-size: 16px;
+  font-family: "Gilroy";
+  font-weight: 600;
   &:focus {
     outline: none;
   }
@@ -73,10 +74,12 @@ input {
   box-shadow: 8px 8px 16px #ab8352, -8px -8px 16px #fbc178;
 }
 
-.order-a-call-header {
-  span {
-    color: $main-orange;
-  }
+.form-name-container,
+.form-phone-number-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-input-container {
@@ -84,6 +87,19 @@ input {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  label {
+    position: absolute;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+    span {
+      width: max-content;
+      color: $main-black;
+      font-size: 16px;
+      font-family: "Gilroy";
+      font-weight: 600;
+      z-index: 0;
+    }
+  }
 }
 
 .submit-button {
