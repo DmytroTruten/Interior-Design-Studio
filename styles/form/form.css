@@ -15,57 +15,32 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #d3a265;
+  background-color: #d3a265 !important;
 }
 
 h1,
 h3 {
   font-family: "BN Chester";
   color: #161616;
+  font-weight: 600 !important;
 }
 
 h1 {
   margin: 30px 0px 0px;
+  font-size: 32px !important;
+  text-align: center;
 }
 h1 span {
   color: #d3a265;
 }
 
 h3 {
+  font-size: 16px !important;
   margin: 15px 0px 15px 0px;
-  font-size: 14px;
   text-align: center;
 }
 h3 span {
   color: #d3a265;
-}
-
-input {
-  border: 1px solid #d3a265;
-  height: 24px;
-  width: 100%;
-  padding: 0;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  margin: 25px 0px;
-  background-color: transparent;
-  position: relative;
-  font-size: 16px;
-  font-family: "Gilroy";
-  font-weight: 600;
-}
-input:focus {
-  outline: none;
-}
-input::-moz-placeholder {
-  color: transparent;
-}
-input:-ms-input-placeholder {
-  color: transparent;
-}
-input::placeholder {
-  color: transparent;
 }
 
 .form {
@@ -75,18 +50,19 @@ input::placeholder {
   flex-direction: column;
   height: 80%;
   width: 70%;
+  padding: 15px;
   background-color: #fff;
   border-radius: 20px;
   box-shadow: 8px 8px 16px #ab8352, -8px -8px 16px #fbc178;
 }
 
 .form-name-container,
-.form-phone-number-container {
+.form-phone-number-container,
+.submit-button-container {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
 .form-input-container {
@@ -108,13 +84,41 @@ input::placeholder {
   font-weight: 600;
 }
 
-.submit-button {
+.input-field {
+  border: 1px solid #d3a265;
+  height: 24px;
   width: 100%;
-  height: 30px;
+  padding: 0;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin: 30px 0px !important;
+  background-color: transparent;
+  position: relative;
+  font-size: 16px;
+  font-family: "Gilroy";
+  font-weight: 600;
+}
+.input-field:focus {
+  outline: none;
+}
+.input-field::-moz-placeholder {
+  color: transparent;
+}
+.input-field:-ms-input-placeholder {
+  color: transparent;
+}
+.input-field::placeholder {
+  color: transparent;
+}
+
+.submit-button {
+  height: 40px;
+  width: 100%;
   border: 2px solid #d3a265;
   border-radius: 10px;
   background-color: transparent;
-  margin: 30px 0px;
+  margin: 30px 0px !important;
   font-weight: 600;
   font-size: 16px;
   font-family: "Gilroy";

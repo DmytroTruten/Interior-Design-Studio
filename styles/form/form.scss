@@ -19,51 +19,31 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $main-orange;
+  background-color: $main-orange !important;
 }
 
 h1,
 h3 {
   font-family: "BN Chester";
   color: $main-black;
+  font-weight: 600 !important;
 }
 
 h1 {
   margin: 30px 0px 0px;
-  span {
-    color: $main-orange;
-  }
-}
-
-h3 {
-  margin: 15px 0px 15px 0px;
-  font-size: 14px;
+  font-size: 32px !important;
   text-align: center;
   span {
     color: $main-orange;
   }
 }
 
-input {
-  border: 1px solid $main-orange;
-  height: 24px;
-  width: 100%;
-  padding: 0;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  margin: 25px 0px;
-  background-color: transparent;
-  position: relative;
-  font-size: 16px;
-  font-family: "Gilroy";
-  font-weight: 600;
-  &:focus {
-    outline: none;
-  }
-  &::placeholder {
-    color: transparent;
-    
+h3 {
+  font-size: 16px !important;
+  margin: 15px 0px 15px 0px;
+  text-align: center;
+  span {
+    color: $main-orange;
   }
 }
 
@@ -74,18 +54,19 @@ input {
   flex-direction: column;
   height: 80%;
   width: 70%;
+  padding: 15px;
   background-color: $main-white;
   border-radius: 20px;
   box-shadow: 8px 8px 16px #ab8352, -8px -8px 16px #fbc178;
 }
 
 .form-name-container,
-.form-phone-number-container {
+.form-phone-number-container,
+.submit-button-container {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
 .form-input-container {
@@ -105,13 +86,36 @@ input {
   }
 }
 
-.submit-button {
+.input-field {
+  border: 1px solid $main-orange;
+  height: 24px;
   width: 100%;
-  height: 30px;
+  padding: 0;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin: 30px 0px !important;
+  background-color: transparent;
+  position: relative;
+  font-size: 16px;
+  font-family: "Gilroy";
+  font-weight: 600;
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    color: transparent;
+    
+  }
+}
+
+.submit-button {
+  height: 40px;
+  width: 100%;
   border: $button-border;
   border-radius: 10px;
   background-color: transparent;
-  margin: 30px 0px;
+  margin: 30px 0px !important;
   font-weight: 600;
   font-size: 16px;
   font-family: "Gilroy";
