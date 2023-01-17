@@ -58,7 +58,7 @@ function interiorDesignReveal(breakpoint) {
     breakpoint === "lg"
   ) {
     revealIntoDirection(ourServicesSectionHeader, "top");
-
+    
     setTimeout(() => {
       revealIntoDirection(interiorDesignCardIcon, "top");
     }, 200);

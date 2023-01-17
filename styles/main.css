@@ -522,6 +522,19 @@
     margin-left: 40px;
     font-weight: 500;
     opacity: 0;
+    position: relative;
+  }
+  .dropdown img {
+    transition: transform 0.3s ease-in-out;
+  }
+  .en-language,
+.ua-language {
+    cursor: pointer;
+  }
+  .ua-language {
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
   }
   .hamburger-container {
     display: none;
@@ -1187,5 +1200,21 @@ body::-webkit-scrollbar-thumb {
   }
   100% {
     opacity: 1;
+  }
+}
+@-webkit-keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }/*# sourceMappingURL=main.css.map */
