@@ -4,16 +4,23 @@ let wasInvoked = false;
 
 export function ourServicesReveal(breakpoint) {
   if (!wasInvoked) {
-    interiorDesignReveal(breakpoint);
-    setTimeout(() => {
+    if (breakpoint === "xs") {
+      interiorDesignReveal(breakpoint);
+      setTimeout(() => {
+        decorativeServicesReveal(breakpoint);
+      }, 500);
+      setTimeout(() => {
+        spacePlanningReveal(breakpoint);
+      }, 1000);
+      setTimeout(() => {
+        projectManagementReveal(breakpoint);
+      }, 1500);
+    } else {
+      interiorDesignReveal(breakpoint);
       decorativeServicesReveal(breakpoint);
-    }, 500);
-    setTimeout(() => {
       spacePlanningReveal(breakpoint);
-    }, 1000);
-    setTimeout(() => {
       projectManagementReveal(breakpoint);
-    }, 1500);
+    }
     wasInvoked = true;
   }
 }
