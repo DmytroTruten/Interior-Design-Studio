@@ -514,6 +514,7 @@
   }
   .header-right-section {
     display: flex;
+    align-items: center;
   }
   .header-right-section a {
     text-decoration: none;
@@ -527,14 +528,21 @@
   .dropdown img {
     transition: transform 0.3s ease-in-out;
   }
+  .dropdown p {
+    margin: 0;
+  }
   .en-language,
 .ua-language {
     cursor: pointer;
+    display: flex;
   }
   .ua-language {
     opacity: 0;
     position: absolute;
     visibility: hidden;
+  }
+  .en-language p {
+    margin-right: 5px;
   }
   .hamburger-container {
     display: none;

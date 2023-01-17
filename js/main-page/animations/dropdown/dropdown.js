@@ -18,11 +18,14 @@ export function dropdownToggle() {
     selectUALanguage.classList.toggle("language-reveal");
   });
   selectUALanguage.addEventListener("click", function () {
-    changeLanguage("ua");
+    if (location.hash === "#ua") {
+      changeLanguage("en");
+    } else {
+      changeLanguage("ua");
+    }
   });
 
   function changeLanguage(lang) {
-    console.log(lang);
     location.hash = lang;
     location.reload();
   }
@@ -48,6 +51,14 @@ export function dropdownToggle() {
       for (let i = 0; i < headerLink.length; i++) {
         headerLink[i].textContent = Object.values(language.ua)[i];
       }
+      selectENLanguage.children[0].textContent = "UA";
+      selectUALanguage.children[0].textContent = "EN";
+    } else {
+      for (let i = 0; i < headerLink.length; i++) {
+        headerLink[i].textContent = Object.values(language.en)[i];
+      }
+      selectENLanguage.children[0].textContent = "EN";
+      selectUALanguage.children[0].textContent = "UA";
     }
   }
 }
