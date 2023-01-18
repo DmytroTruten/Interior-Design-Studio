@@ -5,15 +5,12 @@ const heroHeaderH1 = document.getElementById("hero-header-h1");
 const heroHeaderP = document.getElementById("hero-header-p");
 const heroHeaderButton = document.getElementById("hero-header-button");
 const sectionHeaders = document.querySelectorAll(".section-header");
-const aboutStudioSectionHeader = document.getElementById(
-  "about-studio-section-header"
-);
+
 const aboutStudioMainText = document.getElementById("about-studio-main-text");
 const aboutStudioMoreTextLg = document.getElementById(
   "about-studio-more-text-lg"
 );
-const ourServicesTextElements = [
-  document.getElementById("our-services-section-header"),
+const ourServicesElements = [
   document.getElementById("interior-design-card-header"),
   document.getElementById("interior-design-card-description"),
   document.getElementById("decorative-services-card-header"),
@@ -39,13 +36,19 @@ const language = {
     heroHeaderP:
       "Our team creates comfortable spaces for our clients. We've been designing your everyday life and work through great ideas since 1999.",
     heroHeaderButton: "GET STARTED",
-    aboutStudioSectionHeader: "About <span>Studio</span>",
+    sectionHeaders: {
+      aboutStudioSectionHeader: "About <span>Studio</span>",
+      ourServicesSectionHeader: "Our <span>Services</span>",
+      ourPortfolioSectionHeader: "Our <span>Portfolio</span>",
+      ourPricingSectionHeader: "Our <span>Pricing</span>",
+      testimonialsSectionHeader: "What <span>People Say</span>",
+      questionSectionHeader: "Do you have <br><span>any question?</span>",
+    },
     aboutStudioMainText:
       "Interiart is an award-winning architecture and interior design practice based in NYC. We work internationally on projects of residential & commercial interior design that require a creative approach. Our talented and experienced designers leverage their knowledge and expertise to create unique and comfortable interiors for you.",
     aboutStudioMoreTextLg:
       "<br>Our team knows that interior design can be stressful for the client and we do our best to make it as easy as possible. We listen to your needs, ideas, and inputs. And most importantly, we make it exciting and enjoyable for our clients.",
-    ourServicesTextElements: {
-      ourServicesSectionHeader: "Our <span>Services</span>",
+    ourServicesElements: {
       interiorDesignCardHeader: "INTERIOR DESIGN",
       interiorDesignCardDescription:
         "Interior design services offer a vast variety of solutions for our clients' homes and offices.",
@@ -69,13 +72,19 @@ const language = {
     heroHeaderP:
       "Наша команда створює комфортний простір для наших клієнтів. З 1999 року ми створюємо ваше повсякденне життя та працюємо над чудовими ідеями.",
     heroHeaderButton: "РОЗПОЧАТИ",
-    aboutStudioSectionHeader: "Про <span>Студію</span>",
+    sectionHeaders: {
+      aboutStudioSectionHeader: "Про <span>Студію</span>",
+      ourServicesSectionHeader: "Наші <span>Послуги</span>",
+      ourPortfolioSectionHeader: "Наше <span>Портфоліо</span>",
+      ourPricingSectionHeader: "Наші <span>Ціни</span>",
+      testimonialsSectionHeader: "Що <span>Кажуть Люди</span>",
+      questionSectionHeader: "Маєте <br><span>Запитання?</span>",
+    },
     aboutStudioMainText:
       "Interiart – це нагороджена практика архітектури та дизайну інтер’єрів, що базується в Нью-Йорку. Ми працюємо над міжнародними проектами дизайну житлових та комерційних інтер'єрів, які потребують творчого підходу. Наші талановиті та досвідчені дизайнери використовують свої знання та досвід, щоб створити унікальні та комфортні інтер’єри для вас.",
     aboutStudioMoreTextLg:
       "<br>Наша команда знає, що дизайн інтер'єру може бути стрессово для клієнта, і ми докладаємо всіх зусиль, щоб зробити його максимально легким. Ми прислухаємося до ваших потреб, ідей та побажань. А головне, ми робимо це захоплюючим і приємним для наших клієнтів.",
-    ourServicesTextElements: {
-      ourServicesSectionHeader: "Наші <span>Послуги</span>",
+    ourServicesElements: {
       interiorDesignCardHeader: "ДИЗАЙН ІНТЕР'ЄРУ",
       interiorDesignCardDescription:
         "Послуги з дизайну інтер’єру пропонують широкий вибір рішень для дому та офісу наших клієнтів.",
@@ -108,19 +117,17 @@ if (window.location.hash) {
     heroHeaderP.textContent = language.ua.heroHeaderP;
     heroHeaderButton.textContent = language.ua.heroHeaderButton;
 
-    sectionHeaders.forEach((header) => {
-      header.classList.add("section-header-ua");
-    });
-
-    aboutStudioSectionHeader.innerHTML = language.ua.aboutStudioSectionHeader;
     aboutStudioMainText.textContent = language.ua.aboutStudioMainText;
     aboutStudioMoreTextLg.innerHTML = language.ua.aboutStudioMoreTextLg;
 
-    for (let i = 0; i < ourServicesTextElements.length; i++) {
-      ourServicesTextElements[0].innerHTML =
-        language.ua.ourServicesTextElements.ourServicesSectionHeader;
-      ourServicesTextElements[i].textContent = Object.values(
-        language.ua.ourServicesTextElements
+    for (let i = 0; i < sectionHeaders.length; i++) {
+      sectionHeaders[i].innerHTML = Object.values(language.ua.sectionHeaders)[i]
+      sectionHeaders[i].classList.add('section-header-ua')
+    }
+
+    for (let i = 0; i < ourServicesElements.length; i++) {
+      ourServicesElements[i].textContent = Object.values(
+        language.ua.ourServicesElements
       )[i];
     }
   } else {
@@ -134,15 +141,17 @@ if (window.location.hash) {
     heroHeaderP.textContent = language.en.heroHeaderP;
     heroHeaderButton.textContent = language.en.heroHeaderButton;
 
-    aboutStudioSectionHeader.innerHTML = language.en.aboutStudioSectionHeader;
     aboutStudioMainText.textContent = language.en.aboutStudioMainText;
     aboutStudioMoreTextLg.innerHTML = language.en.aboutStudioMoreTextLg;
 
-    for (let i = 0; i < ourServicesTextElements.length; i++) {
-      ourServicesTextElements[0].innerHTML =
-        language.en.ourServicesTextElements.ourServicesSectionHeader;
-      ourServicesTextElements[i].textContent = Object.values(
-        language.en.ourServicesTextElements
+    for (let i = 0; i < sectionHeaders.length; i++) {
+      sectionHeaders[i].innerHTML = Object.values(language.en.sectionHeaders)[i]
+      sectionHeaders[i].classList.remove('section-header-ua')
+    }
+
+    for (let i = 0; i < ourServicesElements.length; i++) {
+      ourServicesElements[i].textContent = Object.values(
+        language.en.ourServicesElements
       )[i];
     }
   }
