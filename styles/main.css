@@ -1,5 +1,6 @@
 @import url("../fonts/Gilroy/stylesheet.css");
 @import url("../fonts/BN-Chester/stylesheet.css");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
 @media (min-width: 0px) {
   .navbar {
     padding: 30px !important;
@@ -30,7 +31,7 @@
   }
   .hero-header h1 {
     font-size: 48px;
-    font-family: "BN Chester";
+    font-family: "BN Chester", "Philosopher";
     font-weight: 400;
     color: #3d3737;
   }
@@ -46,14 +47,20 @@
   .section-header {
     font-weight: 400;
     font-size: 32px;
-    font-family: "BN Chester";
+    font-family: "BN Chester", "Philosopher";
     margin: 0;
   }
   .section-header span {
     font-weight: 400;
     font-size: 32px;
-    font-family: "BN Chester";
+    font-family: "BN Chester", "Philosopher";
     color: #d3a265;
+  }
+  .section-header-ua {
+    font-weight: 700;
+  }
+  .section-header-ua span {
+    font-weight: 700;
   }
   .about-studio-row {
     margin: 60px 30px 30px 30px !important;
