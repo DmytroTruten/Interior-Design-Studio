@@ -22,6 +22,9 @@ const ourServicesElements = [
   document.getElementById("consultation-button"),
 ];
 
+const filters = document.querySelectorAll("#filter");
+const more = document.querySelectorAll(".more");
+
 export function changeLanguage(lang) {
   location.hash = lang;
   location.reload();
@@ -63,6 +66,14 @@ const language = {
         "We provide proper project management as it's one of the main success factors in interior design.",
       consultationButton: "FREE CONSULTATION",
     },
+    filters: {
+      all: "ALL",
+      commercial: "COMMERCIAL",
+      residential: "RESIDENTIAL",
+      office: "OFFICE",
+      other: "OTHER",
+    },
+    more: "VIEW MORE",
   },
   ua: {
     services: "Послуги",
@@ -99,6 +110,14 @@ const language = {
         "Ми забезпечуємо належне управління проектами, оскільки це один із головних факторів успіху в дизайні інтер’єру.",
       consultationButton: "БЕЗКОШТОВНА КОНСУЛЬТАЦІЯ",
     },
+    filters: {
+      all: "ВСІ",
+      commercial: "КОМЕРЦІЙНІ",
+      residential: "ЖИТЛОВІ",
+      office: "ОФІСНІ",
+      other: "ІНШІ",
+    },
+    more: "БІЛЬШЕ",
   },
 };
 
@@ -121,14 +140,23 @@ if (window.location.hash) {
     aboutStudioMoreTextLg.innerHTML = language.ua.aboutStudioMoreTextLg;
 
     for (let i = 0; i < sectionHeaders.length; i++) {
-      sectionHeaders[i].innerHTML = Object.values(language.ua.sectionHeaders)[i]
-      sectionHeaders[i].classList.add('section-header-ua')
+      sectionHeaders[i].innerHTML = Object.values(language.ua.sectionHeaders)[
+        i
+      ];
+      sectionHeaders[i].classList.add("section-header-ua");
     }
 
     for (let i = 0; i < ourServicesElements.length; i++) {
       ourServicesElements[i].textContent = Object.values(
         language.ua.ourServicesElements
       )[i];
+    }
+
+    for (let i = 0; i < filters.length; i++) {
+      filters[i].textContent = Object.values(language.ua.filters)[i];
+    }
+    for (let i = 0; i < more.length; i++) {
+      more[i].textContent = language.ua.more
     }
   } else {
     for (let i = 0; i < headerLink.length; i++) {
@@ -145,14 +173,27 @@ if (window.location.hash) {
     aboutStudioMoreTextLg.innerHTML = language.en.aboutStudioMoreTextLg;
 
     for (let i = 0; i < sectionHeaders.length; i++) {
-      sectionHeaders[i].innerHTML = Object.values(language.en.sectionHeaders)[i]
-      sectionHeaders[i].classList.remove('section-header-ua')
+      sectionHeaders[i].innerHTML = Object.values(language.en.sectionHeaders)[
+        i
+      ];
+      sectionHeaders[i].classList.remove("section-header-ua");
     }
 
     for (let i = 0; i < ourServicesElements.length; i++) {
       ourServicesElements[i].textContent = Object.values(
         language.en.ourServicesElements
       )[i];
+    }
+
+    for (let i = 0; i < filters.length; i++) {
+      filters[i].textContent = Object.values(language.en.filters)[i];
+    }
+    for (let i = 0; i < more.length; i++) {
+      if(more[i] === more[0]) {
+        more[0].textContent = 'READ MORE'
+      } else {
+        more[i].textContent = language.en.more
+      }
     }
   }
 }
