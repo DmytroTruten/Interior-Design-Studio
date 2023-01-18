@@ -985,6 +985,9 @@ body::-webkit-scrollbar-thumb {
 .free-consultation-button {
   background-color: transparent;
   border: 2px solid #d3a265;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .our-pricing-section {

@@ -267,6 +267,9 @@ body {
 .free-consultation-button {
   background-color: transparent;
   border: $button-border;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 // Our Pricing
