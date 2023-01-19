@@ -25,6 +25,11 @@ const ourServicesElements = [
 const filters = document.querySelectorAll("#filter");
 const more = document.querySelectorAll(".more");
 
+const pricingType = document.querySelectorAll(".pricing-type");
+const perMonth = document.querySelectorAll(".per-month");
+const pricingServices = document.querySelectorAll("#pricing-service");
+const buyNowButton = document.querySelectorAll('.buy-now-button')
+
 export function changeLanguage(lang) {
   location.hash = lang;
   location.reload();
@@ -74,6 +79,23 @@ const language = {
       other: "OTHER",
     },
     more: "VIEW MORE",
+    pricingType: ["Basic", "Standart", "Premium"],
+    perMonth: "per month",
+    pricingServices: [
+      "Interior Design",
+      "Project Discussion",
+      "Space Planning",
+      "Online Consultation",
+      "Color Analysis",
+      "Space Planning",
+      "Home Remodeling",
+      "3D Interior Model",
+      "Concept Development",
+      "Decoration Services",
+      "Interior Architecture",
+      "Flooring Installation",
+    ],
+    buyNow: "BUY NOW",
   },
   ua: {
     services: "Послуги",
@@ -118,6 +140,23 @@ const language = {
       other: "ІНШІ",
     },
     more: "БІЛЬШЕ",
+    pricingType: ["Базовий", "Стандарт", "Преміум"],
+    perMonth: "на місяць",
+    pricingServices: [
+      "Дизайн Інтер'єру",
+      "Обговорення Проекту",
+      "Планування Простору",
+      "Онлайн Консультація",
+      "Аналіз Кольорів",
+      "Планування Простору",
+      "Ремонт Будинку",
+      "3D Модель Інтер'єру",
+      "Концептуальна Розробка",
+      "Послуги Декорування",
+      "Архітектура Інтер'єру",
+      "Монтаж Підлоги",
+    ],
+    buyNow: "ПРИДБАТИ",
   },
 };
 
@@ -155,9 +194,21 @@ if (window.location.hash) {
     for (let i = 0; i < filters.length; i++) {
       filters[i].textContent = Object.values(language.ua.filters)[i];
     }
+
     for (let i = 0; i < more.length; i++) {
-      more[i].textContent = language.ua.more
+      more[i].textContent = language.ua.more;
     }
+
+    for (let i = 0; i < pricingType.length; i++) {
+      pricingType[i].textContent = language.ua.pricingType[i]
+      perMonth[i].textContent = language.ua.perMonth
+      buyNowButton[i].textContent = language.ua.buyNow
+    }
+
+    for (let i = 0; i < pricingServices.length; i++) {
+      pricingServices[i].textContent = language.ua.pricingServices[i];
+    }
+
   } else {
     for (let i = 0; i < headerLink.length; i++) {
       headerLink[i].textContent = Object.values(language.en)[i];
@@ -188,12 +239,23 @@ if (window.location.hash) {
     for (let i = 0; i < filters.length; i++) {
       filters[i].textContent = Object.values(language.en.filters)[i];
     }
+
     for (let i = 0; i < more.length; i++) {
-      if(more[i] === more[0]) {
-        more[0].textContent = 'READ MORE'
+      if (more[i] === more[0]) {
+        more[0].textContent = "READ MORE";
       } else {
-        more[i].textContent = language.en.more
+        more[i].textContent = language.en.more;
       }
+    }
+
+    for (let i = 0; i < pricingType.length; i++) {
+      pricingType[i].textContent = language.en.pricingType[i]
+      perMonth[i].textContent = language.en.perMonth
+      buyNowButton[i].textContent = language.en.buyNow
+    }
+
+    for (let i = 0; i < pricingServices.length; i++) {
+      pricingServices[i].textContent = language.en.pricingServices[i];
     }
   }
 }

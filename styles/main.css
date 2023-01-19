@@ -1048,7 +1048,7 @@ body::-webkit-scrollbar-thumb {
 .price,
 .per-month {
   font-weight: 400;
-  font-family: "BN Chester";
+  font-family: "BN Chester", "Philosopher";
   color: #161616;
   transition: color 0.5s ease-in-out;
 }
