@@ -1,6 +1,6 @@
 const selectUALanguage = document.getElementById("ua-language");
 const selectENLanguage = document.getElementById("en-language");
-const headerLink = document.querySelectorAll(".header-link");
+const headerLinks = document.querySelectorAll(".header-link");
 const heroHeaderH1 = document.getElementById("hero-header-h1");
 const heroHeaderP = document.getElementById("hero-header-p");
 const heroHeaderButton = document.getElementById("hero-header-button");
@@ -30,6 +30,9 @@ const perMonth = document.querySelectorAll(".per-month");
 const pricingServices = document.querySelectorAll("#pricing-service");
 const buyNowButton = document.querySelectorAll(".buy-now-button");
 
+const names = document.querySelectorAll(".name");
+const positions = document.querySelectorAll(".position");
+
 export function changeLanguage(lang) {
   location.hash = lang;
   location.reload();
@@ -37,9 +40,7 @@ export function changeLanguage(lang) {
 
 const language = {
   en: {
-    services: "Services",
-    portfolio: "Portfolio",
-    pricing: "Pricing",
+    headerLinks: ["Services", "Portfolio", "Pricing"],
     heroHeaderH1: "We create your space better",
     heroHeaderP:
       "Our team creates comfortable spaces for our clients. We've been designing your everyday life and work through great ideas since 1999.",
@@ -86,11 +87,33 @@ const language = {
       "Flooring Installation",
     ],
     buyNow: "BUY NOW",
+    names: [
+      "Annette Black",
+      "Marvin McKinney",
+      "Joanna Gaines",
+      "Marvin McKinney",
+      "Nate Berkus",
+      "Kelly Wearslter",
+      "Pavlo Rymarovych",
+      "Jonathan Adler",
+      "Pavlo Rymarovych",
+      "Dmytro Truten",
+    ],
+    positions: [
+      "Merchandising Associate",
+      "Administrator",
+      "Interior Designer",
+      "Administrator",
+      "Interior Designer",
+      "Interior Designer",
+      "Backend Developer",
+      "Interior Designer",
+      "Backend Developer",
+      "Frontend Developer",
+    ],
   },
   ua: {
-    services: "Послуги",
-    portfolio: "Портфоліо",
-    pricing: "Ціни",
+    headerLinks: ["Послуги", "Портфоліо", "Ціни"],
     heroHeaderH1: "Ми робимо ваш простір кращим",
     heroHeaderP:
       "Наша команда створює комфортний простір для наших клієнтів. З 1999 року ми створюємо ваше повсякденне життя та працюємо над чудовими ідеями.",
@@ -137,6 +160,30 @@ const language = {
       "Монтаж Підлоги",
     ],
     buyNow: "ПРИДБАТИ",
+    names: [
+      "Аннет Блек",
+      "Марвін МакКінні",
+      "Джоанна Гейнс",
+      "Марвін МакКінні",
+      "Нейт Беркус",
+      "Келлі Вірстлер",
+      "Павло Римарович",
+      "Джонатан Адлер",
+      "Павло Римарович",
+      "Дмитро Трутень",
+    ],
+    positions: [
+      "Асистент з мерчандайзингу",
+      "Адміністратор",
+      "Дизайнер інтер'єру",
+      "Адміністратор",
+      "Дизайнер інтер'єру",
+      "Дизайнер інтер'єру",
+      "Бекенд-розробник",
+      "Дизайнер інтер'єру",
+      "Бекенд-розробник",
+      "Фронтенд-розробник",
+    ],
   },
 };
 
@@ -145,8 +192,8 @@ if (window.location.hash) {
   // Set the content of the webpage
   // depending on the hash value
   if (window.location.hash === "#ua") {
-    for (let i = 0; i < headerLink.length; i++) {
-      headerLink[i].textContent = Object.values(language.ua)[i];
+    for (let i = 0; i < headerLinks.length; i++) {
+      headerLinks[i].textContent = language.ua.headerLinks[i];
     }
     selectENLanguage.children[0].textContent = "UA";
     selectUALanguage.children[0].textContent = "EN";
@@ -184,9 +231,14 @@ if (window.location.hash) {
     for (let i = 0; i < pricingServices.length; i++) {
       pricingServices[i].textContent = language.ua.pricingServices[i];
     }
+
+    for (let i = 0; i < positions.length; i++) {
+      names[i].textContent = language.ua.names[i]
+      positions[i].textContent = language.ua.positions[i]
+    }
   } else {
-    for (let i = 0; i < headerLink.length; i++) {
-      headerLink[i].textContent = Object.values(language.en)[i];
+    for (let i = 0; i < headerLinks.length; i++) {
+      headerLinks[i].textContent = language.en.headerLinks[i];
     }
     selectENLanguage.children[0].textContent = "EN";
     selectUALanguage.children[0].textContent = "UA";
@@ -227,6 +279,11 @@ if (window.location.hash) {
 
     for (let i = 0; i < pricingServices.length; i++) {
       pricingServices[i].textContent = language.en.pricingServices[i];
+    }
+
+    for (let i = 0; i < positions.length; i++) {
+      names[i].textContent = language.en.names[i]
+      positions[i].textContent = language.en.positions[i]
     }
   }
 }
