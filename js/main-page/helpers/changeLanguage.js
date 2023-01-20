@@ -33,6 +33,19 @@ const buyNowButton = document.querySelectorAll(".buy-now-button");
 const names = document.querySelectorAll(".name");
 const positions = document.querySelectorAll(".position");
 
+const orderACallButton = document.getElementById("order-a-call-button");
+
+let footer = [
+  document.getElementById("footer-description"),
+  document.querySelectorAll("#license"),
+  document.getElementById('navigation'),
+  document.querySelectorAll("#footer-navigation-link"),
+  document.getElementById("contacts"),
+  document.getElementById("address"),
+  document.getElementById("email"),
+  document.getElementById("phones"),
+];
+
 export function changeLanguage(lang) {
   location.hash = lang;
   location.reload();
@@ -111,6 +124,22 @@ const language = {
       "Backend Developer",
       "Frontend Developer",
     ],
+    orderACallButton: "ORDER A CALL",
+    footer: [
+      "We are one of the leading interior design and remodeling studios available for all ofyour residential and commercial interior design needs.",
+      "© 2023 id Studio. All Rights Reserved.",
+      "© 2023 id Studio. All Rights Reserved.",
+      "NAVIGATION",
+      "About",
+      "Services",
+      "Portfolio",
+      "Pricing",
+      "Testimonials",
+      "CONTACTS",
+      "ADDRESS",
+      "EMAIL",
+      "PHONES",
+    ],
   },
   ua: {
     headerLinks: ["Послуги", "Портфоліо", "Ціни"],
@@ -184,6 +213,22 @@ const language = {
       "Бекенд-розробник",
       "Фронтенд-розробник",
     ],
+    orderACallButton: "ЗАМОВИТИ ДЗВІНОК",
+    footer: [
+      "Ми є однією з провідних студій дизайну та реконструкції інтер'єру, яка може задовольнити всі ваші потреби в дизайні житлових і комерційних приміщень.",
+      "© 2023 id Studio. Всі права захищені.",
+      "© 2023 id Studio. Всі права захищені.",
+      "НАВІГАЦІЯ",
+      "Про Студію",
+      "Послуги",
+      "Портфоліо",
+      "Ціни",
+      "Відгуки",
+      "КОНТАКТИ",
+      "АДРЕСА",
+      "ЕЛЕКТРОННА ПОШТА",
+      "ТЕЛЕФОНИ",
+    ],
   },
 };
 
@@ -233,9 +278,22 @@ if (window.location.hash) {
     }
 
     for (let i = 0; i < positions.length; i++) {
-      names[i].textContent = language.ua.names[i]
-      positions[i].textContent = language.ua.positions[i]
+      names[i].textContent = language.ua.names[i];
+      positions[i].textContent = language.ua.positions[i];
     }
+
+    orderACallButton.textContent = language.ua.orderACallButton;
+    for (let i = 0; i < footer.length; i++) {
+      if (footer[i].length > 1) {
+        footer[i] = Array.from(footer[i]);
+      } 
+    }
+    footer = footer.flat()
+    
+    for (let i = 0; i < footer.length; i++) {
+      footer[i].textContent = language.ua.footer[i]
+    }
+
   } else {
     for (let i = 0; i < headerLinks.length; i++) {
       headerLinks[i].textContent = language.en.headerLinks[i];
@@ -282,8 +340,22 @@ if (window.location.hash) {
     }
 
     for (let i = 0; i < positions.length; i++) {
-      names[i].textContent = language.en.names[i]
-      positions[i].textContent = language.en.positions[i]
+      names[i].textContent = language.en.names[i];
+      positions[i].textContent = language.en.positions[i];
     }
+
+    orderACallButton.textContent = language.en.orderACallButton;
+
+    for (let i = 0; i < footer.length; i++) {
+      if (footer[i].length > 1) {
+        footer[i] = Array.from(footer[i]);
+      } 
+    }
+    footer = footer.flat()
+    
+    for (let i = 0; i < footer.length; i++) {
+      footer[i].textContent = language.en.footer[i]
+    }
+
   }
 }

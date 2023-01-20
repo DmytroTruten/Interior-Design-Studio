@@ -192,6 +192,9 @@ body {
 
 .main-btn {
   transition: all 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 10px 2px $main-orange;
@@ -267,9 +270,10 @@ body {
 .free-consultation-button {
   background-color: transparent;
   border: $button-border;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+.redirect-to-order-page {
+  text-decoration: none !important;
 }
 
 // Our Pricing

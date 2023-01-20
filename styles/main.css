@@ -916,6 +916,9 @@ body::-webkit-scrollbar-thumb {
 
 .main-btn {
   transition: all 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .main-btn:hover {
   transform: scale(1.1);
@@ -985,9 +988,10 @@ body::-webkit-scrollbar-thumb {
 .free-consultation-button {
   background-color: transparent;
   border: 2px solid #d3a265;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+.redirect-to-order-page {
+  text-decoration: none !important;
 }
 
 .our-pricing-section {
