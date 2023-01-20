@@ -39,7 +39,7 @@ let footer = [
   document.getElementById("footer-description"),
   document.querySelectorAll("#license"),
   document.getElementById('navigation'),
-  document.querySelectorAll("#footer-navigation-link"),
+  document.querySelectorAll(".footer-navigation-link"),
   document.getElementById("contacts"),
   document.getElementById("address"),
   document.getElementById("email"),
