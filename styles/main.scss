@@ -161,17 +161,10 @@ body {
     text-align: end;
     display: block;
     p {
+      white-space: nowrap;
       font-weight: 600;
       font-size: 30px;
-      -webkit-text-decoration: solid underline 2px $main-orange;
-      -moz-text-decoration: solid underline 2px $main-orange;
-      -ms-text-decoration: solid underline 2px $main-orange;
-      -o-text-decoration: solid underline 2px $main-orange;
       text-decoration: solid underline 2px $main-orange;
-      -webkit-text-underline-offset: 8px;
-      -moz-text-underline-offset: 8px;
-      -ms-text-underline-offset: 8px;
-      -o-text-underline-offset: 8px;
       text-underline-offset: 8px;
     }
   }
