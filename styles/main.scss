@@ -155,7 +155,7 @@ body {
   overflow-x: hidden;
   transition: 0.6s;
   z-index: 10;
-  padding-top: 100px;
+  padding-top: 50px;
 
   .navigation {
     text-align: end;
@@ -173,6 +173,7 @@ body {
 .navigation-dropdown {
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 100px;
 }
 
 // Main

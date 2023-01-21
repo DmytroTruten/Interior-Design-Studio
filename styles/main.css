@@ -883,7 +883,7 @@ body::-webkit-scrollbar-thumb {
   overflow-x: hidden;
   transition: 0.6s;
   z-index: 10;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .sidenav .navigation {
   text-align: end;
@@ -901,6 +901,7 @@ body::-webkit-scrollbar-thumb {
 .navigation-dropdown {
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 100px;
 }
 
 .hero-header {
