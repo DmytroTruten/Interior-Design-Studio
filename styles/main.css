@@ -903,6 +903,11 @@ body::-webkit-scrollbar-thumb {
   text-underline-offset: 8px;
 }
 
+.navigation-dropdown {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .hero-header {
   background-color: #fff;
 }
