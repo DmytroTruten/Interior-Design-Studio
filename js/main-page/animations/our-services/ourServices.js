@@ -37,13 +37,13 @@ function interiorDesignReveal(breakpoint) {
     revealIntoDirection(interiorDesignCardArray[0], "right");
 
     for (let i = 1; i < interiorDesignCardArray.length; i++) {
-      servicesReveal(interiorDesignCardArray[i], "right");
+      servicesReveal(breakpoint, interiorDesignCardArray[i], "right");
     }
   } else {
     revealIntoDirection(interiorDesignCardArray[0], "top");
 
     for (let i = 1; i < interiorDesignCardArray.length; i++) {
-      servicesReveal(interiorDesignCardArray[i], "top");
+      servicesReveal(breakpoint, interiorDesignCardArray[i], "top");
     }
   }
 }
@@ -59,11 +59,11 @@ function decorativeServicesReveal(breakpoint) {
     revealIntoDirection(decorativeServicesCardArray[0], "right");
 
     for (let i = 1; i < decorativeServicesCardArray.length; i++) {
-      servicesReveal(decorativeServicesCardArray[i], "right");
+      servicesReveal(breakpoint, decorativeServicesCardArray[i], "right");
     }
   } else {
     for (let i = 1; i < decorativeServicesCardArray.length; i++) {
-      servicesReveal(decorativeServicesCardArray[i], "top");
+      servicesReveal(breakpoint, decorativeServicesCardArray[i], "top");
     }
   }
 }
@@ -79,11 +79,11 @@ function spacePlanningReveal(breakpoint) {
     revealIntoDirection(spacePlanningCardArray[0], "right");
 
     for (let i = 1; i < spacePlanningCardArray.length; i++) {
-      servicesReveal(spacePlanningCardArray[i], "right");
+      servicesReveal(breakpoint, spacePlanningCardArray[i], "right");
     }
   } else {
     for (let i = 1; i < spacePlanningCardArray.length; i++) {
-      servicesReveal(spacePlanningCardArray[i], "top", 'second');
+      servicesReveal(breakpoint, spacePlanningCardArray[i], "top", "second");
     }
   }
 }
@@ -99,25 +99,30 @@ function projectManagementReveal(breakpoint) {
     revealIntoDirection(projectManagementCardArray[0], "right");
 
     for (let i = 1; i < projectManagementCardArray.length; i++) {
-      servicesReveal(projectManagementCardArray[i], "right");
+      servicesReveal(breakpoint, projectManagementCardArray[i], "right");
     }
   } else {
     for (let i = 1; i < projectManagementCardArray.length; i++) {
-      servicesReveal(projectManagementCardArray[i], "top", 'second');
+      servicesReveal(
+        breakpoint,
+        projectManagementCardArray[i],
+        "top",
+        "second"
+      );
     }
   }
 }
 
-function servicesReveal(element, direction, row) {
-  if(row === 'second') {
+function servicesReveal(breakpoint, element, direction, row) {
+  if (breakpoint === "sm" || (breakpoint === "md" && row === "second")) {
     setTimeout(() => {
       revealIntoDirection(element, direction);
     }, 600);
-  
+
     setTimeout(() => {
       revealIntoDirection(element, direction);
     }, 800);
-  
+
     setTimeout(() => {
       revealIntoDirection(element, direction);
     }, 1000);
@@ -125,14 +130,21 @@ function servicesReveal(element, direction, row) {
     setTimeout(() => {
       revealIntoDirection(element, direction);
     }, 200);
-  
+
     setTimeout(() => {
       revealIntoDirection(element, direction);
     }, 400);
-  
+
     setTimeout(() => {
       revealIntoDirection(element, direction);
     }, 600);
-
+  }
+  if (breakpoint === "xl") {
+    setTimeout(() => {
+      revealIntoDirection(
+        document.getElementById("consultation-button"),
+        "top"
+      );
+    }, 600);
   }
 }
