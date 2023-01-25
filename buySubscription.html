@@ -57,7 +57,7 @@
         </div>
       </div>
       <div class="subscribe-button-container">
-        <input type="submit" value="SUBSCRIBE">
+        <input class="submit-button" type="submit" value="SUBSCRIBE">
       </div>
     </form>
     <!-- <%if (session.getAttribute("subscriptionErrorMessage") !=null) { %>
@@ -66,7 +66,8 @@
       </p> -->
     <!-- <%} %> -->
   </div>
-  <script src="js/subscription-page/animations/subscription.js"></script>
+  <script type="module" src="js/subscription-page/animations/subscription.js"></script>
+  <script type="module" src="js/subscription-page/helpers/saveUserInfo.js"></script>
 </body>
 
 </html>

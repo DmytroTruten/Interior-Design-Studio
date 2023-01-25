@@ -1,10 +1,4 @@
-const inputFields = document.querySelectorAll(".input-field");
-const labels = [
-  document.querySelector('.first-name-label'),
-  document.querySelector('.last-name-label'),
-  document.querySelector('.phone-number-label'),
-  document.querySelector('.email-label'),
-]
+import { inputFields, labels } from "../helpers/variables.js"
 
 document.addEventListener("DOMContentLoaded", () => {
   for (let i = 0; i < inputFields.length; i++) {
