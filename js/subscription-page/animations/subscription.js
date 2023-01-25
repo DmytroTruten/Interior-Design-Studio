@@ -14,5 +14,12 @@ document.addEventListener("DOMContentLoaded", () => {
         labels[i].style.fontSize = "14px";
       }
     });
+    inputFields[i].addEventListener('keydown', (event) => {
+      if(event.key === 'ArrowDown') {
+        inputFields[i+1].focus()
+      } else if(event.key === 'ArrowUp') {
+        inputFields[i-1].focus()
+      }
+    })
   }
 });

@@ -10,7 +10,8 @@
   // border: 1px solid red;
 }
 
-html, body {
+html,
+body {
   height: 100vh;
   width: 100vw;
 }
@@ -34,7 +35,8 @@ h1 {
   }
 }
 
-p, label {
+p,
+label {
   margin-bottom: 0;
   text-align: center;
   cursor: default;
@@ -43,7 +45,7 @@ p, label {
 input {
   border: none;
   border-bottom: 2px solid $main-orange !important;
-  &:focus{
+  &:focus {
     outline: none;
   }
 }
@@ -54,8 +56,11 @@ input {
   left: 0;
   color: $main-white;
   text-decoration: none;
+  transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
   &:hover {
-    color: $main-white
+    transform: scale(1.2);
+    cursor: pointer;
+    color: $main-white;
   }
 }
 
