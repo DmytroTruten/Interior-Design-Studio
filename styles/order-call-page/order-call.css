@@ -5,7 +5,7 @@
   margin: 0;
   font-family: "Gilroy";
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 html,
@@ -109,9 +109,6 @@ h3 span {
   position: absolute;
   left: 0;
   transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   color: #161616;
 }
 
