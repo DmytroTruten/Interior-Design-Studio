@@ -8,6 +8,7 @@ import { dropdownToggle } from "./animations/dropdown/dropdown.js";
 
 import { addScrollListener } from "./helpers/scrollListener.js";
 import { addScrollIntoSection } from "./helpers/navigation.js";
+import { redirect } from "./helpers/redirect.js";
 
 if (window.screen.width <= 576) {
   if (window.screen.width >= 270 && window.screen.width <= 320) {
@@ -44,3 +45,4 @@ if (window.screen.width < 992) {
 heroHeaderReveal();
 addScrollIntoSection();
 dropdownToggle()
+redirect()
