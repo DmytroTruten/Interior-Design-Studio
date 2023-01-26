@@ -65,6 +65,9 @@ input:focus {
 .header-container {
   margin-bottom: 10px;
 }
+.header-container p span {
+  color: #d3a265;
+}
 
 .form-container {
   width: 100%;
@@ -141,9 +144,10 @@ input:focus {
   background-color: #fff;
   border: 2px solid #d3a265;
   border-radius: 10px;
+  margin-top: 30px;
 }
 
 .subscribing-type-container,
 .term-container {
-  margin: 10px 0px;
+  margin-top: 10px;
 }/*# sourceMappingURL=subscription.css.map */
