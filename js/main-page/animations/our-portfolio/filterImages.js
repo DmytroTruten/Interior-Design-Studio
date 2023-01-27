@@ -13,15 +13,26 @@ export function filterPortfolioImages() {
       this.className += " active-filter";
 
       if (event.currentTarget === filters[1]) {
-        galleryImages[0].style.animation = "hide .5s ease-in-out";
-        setTimeout(() => {
-          galleryImages[0].style.display = "none";
-        }, 490);
-        setTimeout(() => {
-          commercialImages[0].style.display = "block";
-          commercialImages[0].style.animation = "reveal .5s ease-in-out";
-          commercialImages[0].style.opacity = "1";
-        }, 500);
+        let HideTime = 0;
+        let displayTime = 490;
+        let commercialImagesTime = 500;
+        for (let i = 0; i < galleryImages.length; i++) {
+          setTimeout(() => {
+            galleryImages[i].style.animation = "hide .5s ease-in-out";
+          }, HideTime);
+          HideTime += 100;
+
+          setTimeout(() => {
+            galleryImages[i].style.display = "none";
+          }, displayTime);
+          displayTime += 100;
+
+          setTimeout(() => {
+            commercialImages[i].style.display = "block";
+            commercialImages[i].style.animation = "reveal .5s ease-in-out";
+          }, commercialImagesTime);
+          commercialImagesTime += 100;
+        }
       }
     });
   }
