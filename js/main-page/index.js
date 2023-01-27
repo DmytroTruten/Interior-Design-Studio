@@ -5,6 +5,7 @@ import { toggleSideNav } from "./animations/navbar-sidenav/sideNav.js";
 import { animateHeroImg } from "./animations/hero/heroImg.js";
 import { aboutStudioReveal } from "./animations/about-studio/aboutStudio.js";
 import { dropdownToggle } from "./animations/dropdown/dropdown.js";
+import { filterPortfolioImages } from "./animations/our-portfolio/filterImages.js";
 
 import { addScrollListener } from "./helpers/scrollListener.js";
 import { addScrollIntoSection } from "./helpers/navigation.js";
@@ -46,3 +47,4 @@ heroHeaderReveal();
 addScrollIntoSection();
 dropdownToggle()
 redirect()
+filterPortfolioImages()

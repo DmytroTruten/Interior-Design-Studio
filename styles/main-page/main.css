@@ -823,6 +823,7 @@ body::-webkit-scrollbar-thumb {
 #our-portfolio-section-header,
 #filter,
 #gallery-img,
+#commercial-img,
 #tabs-container-more,
 #our-pricing-section-header,
 #pricing-card-basic,
@@ -832,6 +833,10 @@ body::-webkit-scrollbar-thumb {
 #question-section-header,
 #order-a-call-button {
   opacity: 0;
+}
+
+#commercial-img {
+  display: none;
 }
 
 .navbar {
