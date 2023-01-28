@@ -690,6 +690,12 @@
   .contacts {
     text-align: start;
   }
+  .social a img {
+    transition: transform 0.2s ease-in-out;
+  }
+  .social a img:hover {
+    transform: scale(1.2);
+  }
 }
 @media (min-width: 1200px) {
   .hero-header {
@@ -1116,7 +1122,6 @@ body::-webkit-scrollbar-thumb {
   text-decoration: none;
 }
 .social a img {
-  width: 100%;
   display: block;
 }
 
