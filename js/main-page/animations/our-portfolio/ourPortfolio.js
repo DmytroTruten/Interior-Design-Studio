@@ -7,7 +7,7 @@ export function ourPortfolioReveal(breakpoint) {
       "our-portfolio-section-header"
     );
     const tabsContainerMore = document.getElementById("tabs-container-more");
-    const filters = document.querySelectorAll("#filter");
+    const filters = document.querySelectorAll(".filter");
     const galleryImages = document.querySelectorAll("#gallery-img");
     let filterTimeReveal = 0;
     let galleryImagesTimeReveal = 400;

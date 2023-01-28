@@ -19,7 +19,7 @@ let allElementsArray = [
   document.getElementById("project-management-card-header"),
   document.getElementById("project-management-card-description"),
   document.getElementById("consultation-button"),
-  document.querySelectorAll("#filter"),
+  document.querySelectorAll(".filter"),
   document.querySelectorAll(".more"),
   document.querySelectorAll(".pricing-type"),
   document.querySelectorAll(".per-month"),
