@@ -24,6 +24,5 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   }
-  console.log(localStorage);
   getUserInfo();
 });

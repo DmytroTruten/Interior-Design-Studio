@@ -20,12 +20,20 @@ document.addEventListener("DOMContentLoaded", () => {
         loginLabels[i].style.fontSize = "16px";
       }
     });
-    loginInputs[i].addEventListener('keydown', (event) => {
-      if(event.key === 'ArrowDown') {
-        loginInputs[i+1].focus()
-      } else if(event.key === 'ArrowUp') {
-        loginInputs[i-1].focus()
+    loginInputs[i].addEventListener("keydown", (event) => {
+      if (event.key === "ArrowDown") {
+        try {
+          loginInputs[i + 1].focus();
+        } catch (error) {
+          return;
+        }
+      } else if (event.key === "ArrowUp") {
+        try {
+          loginInputs[i - 1].focus();
+        } catch (error) {
+          return;
+        }
       }
-    })
+    });
   }
 });
