@@ -28,8 +28,9 @@
         <input class="submit-button" type="submit" value="SEND" />
       </div>
       <!-- <%if(request.getSession().getAttribute("authnErrorMessage")!=null) { %> -->
-      <p class="error-text">
+      <p class="error-message">
         Error example
+        <!-- <%= request.getSession().getAttribute("authnErrorMessage") %> -->
       </p>
       <!-- <%} %> -->
     </form>
@@ -38,5 +39,3 @@
 </body>
 
 </html>
-
-<!-- <%= request.getSession().getAttribute("authnErrorMessage") %> -->

@@ -82,7 +82,7 @@ p {
   display: flex;
   align-items: center;
   position: relative;
-  margin-bottom: 30px;
+  margin: 30px 0px;
 }
 
 .password-input {
@@ -101,6 +101,6 @@ p {
   border-radius: 10px;
 }
 
-.error-text {
+.error-message {
   margin: 0;
 }
