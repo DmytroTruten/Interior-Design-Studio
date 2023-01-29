@@ -1,0 +1,43 @@
+<!-- <%@ page import="com.myproject.idstudio.models.Customer" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %> -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer details</title>
+</head>
+
+<body>
+  <a href="<%=request.getContextPath()%>/admin/customers-list">Back</a>
+  <!-- <% Customer customer=(Customer)request.getSession().getAttribute("customer");%> -->
+  <h1>
+    Customer #<%= customer.getId() %>
+  </h1>
+  <p>
+    First name: <%=customer.getFirstName()%>
+  </p>
+  <p>
+    Last name: <%=customer.getLastName()%>
+  </p>
+  <p>
+    Telephone number: <%=customer.getTelNumber()%>
+  </p>
+  <p>
+    E-mail: <%=customer.getEmail()%>
+  </p>
+  <a href="<%=request.getContextPath()%>/admin/edit-customer?customerIdToEdit=<%=customer.getId()%>">Edit</a>
+  <p>Subscription: <% if((boolean) request.getSession().getAttribute("subscription-exists")) { %>
+      <%="<a href=\"" + request.getContextPath() + "/admin/show-subscription?customer-id=" + customer.getId() + "\">
+        Show</a>"%>
+        <%} else {%>
+          <%="None"%>
+            <% } %>
+
+  </p>
+</body>
+
+</html>
