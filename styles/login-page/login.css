@@ -92,6 +92,10 @@ input:focus {
   background-color: #fff;
   border: 2px solid #d3a265;
   border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.submit-button:hover {
+  transform: scale(1.1);
 }
 
 .error-message {
