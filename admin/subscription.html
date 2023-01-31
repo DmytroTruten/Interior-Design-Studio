@@ -11,40 +11,29 @@
 </head>
 
 <body>
-  <a href="<%=request.getContextPath()%>/admin/show-customer?id=<%=subscription.getCustomer().getId()%>">Back</a>
   <div class="outer-container row mx-0">
     <div class="inner-container col-10 col-sm-8 col-md-6">
+      <a class="return-link" href="<%=request.getContextPath()%>/admin/show-customer?id=<%=subscription.getCustomer().getId()%>">← Back</a>
       <div class="header-container">
-        <h1>Subscription #Example
-        </h1>
+        <h1>Subscription <span>#Example</span></h1>
       </div>
       <div class="info-container">
         <div class="customer-info-container">
-          <h3>Customer info</h3>
-          <p>
-            First name: First Name Example
-          </p>
-          <p>
-            Last name: Last Name Example
-          </p>
-          <p>
-            Telephone number: +380-11-111-11-11
-          </p>
-          <p>
-            E-mail: emailexample@gmail.com
-          </p>
+          <h3><span>Customer</span> Info</h3>
+          <ul>
+            <li>First name: First Name Example</li>
+            <li>Last name: Last Name Example</li>
+            <li>Telephone number: +380-11-111-11-11</li>
+            <li>E-mail: emailexample@gmail.com</li>
+          </ul>
         </div>
         <div class="subscription-info-container">
-          <h3>Subscription info</h3>
-          <p>
-            Type: Type Example
-          </p>
-          <p>
-            Start date: 22.02.2022
-          </p>
-          <p>
-            End date: 22.03.2022
-          </p>
+          <h3><span>Subscription</span> Info</h3>
+          <ul>
+            <li>Type: Type Example</li>
+            <li>Start date: 22.02.2022</li>
+            <li>End date: 22.03.2022</li>
+          </ul>
         </div>
       </div>
     </div>

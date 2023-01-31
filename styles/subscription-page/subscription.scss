@@ -34,20 +34,31 @@ h1 {
   }
 }
 
-h5 {
+h3 {
   font-weight: 600;
-}
-
-a {
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-  &:hover {
-    transform: scale(1.1);
+  margin: 20px 0px 0px;
+  span {
+    color: $main-orange;
+    font-size: calc(1.3rem + .6vw);
   }
 }
 
-p {
-  margin-bottom: 25px;
+li {
+  margin-top: 20px;
+}
+
+.return-link {
+  position: absolute;
+  top: -10%;
+  left: 0;
+  color: $main-white;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    color: $main-white;
+  }
 }
 
 .outer-container {
@@ -80,3 +91,16 @@ p {
   display: flex;
   flex-direction: column;
 }
+
+@media (min-width: 0px) {
+  * {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 576px) {
+  * {
+    font-size: 16px;
+  }
+}
+
