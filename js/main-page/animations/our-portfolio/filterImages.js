@@ -1,10 +1,9 @@
 const filters = document.querySelectorAll(".filter");
-const galleryImages = Array.from(document.querySelectorAll("#gallery-img"));
-const commercialImages = Array.from(
-  document.querySelectorAll("#commercial-img")
-);
+const allImages = document.querySelectorAll("#all-img");
+const commercialImages = document.querySelectorAll("#commercial-img");
+const residentialImages = document.querySelectorAll('#residential-img')
 
-let currentImages = galleryImages;
+let currentImages = allImages;
 let nextImages;
 
 export function filterPortfolioImages() {
@@ -23,10 +22,13 @@ export function filterPortfolioImages() {
 
       switch (event.target.id) {
         case "all":
-          nextImages = galleryImages;
+          nextImages = allImages;
           break;
         case "commercial":
           nextImages = commercialImages;
+          break;
+        case "residential":
+          nextImages = residentialImages;
           break;
       }
       animateFilterImages(

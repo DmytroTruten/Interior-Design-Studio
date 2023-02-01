@@ -8,9 +8,9 @@ export function ourPortfolioReveal(breakpoint) {
     );
     const tabsContainerMore = document.getElementById("tabs-container-more");
     const filters = document.querySelectorAll(".filter");
-    const galleryImages = document.querySelectorAll("#gallery-img");
+    const allImages = document.querySelectorAll("#all-img");
     let filterTimeReveal = 0;
-    let galleryImagesTimeReveal = 400;
+    let allImagesTimeReveal = 400;
     if (breakpoint === "xs") {
       revealIntoDirection(ourPortfolioSectionHeader, "right");
       for (let i = 0; i < filters.length; i++) {
@@ -19,14 +19,11 @@ export function ourPortfolioReveal(breakpoint) {
         }, filterTimeReveal);
         filterTimeReveal += 100;
       }
-      for (let i = 0; i < galleryImages.length; i++) {
-        if (galleryImages[i].id === "gallery-img-4") {
-          break;
-        }
+      for (let i = 0; i < allImages.length; i++) {
         setTimeout(() => {
-          revealIntoDirection(galleryImages[i], "right");
-        }, galleryImagesTimeReveal);
-        galleryImagesTimeReveal += 100;
+          revealIntoDirection(allImages[i], "right");
+        }, allImagesTimeReveal);
+        allImagesTimeReveal += 100;
       }
     } else if (
       breakpoint === "sm" ||
@@ -44,11 +41,11 @@ export function ourPortfolioReveal(breakpoint) {
       setTimeout(() => {
         revealIntoDirection(tabsContainerMore, "top");
       }, 600);
-      for (let i = 0; i < galleryImages.length; i++) {
+      for (let i = 0; i < allImages.length; i++) {
         setTimeout(() => {
-          revealIntoDirection(galleryImages[i], "top");
-        }, galleryImagesTimeReveal);
-        galleryImagesTimeReveal += 100;
+          revealIntoDirection(allImages[i], "top");
+        }, allImagesTimeReveal);
+        allImagesTimeReveal += 100;
       }
     }
     wasInvoked = true;
