@@ -1,14 +1,18 @@
-function setPricingType() {
+(function () {
   const pricingTypes = [
-    document.getElementById('basic'),
-    document.getElementById('standard'),
-    document.getElementById('premium'),
-  ]
-  if(window.location.hash) {
-    if(window.location.hash === "#basic") {
-      pricingTypes[0].setAttribute("checked", "checked")
+    document.getElementById("basic"),
+    document.getElementById("standard"),
+    document.getElementById("premium"),
+  ];
+  let chosenPricingType;
+  if (window.location.hash) {
+    if (window.location.hash === "#basic") {
+      chosenPricingType = pricingTypes[0]
+    } else if (window.location.hash === "#standart") {
+      chosenPricingType = pricingTypes[1]
+    } else {
+      chosenPricingType = pricingTypes[2]
     }
   }
-}
-
-setPricingType()
+  chosenPricingType.setAttribute("checked", "checked")
+})();
