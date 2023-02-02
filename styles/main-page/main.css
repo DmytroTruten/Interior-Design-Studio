@@ -838,7 +838,8 @@ body::-webkit-scrollbar-thumb {
 
 #commercial-img,
 #residential-img,
-#office-img {
+#office-img,
+#other-img {
   display: none;
 }
 
