@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       inputFields[i].value = localStorageElements[i];
       if (inputFields[i].value !== "") {
         labels[i].style.transform = "translateY(-20px)";
-        labels[i].style.fontSize = "12px";
+        labels[i].style.fontSize = "14px";
       }
     }
   }
