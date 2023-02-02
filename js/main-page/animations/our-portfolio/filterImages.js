@@ -2,6 +2,7 @@ const filters = document.querySelectorAll(".filter");
 const allImages = document.querySelectorAll("#all-img");
 const commercialImages = document.querySelectorAll("#commercial-img");
 const residentialImages = document.querySelectorAll('#residential-img')
+const officeImages = document.querySelectorAll('#office-img')
 
 let currentImages = allImages;
 let nextImages;
@@ -30,6 +31,9 @@ export function filterPortfolioImages() {
         case "residential":
           nextImages = residentialImages;
           break;
+          case "office":
+            nextImages = officeImages;
+            break;
       }
       animateFilterImages(
         currentImages,

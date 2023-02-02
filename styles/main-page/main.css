@@ -837,7 +837,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 #commercial-img,
-#residential-img {
+#residential-img,
+#office-img {
   display: none;
 }
 
