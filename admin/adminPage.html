@@ -1,5 +1,4 @@
-<!-- <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-         pageEncoding="ISO-8859-1"%> -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,27 +17,19 @@
       <h1>Hello, <span>Admin</span></h1>
       <h5>Today we have:</h5>
       <p>
-        <!-- <% Integer customersAmount=(Integer)request.getSession().getAttribute("customersAmount"); Integer
-          callOrdersAmount=(Integer)request.getSession().getAttribute("callOrdersAmount");%> -->
       </p>
       <p>
-        <!-- <%=customersAmount%> customer<%if(customersAmount!=1) {%>
-              <%="s"%>
-                <%}%> -->
         Customers Amount
       </p>
       <p>
-        <!-- <%=callOrdersAmount%> call order<%if(callOrdersAmount!=1) {%>
-              <%="s"%>
-                <%}%> -->
         Call Orders Amount
       </p>
       <div class="links-container">
         <a href="<%=request.getContextPath()%>/admin/customers-list">
-          <button class="list-button">List of Customers</button> 
+          <button class="list-button">List of Customers</button>
         </a>
         <a href="<%=request.getContextPath()%>/admin/call-order-list">
-          <button class="list-button">List of Call Orders</button> 
+          <button class="list-button">List of Call Orders</button>
         </a>
       </div>
     </div>
