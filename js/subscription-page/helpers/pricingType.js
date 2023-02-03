@@ -13,6 +13,6 @@
     } else {
       chosenPricingType = pricingTypes[2]
     }
+    chosenPricingType.setAttribute("checked", "checked")
   }
-  chosenPricingType.setAttribute("checked", "checked")
 })();
