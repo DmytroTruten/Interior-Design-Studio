@@ -143,6 +143,7 @@
   }
   .gallery img {
     border-radius: 0px !important;
+    aspect-ratio: 16/9;
   }
   .gallery .card {
     border: none;
