@@ -844,6 +844,10 @@ body::-webkit-scrollbar-thumb {
   display: none;
 }
 
+.filter {
+  transition: transform 0.2s ease-in-out;
+}
+
 .navbar {
   background-color: transparent;
 }

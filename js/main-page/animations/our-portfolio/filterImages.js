@@ -50,6 +50,12 @@ export function filterPortfolioImages() {
         );
       }
     });
+    filters[i].addEventListener('mouseenter', () => {
+      filters[i].style.transform = 'scale(1.1)'
+    })
+    filters[i].addEventListener('mouseleave', () => {
+      filters[i].style.transform = 'scale(1)'
+    })
   }
 }
 
