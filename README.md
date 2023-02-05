@@ -56,6 +56,6 @@
 
 #### _Or_
 
-- Follow this link [https://dmitriytruten.github.io/Stopwatch-App/](https://dmitriytruten.github.io/Stopwatch-App/)
+- Follow this link [https://dmytrotruten.github.io/Interior-Design-Studio/](https://dmytrotruten.github.io/Interior-Design-Studio/)
 
 ---
