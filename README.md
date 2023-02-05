@@ -11,19 +11,20 @@
 
 ![thumbnail](images/services-img.png)
 
-\
+&nbsp;
 
-##### Here you can view the portfolio with finished projects of this company
+##### Here you can view the portfolio with finished projects of this company 
+
 
 ![thumbnail](images/portfolio-img.png)
 
-\
+&nbsp;
 
 ##### The three levels of subscription plans
 
 ![thumbnail](images/pricing-img.png)
 
-\
+&nbsp;
 
 ##### You can also order a call
 
