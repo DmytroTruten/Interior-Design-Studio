@@ -50,12 +50,6 @@
 
 ---
 
-#### _If you want to check or use this app_
-
-- Follow **Environments > View Deployment**
-
-#### _Or_
-
 - Follow this link [https://dmytrotruten.github.io/Interior-Design-Studio/](https://dmytrotruten.github.io/Interior-Design-Studio/)
 
 ---
